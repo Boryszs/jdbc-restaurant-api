@@ -24,7 +24,6 @@ public class AdresController {
     Logger logger = LoggerFactory.getLogger(AdresController.class);
 
     private AdresService adresService;
-
     @Autowired
     public AdresController(AdresService adresService) {
         this.adresService = adresService;

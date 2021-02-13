@@ -49,8 +49,7 @@ public class JdbcAdresRepository implements AdresRepository {
 
         jdbcTemplate.update(preparedStatementCreator,holder);
         final Long Id = (Long) holder.getKeys().get("id_adresu");
-        System.out.println(Id);
-        return 1;
+        return Id.intValue();
     }
 
     @Override

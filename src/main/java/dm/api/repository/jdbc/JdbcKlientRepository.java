@@ -27,12 +27,12 @@ public class JdbcKlientRepository implements KlientRepository {
 
     @Override
     public int save(Klient klient) {
-        return jdbcTemplate.update("insert into restauracja.klient(login,haslo,id_osoby) value(?,crypt(?, gen_salt('md5'),?)",klient.getLogin(),klient.getHaslo(),klient.getIdOsoby());
+        return jdbcTemplate.update("insert into restauracja.klient(login,haslo,id_osoby) values(?,crypt(?, gen_salt('md5')),?)",klient.getLogin(),klient.getHaslo(),klient.getIdOsoby());
     }
 
     @Override
     public int update(Klient klient) {
-        return jdbcTemplate.update("update restauracja.klient set login = ? , haslo = crypt(?, gen_salt('md5')  where id_klienta = ?",klient.getLogin(),klient.getHaslo(),klient.getIdKlienta());
+        return jdbcTemplate.update("update restauracja.klient set login = ? , haslo = crypt(?, gen_salt('md5')) where id_klienta = ?",klient.getLogin(),klient.getHaslo(),klient.getIdKlienta());
     }
 
     //TODO NOT WORK !!!!

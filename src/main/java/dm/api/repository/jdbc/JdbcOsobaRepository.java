@@ -5,8 +5,15 @@ import dm.api.model.Osoba;
 import dm.api.repository.OsobaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.List;
 import java.util.Optional;
 
@@ -27,7 +34,26 @@ public class JdbcOsobaRepository implements OsobaRepository {
 
     @Override
     public int save(Osoba osoba) {
-        return jdbcTemplate.update("insert into restauracja.osoba(imie,nazwisko,pesel,data_urodzenia,email,telefon,id_adresu) value(?,?,?,?,?,?,?)",osoba.getImie(),osoba.getNazwisko(),osoba.getPesel(),osoba.getDataUrodzenia(),osoba.getEmail(),osoba.getTelefon(),osoba.getIdAdresu());
+        final KeyHolder holder = new GeneratedKeyHolder();
+        final PreparedStatementCreator preparedStatementCreator = new PreparedStatementCreator(){
+
+            @Override
+            public PreparedStatement createPreparedStatement(final Connection connection) throws SQLException {
+                final PreparedStatement preparedStatement = connection.prepareStatement("insert into restauracja.osoba(imie,nazwisko,pesel,data_urodzenia,email,telefon,id_adresu) values(?,?,?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
+                preparedStatement.setString(1,osoba.getImie());
+                preparedStatement.setString(2,osoba.getNazwisko());
+                preparedStatement.setString(3,osoba.getPesel());
+                preparedStatement.setDate(4,new java.sql.Date(osoba.getDataUrodzenia().getTime()));
+                preparedStatement.setString(5,osoba.getEmail());
+                preparedStatement.setString(6,osoba.getTelefon());
+                preparedStatement.setInt(7,osoba.getIdAdresu());
+                return preparedStatement;
+            }
+        };
+
+        jdbcTemplate.update(preparedStatementCreator,holder);
+        final Long Id = (Long) holder.getKeys().get("id_osoby");
+        return Id.intValue();
     }
 
     @Override
