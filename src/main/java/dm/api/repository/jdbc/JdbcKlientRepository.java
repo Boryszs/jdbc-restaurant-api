@@ -32,7 +32,7 @@ public class JdbcKlientRepository implements KlientRepository {
 
     @Override
     public int update(Klient klient) {
-        return jdbcTemplate.update("update restauracja.klient set login = ? , haslo = crypt(?, gen_salt('md5')  where  id_klienta = ?",klient.getLogin(),klient.getHaslo(),klient.getIdKlienta());
+        return jdbcTemplate.update("update restauracja.klient set login = ? , haslo = crypt(?, gen_salt('md5')  where id_klienta = ?",klient.getLogin(),klient.getHaslo(),klient.getIdKlienta());
     }
 
     //TODO NOT WORK !!!!

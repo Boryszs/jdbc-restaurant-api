@@ -49,6 +49,28 @@ public class Klient {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Klient klient = (Klient) o;
+
+        if (idKlienta != null ? !idKlienta.equals(klient.idKlienta) : klient.idKlienta != null) return false;
+        if (login != null ? !login.equals(klient.login) : klient.login != null) return false;
+        if (haslo != null ? !haslo.equals(klient.haslo) : klient.haslo != null) return false;
+        return idOsoby != null ? idOsoby.equals(klient.idOsoby) : klient.idOsoby == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = idKlienta != null ? idKlienta.hashCode() : 0;
+        result = 31 * result + (login != null ? login.hashCode() : 0);
+        result = 31 * result + (haslo != null ? haslo.hashCode() : 0);
+        result = 31 * result + (idOsoby != null ? idOsoby.hashCode() : 0);
+        return result;
+    }
+
+    @Override
     public String toString() {
         return "Klient{" +
                 "idKlienta=" + idKlienta +

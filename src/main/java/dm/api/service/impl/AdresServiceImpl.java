@@ -3,7 +3,6 @@ package dm.api.service.impl;
 import dm.api.model.Adres;
 import dm.api.repository.AdresRepository;
 import dm.api.service.AdresService;
-import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

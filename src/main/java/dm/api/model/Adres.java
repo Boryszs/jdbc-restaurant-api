@@ -59,6 +59,30 @@ public class Adres {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Adres adres = (Adres) o;
+
+        if (idAdresu != null ? !idAdresu.equals(adres.idAdresu) : adres.idAdresu != null) return false;
+        if (miejscowosc != null ? !miejscowosc.equals(adres.miejscowosc) : adres.miejscowosc != null) return false;
+        if (ulica != null ? !ulica.equals(adres.ulica) : adres.ulica != null) return false;
+        if (nrDomu != null ? !nrDomu.equals(adres.nrDomu) : adres.nrDomu != null) return false;
+        return kodPocztowy != null ? kodPocztowy.equals(adres.kodPocztowy) : adres.kodPocztowy == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = idAdresu != null ? idAdresu.hashCode() : 0;
+        result = 31 * result + (miejscowosc != null ? miejscowosc.hashCode() : 0);
+        result = 31 * result + (ulica != null ? ulica.hashCode() : 0);
+        result = 31 * result + (nrDomu != null ? nrDomu.hashCode() : 0);
+        result = 31 * result + (kodPocztowy != null ? kodPocztowy.hashCode() : 0);
+        return result;
+    }
+
+    @Override
     public String toString() {
         return "Adres{" +
                 "idAdresu=" + idAdresu +

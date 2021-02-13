@@ -1,11 +1,9 @@
 package dm.api.controller;
 
 
-import dm.api.dto.request.DtoAdresRequest;
 import dm.api.dto.request.DtoKlientRequest;
 import dm.api.dto.response.DtoError;
 import dm.api.dto.response.DtoKlientResponse;
-import dm.api.model.Adres;
 import dm.api.model.Klient;
 import dm.api.service.KlientService;
 import org.slf4j.Logger;
@@ -69,7 +67,7 @@ public class KlientController {
             Optional<Klient> klient = klientService.finById(id);
             return ResponseEntity.ok(klient.get());
         }catch (EmptyResultDataAccessException e){
-            logger.error("Get kleint on id {}",e.getMessage());
+            logger.error(e.getMessage());
             return ResponseEntity.status(400).body(new DtoError("No find Klient on id: "+id));
         }
     }
