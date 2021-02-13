@@ -4,7 +4,6 @@ import dm.api.dto.request.DtoAdresRequest;
 import dm.api.dto.response.DtoAdresResponse;
 import dm.api.dto.response.DtoError;
 import dm.api.model.Adres;
-import dm.api.repository.AdresRepository;
 import dm.api.service.AdresService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,9 +41,9 @@ public class AdresController {
     @GetMapping(value = "/all")
     public ResponseEntity<List<DtoAdresResponse>> getAll() {
         logger.info("Get all adres");
-        List<DtoAdresResponse> dtoAdresResponseRespons = new LinkedList<>();
-        adresService.findAll().stream().map(k -> new DtoAdresResponse(k.getIdAdresu(),k.getMiejscowosc(),k.getUlica(),k.getNrDomu(),k.getKodPocztowy())).forEach(dtoAdresResponseRespons::add);
-        return ResponseEntity.ok(dtoAdresResponseRespons);
+        List<DtoAdresResponse> dtoAdresResponse = new LinkedList<>();
+        adresService.findAll().stream().map(k -> new DtoAdresResponse(k.getIdAdresu(),k.getMiejscowosc(),k.getUlica(),k.getNrDomu(),k.getKodPocztowy())).forEach(dtoAdresResponse::add);
+        return ResponseEntity.ok(dtoAdresResponse);
     }
 
     @PostMapping(value = "/add")
