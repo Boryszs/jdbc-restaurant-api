@@ -1,0 +1,2 @@
+2021-02-14 21:17:00 [http-nio-8080-exec-1] INFO  dm.api.controller.OsobaController - Get osoba on id 45
+2021-02-14 21:17:04 [http-nio-8080-exec-2] INFO  dm.api.controller.KlientController - Get klient on id 45

@@ -6,16 +6,13 @@ import dm.api.dto.request.DtoKlientRequest;
 import dm.api.dto.response.DtoError;
 import dm.api.dto.response.DtoKlientResponse;
 import dm.api.model.Klient;
-import dm.api.service.AdresService;
 import dm.api.service.KlientService;
-import dm.api.service.OsobaService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
@@ -28,8 +25,6 @@ public class KlientController {
     Logger logger = LoggerFactory.getLogger(KlientController.class);
 
     private KlientService klientService;
-    private OsobaService osobaService;
-    private AdresService adresService;
 
     @Autowired
     public KlientController(KlientService klientService) {
@@ -74,7 +69,7 @@ public class KlientController {
     @ResponseBody
     @GetMapping(value = "get/{id}")
     public ResponseEntity<?> getKlient(@PathVariable(value="id") Integer id) {
-        logger.info("Get kleint on id {}",id);
+        logger.info("Get klient on id {}",id);
         try {
             Optional<Klient> klient = klientService.finById(id);
             return ResponseEntity.ok(klient.get());

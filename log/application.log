@@ -1,0 +1,6 @@
+2021-02-14 21:16:56 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 15336 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-14 21:16:56 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-14 21:16:56 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-14 21:16:57 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.789 seconds (JVM running for 2.405)
+2021-02-14 21:17:00 [http-nio-8080-exec-1] INFO  dm.api.controller.OsobaController - Get osoba on id 45
+2021-02-14 21:17:04 [http-nio-8080-exec-2] INFO  dm.api.controller.KlientController - Get klient on id 45

@@ -1,4 +1,4 @@
-package config;
+package dm.api.config;
 
 import com.google.common.base.Predicate;
 import org.springframework.context.annotation.Bean;
@@ -22,7 +22,8 @@ public class SwaggerConfig {
     }
 
     private Predicate<String> postPaths() {
-        return or(regex("/api/posts.*"), regex("/api/test.*"));
+        return or(regex("/api/posts.*"),regex("/api/swagger.*"),
+                regex("/adres.*"),regex("/klient.*"),regex("/osoba.*"));
     }
 
     private ApiInfo apiInfo() {
