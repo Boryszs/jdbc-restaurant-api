@@ -50,13 +50,13 @@ public class KlientController {
     @PostMapping(value = "/add")
     public ResponseEntity<Integer> addKlient(@RequestBody DtoKlientRequest klientRequest) {
         logger.info("Add klient");
-        return ResponseEntity.ok(klientService.save(new Klient(null,klientRequest.getLogin(),klientRequest.getHaslo(),klientRequest.getIdOsoby())));
+        return ResponseEntity.status(201).body(klientService.save(new Klient(null,klientRequest.getLogin(),klientRequest.getHaslo(),klientRequest.getIdOsoby())));
     }
 
     @PostMapping(value = "/add-klient")
     public ResponseEntity<Integer> add(@RequestBody DtoAddKlientRequest klientRequest) {
         logger.info("Add klient");
-        return ResponseEntity.ok(klientService.add(klientRequest));
+        return ResponseEntity.status(201).body(klientService.add(klientRequest));
     }
 
 

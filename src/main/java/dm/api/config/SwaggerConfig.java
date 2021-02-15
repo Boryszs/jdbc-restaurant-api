@@ -23,13 +23,14 @@ public class SwaggerConfig {
 
     private Predicate<String> postPaths() {
         return or(regex("/api/posts.*"),regex("/api/swagger.*"),
-                regex("/adres.*"),regex("/klient.*"),regex("/osoba.*"));
+                regex("/adres.*"),regex("/klient.*"),regex("/osoba.*")
+                ,regex("/pracownik.*"),regex("/test.*"));
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("API")
-                .description("API SWAGGER")
-                .license("License")
+        return new ApiInfoBuilder().title("Documentation")
+                .description("api reastaurant")
+                .license("License").title("Project Api restaurant")
                 .version("1.0").build();
     }
 

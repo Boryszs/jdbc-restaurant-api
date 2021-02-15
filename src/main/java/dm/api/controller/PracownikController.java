@@ -49,14 +49,14 @@ public class PracownikController {
     @PostMapping(value = "/add")
     public ResponseEntity<Integer> addAdres(@RequestBody DtoPracownikResponse pracownikResponse) {
         logger.info("Add pracownik");
-        return ResponseEntity.ok(pracownikService.save(new Pracownik(null,pracownikResponse.getPensja(),pracownikResponse.getRola(),pracownikResponse.getIdOsoby())));
+        return ResponseEntity.status(201).body(pracownikService.save(new Pracownik(null,pracownikResponse.getPensja(),pracownikResponse.getRola(),pracownikResponse.getIdOsoby())));
     }
 
     @PostMapping(value = "/add-pracownik")
     public ResponseEntity<Integer> add(@RequestBody DtoAddPracownikRequest klientRequest) {
         logger.info("Add klient");
         logger.info(klientRequest.toString());
-        return ResponseEntity.ok(pracownikService.add(klientRequest));
+        return ResponseEntity.status(201).body(pracownikService.add(klientRequest));
     }
 
 

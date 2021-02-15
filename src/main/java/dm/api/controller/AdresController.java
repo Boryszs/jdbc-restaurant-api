@@ -48,7 +48,7 @@ public class AdresController {
     @PostMapping(value = "/add")
     public ResponseEntity<Integer> addAdres(@RequestBody DtoAdresRequest adresRequest) {
         logger.info("Add adres");
-        return ResponseEntity.ok(adresService.save(new Adres(null,adresRequest.getMiejscowosc(),adresRequest.getUlica(),adresRequest.getNrDomu(),adresRequest.getKodPocztowy())));
+        return ResponseEntity.status(201).body(adresService.save(new Adres(null,adresRequest.getMiejscowosc(),adresRequest.getUlica(),adresRequest.getNrDomu(),adresRequest.getKodPocztowy())));
     }
 
     @PutMapping(value = "/update/{id}")

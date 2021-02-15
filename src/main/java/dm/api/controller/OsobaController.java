@@ -49,7 +49,7 @@ public class OsobaController {
     @PostMapping(value = "/add")
     public ResponseEntity<Integer> addAdres(@RequestBody DtoOsobaResponse osobaRequest) {
         logger.info("Add osoba");
-        return ResponseEntity.ok(osobaService.save(new Osoba(null,osobaRequest.getImie(),osobaRequest.getNazwisko(),osobaRequest.getPesel(),osobaRequest.getDataUrodzenia(),osobaRequest.getEmail(),osobaRequest.getTelefon(),osobaRequest.getIdAdresu())));
+        return ResponseEntity.status(201).body(osobaService.save(new Osoba(null,osobaRequest.getImie(),osobaRequest.getNazwisko(),osobaRequest.getPesel(),osobaRequest.getDataUrodzenia(),osobaRequest.getEmail(),osobaRequest.getTelefon(),osobaRequest.getIdAdresu())));
     }
 
     @PutMapping(value = "/update/{id}")

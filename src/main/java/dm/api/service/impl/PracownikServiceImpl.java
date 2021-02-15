@@ -51,9 +51,7 @@ public class PracownikServiceImpl implements PracownikService {
     @Override
     public int add(DtoAddPracownikRequest pracownik) {
         Integer idAdres = adresRepository.save(new Adres(null,pracownik.getAdres().getMiejscowosc(),pracownik.getAdres().getUlica(),pracownik.getAdres().getNrDomu(),pracownik.getAdres().getKodPocztowy()));
-        System.out.println(idAdres);
         Integer idOsoba = osobaRepository.save(new Osoba(null,pracownik.getOsoba().getImie(),pracownik.getOsoba().getNazwisko(),pracownik.getOsoba().getPesel(),pracownik.getOsoba().getDataUrodzenia(),pracownik.getOsoba().getEmail(),pracownik.getOsoba().getTelefon(),idAdres));
-        System.out.println(idOsoba);
         return pracownikRepository.save(new Pracownik(null,pracownik.getPensja(),pracownik.getRola(),idOsoba));
     }
 

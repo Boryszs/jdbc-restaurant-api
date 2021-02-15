@@ -46,3 +46,5 @@
 2021-02-15 14:25:33 [http-nio-8080-exec-3] INFO  dm.api.controller.OsobaController - Get all osoba
 2021-02-15 14:25:46 [http-nio-8080-exec-5] INFO  d.api.controller.PracownikController - Add klient
 2021-02-15 14:25:46 [http-nio-8080-exec-5] INFO  d.api.controller.PracownikController - DtoAddPracownikRequest{pensja=2400.0, Rola='sprzedawca', osoba=DtoOsobaResponse{ imie='Heraiusz', nazwisko='m2', pesel='95042583646', dataUrodzenia=Fri Jul 19 02:00:00 CEST 1946, email='760CB67@wp.au', telefon='(0)752137915', idAdresu=null}, adres=DtoAdresResponse{ miejscowosc='Toruń1', ulica='ul. Kosmonautó', nrDomu='73', kodPocztowy='87-127'}}
+2021-02-15 14:33:52 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Add klient
+2021-02-15 14:33:52 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - DtoAddPracownikRequest{pensja=2400.0, Rola='sprzedawca', osoba=DtoOsobaResponse{ imie='Heraiusz', nazwisko='m2', pesel='98042583646', dataUrodzenia=Fri Jul 19 02:00:00 CEST 1946, email='760CB67@wp.au', telefon='(0)752137915', idAdresu=null}, adres=DtoAdresResponse{ miejscowosc='Toruń1', ulica='ul. Kosmonautó', nrDomu='73', kodPocztowy='87-127'}}

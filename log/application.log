@@ -154,3 +154,21 @@
 2021-02-15 14:25:33 [http-nio-8080-exec-3] INFO  dm.api.controller.OsobaController - Get all osoba
 2021-02-15 14:25:46 [http-nio-8080-exec-5] INFO  d.api.controller.PracownikController - Add klient
 2021-02-15 14:25:46 [http-nio-8080-exec-5] INFO  d.api.controller.PracownikController - DtoAddPracownikRequest{pensja=2400.0, Rola='sprzedawca', osoba=DtoOsobaResponse{ imie='Heraiusz', nazwisko='m2', pesel='95042583646', dataUrodzenia=Fri Jul 19 02:00:00 CEST 1946, email='760CB67@wp.au', telefon='(0)752137915', idAdresu=null}, adres=DtoAdresResponse{ miejscowosc='Toruń1', ulica='ul. Kosmonautó', nrDomu='73', kodPocztowy='87-127'}}
+2021-02-15 14:28:59 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 25416 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-15 14:28:59 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-15 14:28:59 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-15 14:29:01 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.911 seconds (JVM running for 2.563)
+2021-02-15 14:30:39 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 21204 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-15 14:30:39 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-15 14:30:39 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-15 14:30:41 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.44 seconds (JVM running for 3.109)
+2021-02-15 14:31:33 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 21548 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-15 14:31:33 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-15 14:31:33 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-15 14:31:35 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.847 seconds (JVM running for 2.423)
+2021-02-15 14:33:44 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 8316 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-15 14:33:44 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-15 14:33:44 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-15 14:33:46 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.045 seconds (JVM running for 2.886)
+2021-02-15 14:33:52 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Add klient
+2021-02-15 14:33:52 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - DtoAddPracownikRequest{pensja=2400.0, Rola='sprzedawca', osoba=DtoOsobaResponse{ imie='Heraiusz', nazwisko='m2', pesel='98042583646', dataUrodzenia=Fri Jul 19 02:00:00 CEST 1946, email='760CB67@wp.au', telefon='(0)752137915', idAdresu=null}, adres=DtoAdresResponse{ miejscowosc='Toruń1', ulica='ul. Kosmonautó', nrDomu='73', kodPocztowy='87-127'}}
