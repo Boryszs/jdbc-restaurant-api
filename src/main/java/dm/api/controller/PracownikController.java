@@ -1,9 +1,10 @@
 package dm.api.controller;
 
 import dm.api.dto.request.DtoAddPracownikRequest;
-import dm.api.dto.response.DtoError;
-import dm.api.dto.response.DtoPracownikResponse;
+import dm.api.dto.response.*;
 import dm.api.model.Pracownik;
+import dm.api.service.AdresService;
+import dm.api.service.OsobaService;
 import dm.api.service.PracownikService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,10 +25,14 @@ public class PracownikController {
     Logger logger = LoggerFactory.getLogger(PracownikController.class);
 
     private PracownikService pracownikService;
+    private OsobaService osobaService;
+    private AdresService adresService;
 
     @Autowired
-    public PracownikController(PracownikService pracownikService) {
+    public PracownikController(PracownikService pracownikService, OsobaService osobaService, AdresService adresService) {
         this.pracownikService = pracownikService;
+        this.osobaService = osobaService;
+        this.adresService = adresService;
     }
 
     @ResponseBody
@@ -35,6 +40,20 @@ public class PracownikController {
     public ResponseEntity<Integer> size() {
         logger.info("Get count pracownik entity");
         return ResponseEntity.ok(pracownikService.count());
+    }
+
+    @ResponseBody
+    @GetMapping(value = "/all-pracownik")
+    public ResponseEntity<List<DtoPracownikDataResponse>> getAllKlient() {
+        logger.info("Get all klient data");
+        List<DtoPracownikDataResponse> dtoKlientDataResponses = new LinkedList<>();
+        for(Pracownik pracownik : pracownikService.findAll()){
+            DtoPracownikResponse dtoPracownikResponse = new DtoPracownikResponse(pracownik.getIdPracownika(),pracownik.getPensja(),pracownik.getRola(),pracownik.getIdOsoby());
+            DtoOsobaResponse dtoOsobaResponse = osobaService.findById(pracownik.getIdOsoby()).map(osoba ->  new DtoOsobaResponse(osoba.getIdOsoby(),osoba.getImie(),osoba.getNazwisko(),osoba.getPesel(),osoba.getDataUrodzenia(),osoba.getEmail(),osoba.getTelefon(),osoba.getIdAdresu())).get();
+            DtoAdresResponse dtoAdresResponse = adresService.findById(dtoOsobaResponse.getIdAdresu()).map(adres -> new DtoAdresResponse(adres.getIdAdresu(),adres.getMiejscowosc(),adres.getUlica(),adres.getNrDomu(),adres.getKodPocztowy())).get();
+            dtoKlientDataResponses.add(new DtoPracownikDataResponse(dtoPracownikResponse,dtoOsobaResponse,dtoAdresResponse));
+        }
+        return ResponseEntity.ok(dtoKlientDataResponses);
     }
 
     @ResponseBody

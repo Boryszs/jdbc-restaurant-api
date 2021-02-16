@@ -3,16 +3,18 @@ package dm.api.controller;
 
 import dm.api.dto.request.DtoAddKlientRequest;
 import dm.api.dto.request.DtoKlientRequest;
-import dm.api.dto.response.DtoError;
-import dm.api.dto.response.DtoKlientResponse;
+import dm.api.dto.response.*;
 import dm.api.model.Klient;
+import dm.api.service.AdresService;
 import dm.api.service.KlientService;
+import dm.api.service.OsobaService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
@@ -25,10 +27,14 @@ public class KlientController {
     Logger logger = LoggerFactory.getLogger(KlientController.class);
 
     private KlientService klientService;
+    private OsobaService osobaService;
+    private AdresService adresService;
 
     @Autowired
-    public KlientController(KlientService klientService) {
+    public KlientController(KlientService klientService, OsobaService osobaService, AdresService adresService) {
         this.klientService = klientService;
+        this.osobaService = osobaService;
+        this.adresService = adresService;
     }
 
     @ResponseBody
@@ -36,6 +42,20 @@ public class KlientController {
     public ResponseEntity<Integer> size() {
         logger.info("Get count klient entity");
        return ResponseEntity.ok(klientService.count());
+    }
+
+    @ResponseBody
+    @GetMapping(value = "/all-klient")
+    public ResponseEntity<List<DtoKlientDataResponse>> getAllKlient() {
+        logger.info("Get all klient data");
+        List<DtoKlientDataResponse> dtoKlientDataResponses = new LinkedList<>();
+        for(Klient klient : klientService.findAll()){
+         DtoKlientResponse dtoKlientResponse = new DtoKlientResponse(klient.getIdKlienta(),klient.getLogin(),klient.getHaslo(),klient.getIdOsoby());
+         DtoOsobaResponse dtoOsobaResponse = osobaService.findById(klient.getIdOsoby()).map(osoba ->  new DtoOsobaResponse(osoba.getIdOsoby(),osoba.getImie(),osoba.getNazwisko(),osoba.getPesel(),osoba.getDataUrodzenia(),osoba.getEmail(),osoba.getTelefon(),osoba.getIdAdresu())).get();
+         DtoAdresResponse dtoAdresResponse = adresService.findById(dtoOsobaResponse.getIdAdresu()).map(adres -> new DtoAdresResponse(adres.getIdAdresu(),adres.getMiejscowosc(),adres.getUlica(),adres.getNrDomu(),adres.getKodPocztowy())).get();
+         dtoKlientDataResponses.add(new DtoKlientDataResponse(dtoKlientResponse,dtoOsobaResponse,dtoAdresResponse));
+        }
+        return ResponseEntity.ok(dtoKlientDataResponses);
     }
 
     @ResponseBody

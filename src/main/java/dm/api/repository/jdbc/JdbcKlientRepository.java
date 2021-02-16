@@ -43,7 +43,7 @@ public class JdbcKlientRepository implements KlientRepository {
 
     @Override
     public List<Klient> findAll() {
-        return jdbcTemplate.query("select * from restauracja.klient",new KlientRowMapper());
+        return jdbcTemplate.query("select * from restauracja.klient ORDER BY id_klienta",new KlientRowMapper());
     }
 
     @Override

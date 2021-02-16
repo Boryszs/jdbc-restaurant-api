@@ -65,7 +65,7 @@ public class JdbcAdresRepository implements AdresRepository {
 
     @Override
     public List<Adres> findAll() {
-        return jdbcTemplate.query("select * from restauracja.adres",new AdresRowMapper());
+        return jdbcTemplate.query("select * from restauracja.adres ORDER BY id_adresu",new AdresRowMapper());
     }
 
     @Override

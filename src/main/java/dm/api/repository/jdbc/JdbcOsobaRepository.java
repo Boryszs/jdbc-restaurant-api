@@ -69,7 +69,7 @@ public class JdbcOsobaRepository implements OsobaRepository {
 
     @Override
     public List<Osoba> findAll() {
-        return jdbcTemplate.query("select * from restauracja.osoba",new OsobaRowMapper());
+        return jdbcTemplate.query("select * from restauracja.osoba ORDER BY id_osoby",new OsobaRowMapper());
     }
 
     @Override

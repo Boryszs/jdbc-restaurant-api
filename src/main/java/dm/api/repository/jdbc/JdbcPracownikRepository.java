@@ -60,7 +60,7 @@ public class JdbcPracownikRepository implements PracownikRepository {
 
     @Override
     public List<Pracownik> findAll() {
-        return jdbcTemplate.query("select * from restauracja.pracownik",new PracownikRowMapper());
+        return jdbcTemplate.query("select * from restauracja.pracownik ORDER BY id_pracownika",new PracownikRowMapper());
     }
 
     @Override

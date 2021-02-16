@@ -172,3 +172,1234 @@
 2021-02-15 14:33:46 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.045 seconds (JVM running for 2.886)
 2021-02-15 14:33:52 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Add klient
 2021-02-15 14:33:52 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - DtoAddPracownikRequest{pensja=2400.0, Rola='sprzedawca', osoba=DtoOsobaResponse{ imie='Heraiusz', nazwisko='m2', pesel='98042583646', dataUrodzenia=Fri Jul 19 02:00:00 CEST 1946, email='760CB67@wp.au', telefon='(0)752137915', idAdresu=null}, adres=DtoAdresResponse{ miejscowosc='Toruń1', ulica='ul. Kosmonautó', nrDomu='73', kodPocztowy='87-127'}}
+2021-02-16 14:22:28 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 12340 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 14:22:28 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 14:22:28 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 14:22:30 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.374 seconds (JVM running for 3.201)
+2021-02-16 14:22:33 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 14:22:48 [http-nio-8080-exec-3] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 14:23:38 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 18736 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 14:23:38 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 14:23:38 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 14:23:40 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.999 seconds (JVM running for 2.624)
+2021-02-16 14:23:41 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 14:23:54 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 26520 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 14:23:54 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 14:23:54 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 14:23:56 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.958 seconds (JVM running for 2.695)
+2021-02-16 14:23:59 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 14:24:29 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 14848 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 14:24:29 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 14:24:29 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 14:24:30 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.896 seconds (JVM running for 2.485)
+2021-02-16 14:24:39 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 14:30:12 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 17352 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 14:30:12 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 14:30:12 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 14:30:14 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.893 seconds (JVM running for 2.626)
+2021-02-16 14:30:17 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 14:41:14 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 8624 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 14:41:14 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 14:41:14 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 14:41:16 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.111 seconds (JVM running for 2.696)
+2021-02-16 14:41:18 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 14:42:42 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 17020 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 14:42:42 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 14:42:42 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 14:42:43 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.898 seconds (JVM running for 2.479)
+2021-02-16 14:42:44 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 14:44:07 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 10564 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 14:44:07 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 14:44:07 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 14:44:09 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.098 seconds (JVM running for 2.709)
+2021-02-16 14:44:13 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 14:45:23 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 17680 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 14:45:23 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 14:45:23 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 14:45:25 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.188 seconds (JVM running for 2.87)
+2021-02-16 14:45:27 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 14:54:04 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 23392 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 14:54:04 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 14:54:04 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 14:54:05 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.972 seconds (JVM running for 2.784)
+2021-02-16 14:54:17 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 15:00:44 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 9260 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:00:44 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:00:44 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:00:45 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.934 seconds (JVM running for 2.531)
+2021-02-16 15:00:58 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:02:00 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 5900 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:02:00 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:02:00 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:02:02 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.079 seconds (JVM running for 2.774)
+2021-02-16 15:02:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:02:21 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 15876 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:02:21 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:02:21 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:02:23 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.868 seconds (JVM running for 2.458)
+2021-02-16 15:02:23 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:03:05 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 20136 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:03:05 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:03:05 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:03:07 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.827 seconds (JVM running for 2.37)
+2021-02-16 15:03:08 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:03:41 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 5428 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:03:41 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:03:41 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:03:43 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.921 seconds (JVM running for 2.544)
+2021-02-16 15:03:46 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:04:10 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 7712 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:04:10 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:04:10 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:04:11 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.833 seconds (JVM running for 2.423)
+2021-02-16 15:04:14 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:05:11 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 9436 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:05:11 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:05:11 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:05:13 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.115 seconds (JVM running for 2.763)
+2021-02-16 15:05:15 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:08:49 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 11512 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:08:49 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:08:49 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:08:51 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.355 seconds (JVM running for 2.923)
+2021-02-16 15:08:52 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:09:12 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 26000 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:09:12 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:09:12 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:09:14 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.958 seconds (JVM running for 2.633)
+2021-02-16 15:09:15 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:09:34 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 25020 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:09:34 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:09:34 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:09:36 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.854 seconds (JVM running for 2.413)
+2021-02-16 15:09:38 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:09:56 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 7624 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:09:56 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:09:56 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:09:58 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.847 seconds (JVM running for 2.407)
+2021-02-16 15:09:59 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:10:55 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 12852 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:10:55 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:10:55 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:10:57 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:10:57 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.948 seconds (JVM running for 2.582)
+2021-02-16 15:12:31 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 21096 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:12:31 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:12:31 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:12:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:12:32 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.891 seconds (JVM running for 2.467)
+2021-02-16 15:12:38 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:12:47 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 23592 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:12:47 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:12:47 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:12:48 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.843 seconds (JVM running for 2.405)
+2021-02-16 15:12:48 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:12:58 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 18088 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:12:58 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:12:58 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:12:59 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.011 seconds (JVM running for 2.601)
+2021-02-16 15:13:02 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:13:23 [http-nio-8080-exec-2] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 15:14:23 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 10196 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:14:23 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:14:23 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:14:24 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.958 seconds (JVM running for 2.582)
+2021-02-16 15:14:24 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:14:38 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 14464 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:14:38 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:14:38 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:14:40 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.858 seconds (JVM running for 2.428)
+2021-02-16 15:14:41 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:15:18 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 18908 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:15:18 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:15:18 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:15:19 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:15:19 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.886 seconds (JVM running for 2.48)
+2021-02-16 15:16:20 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 23872 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:16:20 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:16:20 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:16:21 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.837 seconds (JVM running for 2.667)
+2021-02-16 15:16:23 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:18:18 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 23332 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:18:18 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:18:18 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:18:20 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.894 seconds (JVM running for 2.474)
+2021-02-16 15:18:22 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:20:34 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 19844 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:20:34 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:20:34 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:20:36 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.946 seconds (JVM running for 2.527)
+2021-02-16 15:20:37 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:21:33 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 9440 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:21:33 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:21:33 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:21:34 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.827 seconds (JVM running for 2.401)
+2021-02-16 15:21:34 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=4, miejscowosc='Głogów', ulica='Głogów', nrDomu='106', kodPocztowy='67-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=5, miejscowosc='Kłodzko', ulica='mala', nrDomu='195', kodPocztowy='57-300'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=7, miejscowosc='Jawor', ulica='ul. Na Skarpie', nrDomu='62', kodPocztowy='59-400'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=8, miejscowosc='Poznań', ulica='ul. Opoczyńska', nrDomu='214', kodPocztowy='60-168'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=9, miejscowosc='Rzeszów', ulica='ul. Cyrkoniowa', nrDomu='250', kodPocztowy='35-262'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=10, miejscowosc='Katowice', ulica='ul. Ludwika Solskiego', nrDomu='38', kodPocztowy='40-077'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=11, miejscowosc='Tarnów', ulica='ul. Klasztorna', nrDomu='48', kodPocztowy='33-100'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=12, miejscowosc='Legnica', ulica='pl. Słowiański', nrDomu='274', kodPocztowy='59-200'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=13, miejscowosc='Płock', ulica='ul. Stefana Batorego', nrDomu='73', kodPocztowy='09-442'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=14, miejscowosc='Oleśnica', ulica='ul. Jana Brzechwy', nrDomu='89', kodPocztowy='56-400'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=15, miejscowosc='Lublin', ulica='ul. Czeska', nrDomu='80', kodPocztowy='20-171'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=16, miejscowosc='Gdańsk', ulica='ul. Kurza', nrDomu='154', kodPocztowy='80-004'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=17, miejscowosc='Warszawa', ulica='ul. Emilii Plater', nrDomu='284', kodPocztowy='00-055'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=18, miejscowosc='Kłodzko', ulica='ul. Kamieniecka', nrDomu='123', kodPocztowy='57-300'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=19, miejscowosc='Białystok', ulica='ul. Słonimska', nrDomu='129', kodPocztowy='15-220'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=20, miejscowosc='Poznań', ulica='ul. Chyżańska', nrDomu='8', kodPocztowy='60-112'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=21, miejscowosc='Oleśnica', ulica='ul. Stefana Jaracza', nrDomu='252', kodPocztowy='56-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=22, miejscowosc='Gliwice', ulica='ul. Szczupaków', nrDomu='72', kodPocztowy='44-190'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=23, miejscowosc='Włocławek', ulica='ul. Wojciecha Albrychta', nrDomu='223', kodPocztowy='87-812'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=24, miejscowosc='Bytom', ulica='ul. Bzów', nrDomu='6', kodPocztowy='41-933'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=25, miejscowosc='Oleśnica', ulica='ul. Kazimierza Przerwy-Tetmajera', nrDomu='85', kodPocztowy='56-400'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=26, miejscowosc='Płock', ulica='ul. Podleśna', nrDomu='211', kodPocztowy='09-410'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=27, miejscowosc='Opole', ulica='ul. Konwalii', nrDomu='108', kodPocztowy='45-322'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=28, miejscowosc='Wrocław', ulica='ul. Rudolfa Weigla', nrDomu='283', kodPocztowy='50-246'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=29, miejscowosc='Wałbrzych', ulica='ul. Obrońców Pokoju', nrDomu='71', kodPocztowy='58-302'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=30, miejscowosc='Szczecin', ulica='pl. Lecha', nrDomu='245', kodPocztowy='70-350'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=31, miejscowosc='Poznań', ulica='ul. Treblińska', nrDomu='288', kodPocztowy='60-106'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=32, miejscowosc='Tarnów', ulica='ul. Świętojańska', nrDomu='247', kodPocztowy='33-100'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=33, miejscowosc='Łódź', ulica='ul. Gładka', nrDomu='280', kodPocztowy='90-152'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=34, miejscowosc='Szczecin', ulica='ul. Kornela Ujejskiego', nrDomu='136', kodPocztowy='70-005'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=35, miejscowosc='Tarnów', ulica='ul. Krakusa', nrDomu='33', kodPocztowy='33-131'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=36, miejscowosc='Łódź', ulica='ul. Dachowa', nrDomu='57', kodPocztowy='90-241'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=37, miejscowosc='Bydgoszcz', ulica='ul. Szubińska', nrDomu='62', kodPocztowy='85-064'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=38, miejscowosc='Gdańsk', ulica='ul. Reduta Wilk', nrDomu='85', kodPocztowy='80-164'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=39, miejscowosc='Katowice', ulica='ul. Ogrodowa', nrDomu='195', kodPocztowy='40-198'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=40, miejscowosc='Płock', ulica='ul. Zgodna', nrDomu='191', kodPocztowy='09-409'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=41, miejscowosc='Rzeszów', ulica='ul. Kłosowa', nrDomu='100', kodPocztowy='35-405'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=42, miejscowosc='Rzeszów', ulica='ul. Eugeniusza Nazimka', nrDomu='220', kodPocztowy='35-511'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=43, miejscowosc='Głogów', ulica='al. Podwale', nrDomu='150', kodPocztowy='67-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=44, miejscowosc='Wałbrzych', ulica='ul. Polna', nrDomu='282', kodPocztowy='58-302'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=45, miejscowosc='Wrocław', ulica='ul. Wiśniowa', nrDomu='105', kodPocztowy='50-124'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=46, miejscowosc='Kraków', ulica='ul. Mała', nrDomu='294', kodPocztowy='30-165'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=47, miejscowosc='Kraków', ulica='ul. Filipa Eisenberga', nrDomu='54', kodPocztowy='30-022'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=48, miejscowosc='Gorzów Wielkopolski', ulica='ul. Składowa', nrDomu='57', kodPocztowy='66-412'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=49, miejscowosc='Kraków', ulica='ul. Młyńska Boczna', nrDomu='206', kodPocztowy='30-303'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=50, miejscowosc='Rzeszów', ulica='ul. Ambrożego Towarnickiego', nrDomu='294', kodPocztowy='35-205'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=51, miejscowosc='Rzeszów', ulica='ul. Podkarpacka', nrDomu='31', kodPocztowy='35-526'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=52, miejscowosc='Zielona Góra', ulica='ul. mjr. Henryka Sucharskiego', nrDomu='107', kodPocztowy='65-298'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=53, miejscowosc='Kraków', ulica='ul. Młyńska', nrDomu='122', kodPocztowy='30-024'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=54, miejscowosc='Białystok', ulica='ul. Ignacego Domeyki', nrDomu='65', kodPocztowy='15-085'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=55, miejscowosc='Gorzów Wielkopolski', ulica='ul. Plac Jana Pawła II', nrDomu='138', kodPocztowy='66-412'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=56, miejscowosc='Lublin', ulica='ul. Jana Chęcińskiego', nrDomu='257', kodPocztowy='20-252'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=57, miejscowosc='Poznań', ulica='ul. Obrzyca', nrDomu='169', kodPocztowy='60-158'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=58, miejscowosc='Gorzów Wielkopolski', ulica='ul. Ozima', nrDomu='81', kodPocztowy='66-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=59, miejscowosc='Złotoryja', ulica='ul. ks. Piotra Ściegiennego', nrDomu='13', kodPocztowy='59-500'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=60, miejscowosc='Gdańsk', ulica='ul. Śląska', nrDomu='32', kodPocztowy='80-190'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=61, miejscowosc='Katowice', ulica='ul. Józefa Ligęzy', nrDomu='33', kodPocztowy='40-004'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=62, miejscowosc='Jelenia Góra', ulica='ul. Długa', nrDomu='298', kodPocztowy='58-505'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=63, miejscowosc='Gliwice', ulica='ul. Józefy Kantorówny', nrDomu='211', kodPocztowy='44-164'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=64, miejscowosc='Włocławek', ulica='ul. Karkonoska', nrDomu='216', kodPocztowy='87-822'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=65, miejscowosc='Gorzów Wielkopolski', ulica='ul. Śniadeckich', nrDomu='217', kodPocztowy='66-400'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=66, miejscowosc='Katowice', ulica='ul. Lechicka', nrDomu='160', kodPocztowy='40-115'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=67, miejscowosc='Wałbrzych', ulica='ul. Karola Marcinkowskiego', nrDomu='110', kodPocztowy='58-309'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=68, miejscowosc='Gorzów Wielkopolski', ulica='ul. Stefana Batorego', nrDomu='245', kodPocztowy='66-412'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=69, miejscowosc='Wrocław', ulica='ul. Jana Pawła II', nrDomu='117', kodPocztowy='50-131'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=70, miejscowosc='Legnica', ulica='ul. Ukryta', nrDomu='137', kodPocztowy='59-220'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=71, miejscowosc='Katowice', ulica='ul. Jana Matejki', nrDomu='36', kodPocztowy='40-062'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=72, miejscowosc='Wrocław', ulica='ul. Sobieszowska', nrDomu='211', kodPocztowy='50-136'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=73, miejscowosc='Złotoryja', ulica='ul. gen. Józefa Bema', nrDomu='188', kodPocztowy='59-500'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=74, miejscowosc='Legnica', ulica='ul. Pod Chojnikiem', nrDomu='265', kodPocztowy='59-220'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=75, miejscowosc='Bytom', ulica='ul. Wytapiaczy', nrDomu='241', kodPocztowy='41-909'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=76, miejscowosc='Białystok', ulica='ul. Wolińska', nrDomu='111', kodPocztowy='15-177'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=77, miejscowosc='Grudziądz', ulica='ul. prof. Jana Czochralskiego', nrDomu='116', kodPocztowy='86-310'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=78, miejscowosc='Kraków', ulica='ul. Józefa Dietla', nrDomu='66', kodPocztowy='30-115'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=79, miejscowosc='Kłodzko', ulica='pl. Konstytucji 3 Maja', nrDomu='176', kodPocztowy='57-303'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=80, miejscowosc='Płock', ulica='ul. Lisia', nrDomu='87', kodPocztowy='09-402'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=81, miejscowosc='Kraków', ulica='ul. Retoryka', nrDomu='206', kodPocztowy='30-285'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=82, miejscowosc='Katowice', ulica='ul. Lechicka', nrDomu='102', kodPocztowy='40-189'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=83, miejscowosc='Katowice', ulica='ul. J. Lelewela', nrDomu='23', kodPocztowy='40-028'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=84, miejscowosc='Toruń', ulica='ul. Skrajna', nrDomu='261', kodPocztowy='87-119'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=85, miejscowosc='Rybnik', ulica='ul. Klonowa', nrDomu='25', kodPocztowy='42-200'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=86, miejscowosc='Szczecin', ulica='ul. Kurza Stopka', nrDomu='40', kodPocztowy='70-312'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=87, miejscowosc='Wrocław', ulica='ul. Tadeusza Różewicza', nrDomu='157', kodPocztowy='50-175'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=88, miejscowosc='Grudziądz', ulica='ul. Ludwika Waryńskiego', nrDomu='110', kodPocztowy='86-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=89, miejscowosc='Gorzów Wielkopolski', ulica='ul. Longinusa Podbipięty', nrDomu='282', kodPocztowy='66-446'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=90, miejscowosc='Grudziądz', ulica='ul. Obrońców Bydgoszczy', nrDomu='126', kodPocztowy='86-302'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=91, miejscowosc='Toruń', ulica='ul. Kościelna', nrDomu='191', kodPocztowy='87-127'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=92, miejscowosc='Tychy', ulica='ul. Kazimierza Skiby', nrDomu='150', kodPocztowy='43-109'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=93, miejscowosc='Białystok', ulica='ul. Stanisława Leca', nrDomu='72', kodPocztowy='15-124'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=94, miejscowosc='Rzeszów', ulica='ul. św. Jana z Dukli', nrDomu='137', kodPocztowy='35-221'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=95, miejscowosc='Opole', ulica='ul. Juliusza Kossaka', nrDomu='27', kodPocztowy='45-337'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=96, miejscowosc='Grudziądz', ulica='ul. Czapla', nrDomu='262', kodPocztowy='86-300'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=97, miejscowosc='Białystok', ulica='ul. Romantyczna', nrDomu='276', kodPocztowy='15-025'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=98, miejscowosc='Toruń', ulica='ul. Wandy Siemaszkowej', nrDomu='219', kodPocztowy='87-127'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=99, miejscowosc='Wołów', ulica='ul. Wodna', nrDomu='76', kodPocztowy='56-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=100, miejscowosc='Gorzów Wielkopolski', ulica='ul. Piłkarska', nrDomu='193', kodPocztowy='66-415'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=101, miejscowosc='Kielce', ulica='ul. Zacisze', nrDomu='253', kodPocztowy='25-290'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=102, miejscowosc='Rybnik', ulica='ul. Targowa', nrDomu='201', kodPocztowy='42-292'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=103, miejscowosc='Wałbrzych', ulica='ul. Kaszubska', nrDomu='120', kodPocztowy='58-316'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=104, miejscowosc='Warszawa', ulica='ul. Bugaj', nrDomu='288', kodPocztowy='00-102'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=105, miejscowosc='Częstochowa', ulica='ul. Dyrekcyjna', nrDomu='99', kodPocztowy='42-233'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=106, miejscowosc='Bydgoszcz', ulica='ul. Zygmunta Krasińskiego', nrDomu='67', kodPocztowy='85-009'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=107, miejscowosc='Wołów', ulica='ul. Władysława Reymonta', nrDomu='189', kodPocztowy='55-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=108, miejscowosc='Wałbrzych', ulica='ul. Słowiańska', nrDomu='50', kodPocztowy='58-160'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=109, miejscowosc='Kłodzko', ulica='ul. Kościelna', nrDomu='236', kodPocztowy='57-303'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=110, miejscowosc='Opole', ulica='ul. Wrocławska', nrDomu='230', kodPocztowy='45-231'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=111, miejscowosc='Wrocław', ulica='ul. Francuska', nrDomu='67', kodPocztowy='50-065'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=112, miejscowosc='Warszawa', ulica='ul. Próżna', nrDomu='21', kodPocztowy='00-115'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=113, miejscowosc='Białystok', ulica='ul. Jachtowa', nrDomu='220', kodPocztowy='15-144'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=114, miejscowosc='Kraków', ulica='ul. Przemyska', nrDomu='279', kodPocztowy='30-199'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=115, miejscowosc='Legnica', ulica='ul. Turkusowa', nrDomu='273', kodPocztowy='59-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=116, miejscowosc='Warszawa', ulica='ul. Graniczna', nrDomu='280', kodPocztowy='00-030'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=117, miejscowosc='Kraków', ulica='ul. Topolowa', nrDomu='180', kodPocztowy='30-069'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=118, miejscowosc='Grudziądz', ulica='ul. Olsztyńska', nrDomu='23', kodPocztowy='86-300'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=119, miejscowosc='Rybnik', ulica='ul. Kostki Napierskiego', nrDomu='34', kodPocztowy='42-205'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=120, miejscowosc='Grudziądz', ulica='ul. Żupy', nrDomu='68', kodPocztowy='86-300'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=121, miejscowosc='Poznań', ulica='ul. Brokułowa', nrDomu='20', kodPocztowy='60-179'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=122, miejscowosc='Kłodzko', ulica='ul. Ptasia', nrDomu='46', kodPocztowy='57-304'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=123, miejscowosc='Gliwice', ulica='ul. Jana Filaka', nrDomu='293', kodPocztowy='44-102'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=124, miejscowosc='Jawor', ulica='ul. Rodzinna', nrDomu='45', kodPocztowy='59-411'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=125, miejscowosc='Katowice', ulica='ul. Piastowska', nrDomu='181', kodPocztowy='40-066'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=126, miejscowosc='Toruń', ulica='ul. Łącka', nrDomu='238', kodPocztowy='87-127'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=127, miejscowosc='Legnica', ulica='ul. Storczykowa', nrDomu='96', kodPocztowy='59-216'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=128, miejscowosc='Chełm', ulica='ul. Józefata Barszczewskiego', nrDomu='264', kodPocztowy='22-151'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=129, miejscowosc='Jawor', ulica='ul. Głogowska', nrDomu='293', kodPocztowy='59-400'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=130, miejscowosc='Warszawa', ulica='ul. Książęca', nrDomu='241', kodPocztowy='00-125'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=131, miejscowosc='Wrocław', ulica='ul. Miła', nrDomu='266', kodPocztowy='50-209'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=132, miejscowosc='Gliwice', ulica='ul. Długa', nrDomu='121', kodPocztowy='44-109'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=133, miejscowosc='Wrocław', ulica='ul. Żwirki i Wigury', nrDomu='269', kodPocztowy='50-157'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=134, miejscowosc='Częstochowa', ulica='ul. Michała Grażyńskiego', nrDomu='265', kodPocztowy='42-274'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=135, miejscowosc='Poznań', ulica='park ks. Tadeusza Kirschke', nrDomu='258', kodPocztowy='60-121'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=136, miejscowosc='Gdynia', ulica='ul. Sulmińska', nrDomu='108', kodPocztowy='81-203'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=6, miejscowosc='Tarnów', ulica='ul. Generała Władysława Sikorskiego', nrDomu='200', kodPocztowy='33-113'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=2, miejscowosc='Kłodzko', ulica='ul. duza', nrDomu='44', kodPocztowy='57-259'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=137, miejscowosc='Opole', ulica='ul. Wieluńska', nrDomu='208', kodPocztowy='45-019'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=138, miejscowosc='Głogów', ulica='ul. Andrzeja Szmidta', nrDomu='272', kodPocztowy='67-210'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=139, miejscowosc='Wałbrzych', ulica='ul. Rabarbarowa', nrDomu='108', kodPocztowy='58-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=140, miejscowosc='Szczecin', ulica='ul. Marii Skłodowskiej-Curie', nrDomu='77', kodPocztowy='70-303'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=141, miejscowosc='Łódź', ulica='ul. Mewy', nrDomu='230', kodPocztowy='90-183'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=142, miejscowosc='Wrocław', ulica='ul. Cicha', nrDomu='92', kodPocztowy='50-256'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=143, miejscowosc='Jelenia Góra', ulica='ul. Spadochronowa', nrDomu='50', kodPocztowy='58-570'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=144, miejscowosc='Gorzów Wielkopolski', ulica='ul. Mikołaja Kopernika', nrDomu='202', kodPocztowy='66-415'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=145, miejscowosc='Gorzów Wielkopolski', ulica='ul. Wawrowska', nrDomu='215', kodPocztowy='66-400'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=146, miejscowosc='Złotoryja', ulica='ul. Zielona', nrDomu='93', kodPocztowy='59-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=147, miejscowosc='Włocławek', ulica='ul. Notecka', nrDomu='36', kodPocztowy='87-800'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=148, miejscowosc='Gdańsk', ulica='ul. Żwirki i Wigury', nrDomu='155', kodPocztowy='80-026'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=149, miejscowosc='Kłodzko', ulica='ul. Jurija Gagarina', nrDomu='112', kodPocztowy='57-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=150, miejscowosc='Opole', ulica='ul. Księżycowa', nrDomu='253', kodPocztowy='45-318'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=151, miejscowosc='Tarnów', ulica='ul. Obrońców Tobruku', nrDomu='90', kodPocztowy='33-100'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=152, miejscowosc='Jelenia Góra', ulica='ul. Aroniowa', nrDomu='134', kodPocztowy='58-507'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=153, miejscowosc='Jawor', ulica='ul. gen. Władysława Sikorskiego', nrDomu='136', kodPocztowy='59-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=154, miejscowosc='Jawor', ulica='ul. Olgi Boznańskiej', nrDomu='134', kodPocztowy='59-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=155, miejscowosc='Tarnów', ulica='ul. Władysława Łokietka', nrDomu='231', kodPocztowy='33-101'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=156, miejscowosc='Jelenia Góra', ulica='ul. Akacjowa', nrDomu='57', kodPocztowy='58-570'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=157, miejscowosc='Chełm', ulica='ul. Elektryczna', nrDomu='70', kodPocztowy='22-100'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=158, miejscowosc='Gorzów Wielkopolski', ulica='ul. Dobra', nrDomu='112', kodPocztowy='66-400'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=159, miejscowosc='Kraków', ulica='ul. Farmaceutów', nrDomu='161', kodPocztowy='30-098'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=160, miejscowosc='Zielona Góra', ulica='ul. Stanisława Wyspiańskiego', nrDomu='243', kodPocztowy='65-158'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=161, miejscowosc='Bydgoszcz', ulica='ul. Zenona Przesmyckiego', nrDomu='126', kodPocztowy='85-176'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=162, miejscowosc='Gorzów Wielkopolski', ulica='ul. Stanisława Staszica', nrDomu='238', kodPocztowy='66-432'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=163, miejscowosc='Wrocław', ulica='ul. Pohulanka', nrDomu='39', kodPocztowy='50-233'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=164, miejscowosc='Poznań', ulica='ul. Mirabelkowa', nrDomu='147', kodPocztowy='60-254'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=165, miejscowosc='Głogów', ulica='ul. Szczęśliwa', nrDomu='282', kodPocztowy='67-200'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=166, miejscowosc='Włocławek', ulica='ul. Wieluńska', nrDomu='18', kodPocztowy='87-806'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=167, miejscowosc='Włocławek', ulica='ul. Jarosławska', nrDomu='153', kodPocztowy='87-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=168, miejscowosc='Warszawa', ulica='ul. Muranowska', nrDomu='22', kodPocztowy='00-007'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=169, miejscowosc='Wołów', ulica='ul. św. Jerzego', nrDomu='84', kodPocztowy='55-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=170, miejscowosc='Rybnik', ulica='ul. Pszczyńska', nrDomu='248', kodPocztowy='42-200'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=171, miejscowosc='Opole', ulica='ul. Piotra Pandzy', nrDomu='187', kodPocztowy='45-353'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=172, miejscowosc='Jawor', ulica='ul. Lipowa', nrDomu='239', kodPocztowy='59-411'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=173, miejscowosc='Toruń', ulica='ul. Aleje Planu 6-letniego', nrDomu='254', kodPocztowy='87-106'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=174, miejscowosc='Kielce', ulica='ul. Za Walcownią', nrDomu='2', kodPocztowy='25-187'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=175, miejscowosc='Rzeszów', ulica='ul. Zbożowa', nrDomu='127', kodPocztowy='35-364'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=176, miejscowosc='Kraków', ulica='ul. Olszecka', nrDomu='47', kodPocztowy='30-231'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=177, miejscowosc='Wrocław', ulica='ul. Juliusza Kossaka', nrDomu='46', kodPocztowy='50-166'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=178, miejscowosc='Tarnów', ulica='ul. Joanny Srebro', nrDomu='290', kodPocztowy='33-100'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=179, miejscowosc='Gorzów Wielkopolski', ulica='ul. Wąska', nrDomu='61', kodPocztowy='66-401'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=180, miejscowosc='Wrocław', ulica='ul. Henryka Pobożnego', nrDomu='31', kodPocztowy='50-224'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=181, miejscowosc='Chełm', ulica='ul. Ku Farze', nrDomu='158', kodPocztowy='22-151'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=182, miejscowosc='Rybnik', ulica='ul. Okoniowa', nrDomu='117', kodPocztowy='42-205'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=183, miejscowosc='Tarnów', ulica='ul. 3 Maja', nrDomu='154', kodPocztowy='33-100'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=184, miejscowosc='Gdynia', ulica='ul. Kolonia Stanisława Przybyszewskiego', nrDomu='177', kodPocztowy='81-040'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=185, miejscowosc='Kraków', ulica='ul. Rajska', nrDomu='57', kodPocztowy='30-223'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=186, miejscowosc='Chorzów', ulica='ul. Piotra', nrDomu='13', kodPocztowy='41-946'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=187, miejscowosc='Tarnów', ulica='rondo Hetmana Jana Tarnowskiego', nrDomu='112', kodPocztowy='33-131'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=188, miejscowosc='Opole', ulica='ul. Batalionów Chłopskich', nrDomu='189', kodPocztowy='45-129'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=189, miejscowosc='Gdynia', ulica='ul. Sportowa', nrDomu='15', kodPocztowy='81-019'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=190, miejscowosc='Jelenia Góra', ulica='ul. Księcia Józefa Poniatowskiego', nrDomu='181', kodPocztowy='58-560'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=191, miejscowosc='Oleśnica', ulica='ul. Ignacego Krasickiego', nrDomu='37', kodPocztowy='56-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=192, miejscowosc='Rzeszów', ulica='ul. Dominikańska', nrDomu='42', kodPocztowy='35-459'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=193, miejscowosc='Tarnów', ulica='ul. Osiedle Niepodległości', nrDomu='79', kodPocztowy='33-131'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=194, miejscowosc='Wołów', ulica='ul. Tadeusza Kościuszki', nrDomu='148', kodPocztowy='55-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=195, miejscowosc='Gdańsk', ulica='ul. prof. Mariana Raciborskiego', nrDomu='43', kodPocztowy='80-108'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=196, miejscowosc='Złotoryja', ulica='ul. Przechodnia', nrDomu='90', kodPocztowy='59-500'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=197, miejscowosc='Wrocław', ulica='ul. Maciejowska', nrDomu='246', kodPocztowy='50-096'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=198, miejscowosc='Grudziądz', ulica='ul. Agatowa', nrDomu='299', kodPocztowy='86-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=199, miejscowosc='Toruń', ulica='ul. Nad Wisłą', nrDomu='145', kodPocztowy='87-000'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=200, miejscowosc='Katowice', ulica='ul. Łanowa', nrDomu='38', kodPocztowy='40-186'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=1, miejscowosc='Restauracja', ulica='null', nrDomu='1', kodPocztowy='null'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=3, miejscowosc='Toruń', ulica='ul. Kosmonautów', nrDomu='73', kodPocztowy='87-127'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=3004, miejscowosc='Zalas', ulica='Piast', nrDomu='23', kodPocztowy='33-159'}
+2021-02-16 15:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=3024, miejscowosc='dd454rqqqqq1q2', ulica='sdssddf', nrDomu='323', kodPocztowy='22-310'}
+2021-02-16 15:23:28 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 16536 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:23:28 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:23:28 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:23:29 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.909 seconds (JVM running for 2.531)
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=4, miejscowosc='Głogów', ulica='Głogów', nrDomu='106', kodPocztowy='67-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=5, miejscowosc='Kłodzko', ulica='mala', nrDomu='195', kodPocztowy='57-300'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=7, miejscowosc='Jawor', ulica='ul. Na Skarpie', nrDomu='62', kodPocztowy='59-400'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=8, miejscowosc='Poznań', ulica='ul. Opoczyńska', nrDomu='214', kodPocztowy='60-168'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=9, miejscowosc='Rzeszów', ulica='ul. Cyrkoniowa', nrDomu='250', kodPocztowy='35-262'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=10, miejscowosc='Katowice', ulica='ul. Ludwika Solskiego', nrDomu='38', kodPocztowy='40-077'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=11, miejscowosc='Tarnów', ulica='ul. Klasztorna', nrDomu='48', kodPocztowy='33-100'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=12, miejscowosc='Legnica', ulica='pl. Słowiański', nrDomu='274', kodPocztowy='59-200'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=13, miejscowosc='Płock', ulica='ul. Stefana Batorego', nrDomu='73', kodPocztowy='09-442'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=14, miejscowosc='Oleśnica', ulica='ul. Jana Brzechwy', nrDomu='89', kodPocztowy='56-400'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=15, miejscowosc='Lublin', ulica='ul. Czeska', nrDomu='80', kodPocztowy='20-171'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=16, miejscowosc='Gdańsk', ulica='ul. Kurza', nrDomu='154', kodPocztowy='80-004'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=17, miejscowosc='Warszawa', ulica='ul. Emilii Plater', nrDomu='284', kodPocztowy='00-055'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=18, miejscowosc='Kłodzko', ulica='ul. Kamieniecka', nrDomu='123', kodPocztowy='57-300'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=19, miejscowosc='Białystok', ulica='ul. Słonimska', nrDomu='129', kodPocztowy='15-220'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=20, miejscowosc='Poznań', ulica='ul. Chyżańska', nrDomu='8', kodPocztowy='60-112'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=21, miejscowosc='Oleśnica', ulica='ul. Stefana Jaracza', nrDomu='252', kodPocztowy='56-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=22, miejscowosc='Gliwice', ulica='ul. Szczupaków', nrDomu='72', kodPocztowy='44-190'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=23, miejscowosc='Włocławek', ulica='ul. Wojciecha Albrychta', nrDomu='223', kodPocztowy='87-812'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=24, miejscowosc='Bytom', ulica='ul. Bzów', nrDomu='6', kodPocztowy='41-933'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=25, miejscowosc='Oleśnica', ulica='ul. Kazimierza Przerwy-Tetmajera', nrDomu='85', kodPocztowy='56-400'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=26, miejscowosc='Płock', ulica='ul. Podleśna', nrDomu='211', kodPocztowy='09-410'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=27, miejscowosc='Opole', ulica='ul. Konwalii', nrDomu='108', kodPocztowy='45-322'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=28, miejscowosc='Wrocław', ulica='ul. Rudolfa Weigla', nrDomu='283', kodPocztowy='50-246'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=29, miejscowosc='Wałbrzych', ulica='ul. Obrońców Pokoju', nrDomu='71', kodPocztowy='58-302'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=30, miejscowosc='Szczecin', ulica='pl. Lecha', nrDomu='245', kodPocztowy='70-350'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=31, miejscowosc='Poznań', ulica='ul. Treblińska', nrDomu='288', kodPocztowy='60-106'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=32, miejscowosc='Tarnów', ulica='ul. Świętojańska', nrDomu='247', kodPocztowy='33-100'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=33, miejscowosc='Łódź', ulica='ul. Gładka', nrDomu='280', kodPocztowy='90-152'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=34, miejscowosc='Szczecin', ulica='ul. Kornela Ujejskiego', nrDomu='136', kodPocztowy='70-005'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=35, miejscowosc='Tarnów', ulica='ul. Krakusa', nrDomu='33', kodPocztowy='33-131'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=36, miejscowosc='Łódź', ulica='ul. Dachowa', nrDomu='57', kodPocztowy='90-241'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=37, miejscowosc='Bydgoszcz', ulica='ul. Szubińska', nrDomu='62', kodPocztowy='85-064'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=38, miejscowosc='Gdańsk', ulica='ul. Reduta Wilk', nrDomu='85', kodPocztowy='80-164'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=39, miejscowosc='Katowice', ulica='ul. Ogrodowa', nrDomu='195', kodPocztowy='40-198'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=40, miejscowosc='Płock', ulica='ul. Zgodna', nrDomu='191', kodPocztowy='09-409'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=41, miejscowosc='Rzeszów', ulica='ul. Kłosowa', nrDomu='100', kodPocztowy='35-405'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=42, miejscowosc='Rzeszów', ulica='ul. Eugeniusza Nazimka', nrDomu='220', kodPocztowy='35-511'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=43, miejscowosc='Głogów', ulica='al. Podwale', nrDomu='150', kodPocztowy='67-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=44, miejscowosc='Wałbrzych', ulica='ul. Polna', nrDomu='282', kodPocztowy='58-302'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=45, miejscowosc='Wrocław', ulica='ul. Wiśniowa', nrDomu='105', kodPocztowy='50-124'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=46, miejscowosc='Kraków', ulica='ul. Mała', nrDomu='294', kodPocztowy='30-165'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=47, miejscowosc='Kraków', ulica='ul. Filipa Eisenberga', nrDomu='54', kodPocztowy='30-022'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=48, miejscowosc='Gorzów Wielkopolski', ulica='ul. Składowa', nrDomu='57', kodPocztowy='66-412'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=49, miejscowosc='Kraków', ulica='ul. Młyńska Boczna', nrDomu='206', kodPocztowy='30-303'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=50, miejscowosc='Rzeszów', ulica='ul. Ambrożego Towarnickiego', nrDomu='294', kodPocztowy='35-205'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=51, miejscowosc='Rzeszów', ulica='ul. Podkarpacka', nrDomu='31', kodPocztowy='35-526'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=52, miejscowosc='Zielona Góra', ulica='ul. mjr. Henryka Sucharskiego', nrDomu='107', kodPocztowy='65-298'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=53, miejscowosc='Kraków', ulica='ul. Młyńska', nrDomu='122', kodPocztowy='30-024'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=54, miejscowosc='Białystok', ulica='ul. Ignacego Domeyki', nrDomu='65', kodPocztowy='15-085'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=55, miejscowosc='Gorzów Wielkopolski', ulica='ul. Plac Jana Pawła II', nrDomu='138', kodPocztowy='66-412'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=56, miejscowosc='Lublin', ulica='ul. Jana Chęcińskiego', nrDomu='257', kodPocztowy='20-252'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=57, miejscowosc='Poznań', ulica='ul. Obrzyca', nrDomu='169', kodPocztowy='60-158'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=58, miejscowosc='Gorzów Wielkopolski', ulica='ul. Ozima', nrDomu='81', kodPocztowy='66-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=59, miejscowosc='Złotoryja', ulica='ul. ks. Piotra Ściegiennego', nrDomu='13', kodPocztowy='59-500'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=60, miejscowosc='Gdańsk', ulica='ul. Śląska', nrDomu='32', kodPocztowy='80-190'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=61, miejscowosc='Katowice', ulica='ul. Józefa Ligęzy', nrDomu='33', kodPocztowy='40-004'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=62, miejscowosc='Jelenia Góra', ulica='ul. Długa', nrDomu='298', kodPocztowy='58-505'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=63, miejscowosc='Gliwice', ulica='ul. Józefy Kantorówny', nrDomu='211', kodPocztowy='44-164'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=64, miejscowosc='Włocławek', ulica='ul. Karkonoska', nrDomu='216', kodPocztowy='87-822'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=65, miejscowosc='Gorzów Wielkopolski', ulica='ul. Śniadeckich', nrDomu='217', kodPocztowy='66-400'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=66, miejscowosc='Katowice', ulica='ul. Lechicka', nrDomu='160', kodPocztowy='40-115'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=67, miejscowosc='Wałbrzych', ulica='ul. Karola Marcinkowskiego', nrDomu='110', kodPocztowy='58-309'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=68, miejscowosc='Gorzów Wielkopolski', ulica='ul. Stefana Batorego', nrDomu='245', kodPocztowy='66-412'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=69, miejscowosc='Wrocław', ulica='ul. Jana Pawła II', nrDomu='117', kodPocztowy='50-131'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=70, miejscowosc='Legnica', ulica='ul. Ukryta', nrDomu='137', kodPocztowy='59-220'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=71, miejscowosc='Katowice', ulica='ul. Jana Matejki', nrDomu='36', kodPocztowy='40-062'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=72, miejscowosc='Wrocław', ulica='ul. Sobieszowska', nrDomu='211', kodPocztowy='50-136'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=73, miejscowosc='Złotoryja', ulica='ul. gen. Józefa Bema', nrDomu='188', kodPocztowy='59-500'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=74, miejscowosc='Legnica', ulica='ul. Pod Chojnikiem', nrDomu='265', kodPocztowy='59-220'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=75, miejscowosc='Bytom', ulica='ul. Wytapiaczy', nrDomu='241', kodPocztowy='41-909'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=76, miejscowosc='Białystok', ulica='ul. Wolińska', nrDomu='111', kodPocztowy='15-177'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=77, miejscowosc='Grudziądz', ulica='ul. prof. Jana Czochralskiego', nrDomu='116', kodPocztowy='86-310'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=78, miejscowosc='Kraków', ulica='ul. Józefa Dietla', nrDomu='66', kodPocztowy='30-115'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=79, miejscowosc='Kłodzko', ulica='pl. Konstytucji 3 Maja', nrDomu='176', kodPocztowy='57-303'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=80, miejscowosc='Płock', ulica='ul. Lisia', nrDomu='87', kodPocztowy='09-402'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=81, miejscowosc='Kraków', ulica='ul. Retoryka', nrDomu='206', kodPocztowy='30-285'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=82, miejscowosc='Katowice', ulica='ul. Lechicka', nrDomu='102', kodPocztowy='40-189'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=83, miejscowosc='Katowice', ulica='ul. J. Lelewela', nrDomu='23', kodPocztowy='40-028'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=84, miejscowosc='Toruń', ulica='ul. Skrajna', nrDomu='261', kodPocztowy='87-119'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=85, miejscowosc='Rybnik', ulica='ul. Klonowa', nrDomu='25', kodPocztowy='42-200'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=86, miejscowosc='Szczecin', ulica='ul. Kurza Stopka', nrDomu='40', kodPocztowy='70-312'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=87, miejscowosc='Wrocław', ulica='ul. Tadeusza Różewicza', nrDomu='157', kodPocztowy='50-175'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=88, miejscowosc='Grudziądz', ulica='ul. Ludwika Waryńskiego', nrDomu='110', kodPocztowy='86-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=89, miejscowosc='Gorzów Wielkopolski', ulica='ul. Longinusa Podbipięty', nrDomu='282', kodPocztowy='66-446'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=90, miejscowosc='Grudziądz', ulica='ul. Obrońców Bydgoszczy', nrDomu='126', kodPocztowy='86-302'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=91, miejscowosc='Toruń', ulica='ul. Kościelna', nrDomu='191', kodPocztowy='87-127'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=92, miejscowosc='Tychy', ulica='ul. Kazimierza Skiby', nrDomu='150', kodPocztowy='43-109'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=93, miejscowosc='Białystok', ulica='ul. Stanisława Leca', nrDomu='72', kodPocztowy='15-124'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=94, miejscowosc='Rzeszów', ulica='ul. św. Jana z Dukli', nrDomu='137', kodPocztowy='35-221'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=95, miejscowosc='Opole', ulica='ul. Juliusza Kossaka', nrDomu='27', kodPocztowy='45-337'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=96, miejscowosc='Grudziądz', ulica='ul. Czapla', nrDomu='262', kodPocztowy='86-300'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=97, miejscowosc='Białystok', ulica='ul. Romantyczna', nrDomu='276', kodPocztowy='15-025'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=98, miejscowosc='Toruń', ulica='ul. Wandy Siemaszkowej', nrDomu='219', kodPocztowy='87-127'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=99, miejscowosc='Wołów', ulica='ul. Wodna', nrDomu='76', kodPocztowy='56-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=100, miejscowosc='Gorzów Wielkopolski', ulica='ul. Piłkarska', nrDomu='193', kodPocztowy='66-415'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=101, miejscowosc='Kielce', ulica='ul. Zacisze', nrDomu='253', kodPocztowy='25-290'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=102, miejscowosc='Rybnik', ulica='ul. Targowa', nrDomu='201', kodPocztowy='42-292'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=103, miejscowosc='Wałbrzych', ulica='ul. Kaszubska', nrDomu='120', kodPocztowy='58-316'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=104, miejscowosc='Warszawa', ulica='ul. Bugaj', nrDomu='288', kodPocztowy='00-102'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=105, miejscowosc='Częstochowa', ulica='ul. Dyrekcyjna', nrDomu='99', kodPocztowy='42-233'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=106, miejscowosc='Bydgoszcz', ulica='ul. Zygmunta Krasińskiego', nrDomu='67', kodPocztowy='85-009'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=107, miejscowosc='Wołów', ulica='ul. Władysława Reymonta', nrDomu='189', kodPocztowy='55-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=108, miejscowosc='Wałbrzych', ulica='ul. Słowiańska', nrDomu='50', kodPocztowy='58-160'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=109, miejscowosc='Kłodzko', ulica='ul. Kościelna', nrDomu='236', kodPocztowy='57-303'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=110, miejscowosc='Opole', ulica='ul. Wrocławska', nrDomu='230', kodPocztowy='45-231'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=111, miejscowosc='Wrocław', ulica='ul. Francuska', nrDomu='67', kodPocztowy='50-065'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=112, miejscowosc='Warszawa', ulica='ul. Próżna', nrDomu='21', kodPocztowy='00-115'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=113, miejscowosc='Białystok', ulica='ul. Jachtowa', nrDomu='220', kodPocztowy='15-144'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=114, miejscowosc='Kraków', ulica='ul. Przemyska', nrDomu='279', kodPocztowy='30-199'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=115, miejscowosc='Legnica', ulica='ul. Turkusowa', nrDomu='273', kodPocztowy='59-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=116, miejscowosc='Warszawa', ulica='ul. Graniczna', nrDomu='280', kodPocztowy='00-030'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=117, miejscowosc='Kraków', ulica='ul. Topolowa', nrDomu='180', kodPocztowy='30-069'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=118, miejscowosc='Grudziądz', ulica='ul. Olsztyńska', nrDomu='23', kodPocztowy='86-300'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=119, miejscowosc='Rybnik', ulica='ul. Kostki Napierskiego', nrDomu='34', kodPocztowy='42-205'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=120, miejscowosc='Grudziądz', ulica='ul. Żupy', nrDomu='68', kodPocztowy='86-300'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=121, miejscowosc='Poznań', ulica='ul. Brokułowa', nrDomu='20', kodPocztowy='60-179'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=122, miejscowosc='Kłodzko', ulica='ul. Ptasia', nrDomu='46', kodPocztowy='57-304'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=123, miejscowosc='Gliwice', ulica='ul. Jana Filaka', nrDomu='293', kodPocztowy='44-102'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=124, miejscowosc='Jawor', ulica='ul. Rodzinna', nrDomu='45', kodPocztowy='59-411'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=125, miejscowosc='Katowice', ulica='ul. Piastowska', nrDomu='181', kodPocztowy='40-066'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=126, miejscowosc='Toruń', ulica='ul. Łącka', nrDomu='238', kodPocztowy='87-127'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=127, miejscowosc='Legnica', ulica='ul. Storczykowa', nrDomu='96', kodPocztowy='59-216'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=128, miejscowosc='Chełm', ulica='ul. Józefata Barszczewskiego', nrDomu='264', kodPocztowy='22-151'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=129, miejscowosc='Jawor', ulica='ul. Głogowska', nrDomu='293', kodPocztowy='59-400'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=130, miejscowosc='Warszawa', ulica='ul. Książęca', nrDomu='241', kodPocztowy='00-125'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=131, miejscowosc='Wrocław', ulica='ul. Miła', nrDomu='266', kodPocztowy='50-209'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=132, miejscowosc='Gliwice', ulica='ul. Długa', nrDomu='121', kodPocztowy='44-109'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=133, miejscowosc='Wrocław', ulica='ul. Żwirki i Wigury', nrDomu='269', kodPocztowy='50-157'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=134, miejscowosc='Częstochowa', ulica='ul. Michała Grażyńskiego', nrDomu='265', kodPocztowy='42-274'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=135, miejscowosc='Poznań', ulica='park ks. Tadeusza Kirschke', nrDomu='258', kodPocztowy='60-121'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=136, miejscowosc='Gdynia', ulica='ul. Sulmińska', nrDomu='108', kodPocztowy='81-203'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=6, miejscowosc='Tarnów', ulica='ul. Generała Władysława Sikorskiego', nrDomu='200', kodPocztowy='33-113'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=2, miejscowosc='Kłodzko', ulica='ul. duza', nrDomu='44', kodPocztowy='57-259'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=137, miejscowosc='Opole', ulica='ul. Wieluńska', nrDomu='208', kodPocztowy='45-019'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=138, miejscowosc='Głogów', ulica='ul. Andrzeja Szmidta', nrDomu='272', kodPocztowy='67-210'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=139, miejscowosc='Wałbrzych', ulica='ul. Rabarbarowa', nrDomu='108', kodPocztowy='58-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=140, miejscowosc='Szczecin', ulica='ul. Marii Skłodowskiej-Curie', nrDomu='77', kodPocztowy='70-303'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=141, miejscowosc='Łódź', ulica='ul. Mewy', nrDomu='230', kodPocztowy='90-183'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=142, miejscowosc='Wrocław', ulica='ul. Cicha', nrDomu='92', kodPocztowy='50-256'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=143, miejscowosc='Jelenia Góra', ulica='ul. Spadochronowa', nrDomu='50', kodPocztowy='58-570'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=144, miejscowosc='Gorzów Wielkopolski', ulica='ul. Mikołaja Kopernika', nrDomu='202', kodPocztowy='66-415'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=145, miejscowosc='Gorzów Wielkopolski', ulica='ul. Wawrowska', nrDomu='215', kodPocztowy='66-400'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=146, miejscowosc='Złotoryja', ulica='ul. Zielona', nrDomu='93', kodPocztowy='59-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=147, miejscowosc='Włocławek', ulica='ul. Notecka', nrDomu='36', kodPocztowy='87-800'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=148, miejscowosc='Gdańsk', ulica='ul. Żwirki i Wigury', nrDomu='155', kodPocztowy='80-026'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=149, miejscowosc='Kłodzko', ulica='ul. Jurija Gagarina', nrDomu='112', kodPocztowy='57-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=150, miejscowosc='Opole', ulica='ul. Księżycowa', nrDomu='253', kodPocztowy='45-318'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=151, miejscowosc='Tarnów', ulica='ul. Obrońców Tobruku', nrDomu='90', kodPocztowy='33-100'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=152, miejscowosc='Jelenia Góra', ulica='ul. Aroniowa', nrDomu='134', kodPocztowy='58-507'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=153, miejscowosc='Jawor', ulica='ul. gen. Władysława Sikorskiego', nrDomu='136', kodPocztowy='59-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=154, miejscowosc='Jawor', ulica='ul. Olgi Boznańskiej', nrDomu='134', kodPocztowy='59-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=155, miejscowosc='Tarnów', ulica='ul. Władysława Łokietka', nrDomu='231', kodPocztowy='33-101'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=156, miejscowosc='Jelenia Góra', ulica='ul. Akacjowa', nrDomu='57', kodPocztowy='58-570'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=157, miejscowosc='Chełm', ulica='ul. Elektryczna', nrDomu='70', kodPocztowy='22-100'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=158, miejscowosc='Gorzów Wielkopolski', ulica='ul. Dobra', nrDomu='112', kodPocztowy='66-400'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=159, miejscowosc='Kraków', ulica='ul. Farmaceutów', nrDomu='161', kodPocztowy='30-098'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=160, miejscowosc='Zielona Góra', ulica='ul. Stanisława Wyspiańskiego', nrDomu='243', kodPocztowy='65-158'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=161, miejscowosc='Bydgoszcz', ulica='ul. Zenona Przesmyckiego', nrDomu='126', kodPocztowy='85-176'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=162, miejscowosc='Gorzów Wielkopolski', ulica='ul. Stanisława Staszica', nrDomu='238', kodPocztowy='66-432'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=163, miejscowosc='Wrocław', ulica='ul. Pohulanka', nrDomu='39', kodPocztowy='50-233'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=164, miejscowosc='Poznań', ulica='ul. Mirabelkowa', nrDomu='147', kodPocztowy='60-254'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=165, miejscowosc='Głogów', ulica='ul. Szczęśliwa', nrDomu='282', kodPocztowy='67-200'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=166, miejscowosc='Włocławek', ulica='ul. Wieluńska', nrDomu='18', kodPocztowy='87-806'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=167, miejscowosc='Włocławek', ulica='ul. Jarosławska', nrDomu='153', kodPocztowy='87-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=168, miejscowosc='Warszawa', ulica='ul. Muranowska', nrDomu='22', kodPocztowy='00-007'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=169, miejscowosc='Wołów', ulica='ul. św. Jerzego', nrDomu='84', kodPocztowy='55-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=170, miejscowosc='Rybnik', ulica='ul. Pszczyńska', nrDomu='248', kodPocztowy='42-200'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=171, miejscowosc='Opole', ulica='ul. Piotra Pandzy', nrDomu='187', kodPocztowy='45-353'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=172, miejscowosc='Jawor', ulica='ul. Lipowa', nrDomu='239', kodPocztowy='59-411'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=173, miejscowosc='Toruń', ulica='ul. Aleje Planu 6-letniego', nrDomu='254', kodPocztowy='87-106'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=174, miejscowosc='Kielce', ulica='ul. Za Walcownią', nrDomu='2', kodPocztowy='25-187'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=175, miejscowosc='Rzeszów', ulica='ul. Zbożowa', nrDomu='127', kodPocztowy='35-364'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=176, miejscowosc='Kraków', ulica='ul. Olszecka', nrDomu='47', kodPocztowy='30-231'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=177, miejscowosc='Wrocław', ulica='ul. Juliusza Kossaka', nrDomu='46', kodPocztowy='50-166'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=178, miejscowosc='Tarnów', ulica='ul. Joanny Srebro', nrDomu='290', kodPocztowy='33-100'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=179, miejscowosc='Gorzów Wielkopolski', ulica='ul. Wąska', nrDomu='61', kodPocztowy='66-401'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=180, miejscowosc='Wrocław', ulica='ul. Henryka Pobożnego', nrDomu='31', kodPocztowy='50-224'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=181, miejscowosc='Chełm', ulica='ul. Ku Farze', nrDomu='158', kodPocztowy='22-151'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=182, miejscowosc='Rybnik', ulica='ul. Okoniowa', nrDomu='117', kodPocztowy='42-205'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=183, miejscowosc='Tarnów', ulica='ul. 3 Maja', nrDomu='154', kodPocztowy='33-100'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=184, miejscowosc='Gdynia', ulica='ul. Kolonia Stanisława Przybyszewskiego', nrDomu='177', kodPocztowy='81-040'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=185, miejscowosc='Kraków', ulica='ul. Rajska', nrDomu='57', kodPocztowy='30-223'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=186, miejscowosc='Chorzów', ulica='ul. Piotra', nrDomu='13', kodPocztowy='41-946'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=187, miejscowosc='Tarnów', ulica='rondo Hetmana Jana Tarnowskiego', nrDomu='112', kodPocztowy='33-131'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=188, miejscowosc='Opole', ulica='ul. Batalionów Chłopskich', nrDomu='189', kodPocztowy='45-129'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=189, miejscowosc='Gdynia', ulica='ul. Sportowa', nrDomu='15', kodPocztowy='81-019'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=190, miejscowosc='Jelenia Góra', ulica='ul. Księcia Józefa Poniatowskiego', nrDomu='181', kodPocztowy='58-560'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=191, miejscowosc='Oleśnica', ulica='ul. Ignacego Krasickiego', nrDomu='37', kodPocztowy='56-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=192, miejscowosc='Rzeszów', ulica='ul. Dominikańska', nrDomu='42', kodPocztowy='35-459'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=193, miejscowosc='Tarnów', ulica='ul. Osiedle Niepodległości', nrDomu='79', kodPocztowy='33-131'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=194, miejscowosc='Wołów', ulica='ul. Tadeusza Kościuszki', nrDomu='148', kodPocztowy='55-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=195, miejscowosc='Gdańsk', ulica='ul. prof. Mariana Raciborskiego', nrDomu='43', kodPocztowy='80-108'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=196, miejscowosc='Złotoryja', ulica='ul. Przechodnia', nrDomu='90', kodPocztowy='59-500'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=197, miejscowosc='Wrocław', ulica='ul. Maciejowska', nrDomu='246', kodPocztowy='50-096'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=198, miejscowosc='Grudziądz', ulica='ul. Agatowa', nrDomu='299', kodPocztowy='86-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=199, miejscowosc='Toruń', ulica='ul. Nad Wisłą', nrDomu='145', kodPocztowy='87-000'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=200, miejscowosc='Katowice', ulica='ul. Łanowa', nrDomu='38', kodPocztowy='40-186'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=1, miejscowosc='Restauracja', ulica='null', nrDomu='1', kodPocztowy='null'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=3, miejscowosc='Toruń', ulica='ul. Kosmonautów', nrDomu='73', kodPocztowy='87-127'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=3004, miejscowosc='Zalas', ulica='Piast', nrDomu='23', kodPocztowy='33-159'}
+2021-02-16 15:23:32 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - --- {}DtoAdresResponse{idAdresu=3024, miejscowosc='dd454rqqqqq1q2', ulica='sdssddf', nrDomu='323', kodPocztowy='22-310'}
+2021-02-16 15:24:19 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 23204 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:24:19 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:24:19 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:24:20 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.845 seconds (JVM running for 2.399)
+2021-02-16 15:24:22 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:25:05 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 2644 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:25:05 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:25:05 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:25:07 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.848 seconds (JVM running for 2.424)
+2021-02-16 15:25:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:25:31 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 7392 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:25:31 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:25:31 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:25:33 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.877 seconds (JVM running for 2.444)
+2021-02-16 15:25:33 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:26:00 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 14360 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:26:00 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:26:00 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:26:02 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.834 seconds (JVM running for 2.526)
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 4
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 5
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 7
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 8
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 9
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 10
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 11
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 12
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 13
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 14
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 15
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 16
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 17
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 18
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 19
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 20
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 21
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 22
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 23
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 24
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 25
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 26
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 27
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 28
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 29
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 30
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 31
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 32
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 33
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 34
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 35
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 36
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 37
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 38
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 39
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 40
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 41
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 42
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 43
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 44
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 45
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 46
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 47
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 48
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 49
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 50
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 51
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 52
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 53
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 54
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 55
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 56
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 57
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 58
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 59
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 60
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 61
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 62
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 63
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 64
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 65
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 66
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 67
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 68
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 69
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 70
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 71
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 72
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 73
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 74
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 75
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 76
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 77
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 78
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 79
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 80
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 81
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 82
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 83
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 84
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 85
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 86
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 87
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 88
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 89
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 90
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 91
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 92
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 93
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 94
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 95
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 96
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 97
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 98
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 99
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 100
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 101
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 102
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 103
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 104
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 105
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 106
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 107
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 108
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 109
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 110
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 111
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 112
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 113
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 114
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 115
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 116
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 117
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 118
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 119
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 120
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 121
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 122
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 123
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 124
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 125
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 126
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 127
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 128
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 129
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 130
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 131
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 132
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 133
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 134
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 135
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 136
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 6
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 2
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 137
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 138
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 139
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 140
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 141
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 142
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 143
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 144
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 145
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 146
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 147
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 148
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 149
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 150
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 151
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 152
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 153
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 154
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 155
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 156
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 157
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 158
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 159
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 160
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 161
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 162
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 163
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 164
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 165
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 166
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 167
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 168
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 169
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 170
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 171
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 172
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 173
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 174
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 175
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 176
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 177
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 178
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 179
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 180
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 181
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 182
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 183
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 184
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 185
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 186
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 187
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 188
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 189
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 190
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 191
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 192
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 193
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 194
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 195
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 196
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 197
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 198
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 199
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 200
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 1
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 3
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 3004
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 3024
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 3025
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 3027
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 3028
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 3051
+2021-02-16 15:26:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - 3052
+2021-02-16 15:27:04 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 2684 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:27:04 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:27:04 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:27:05 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.916 seconds (JVM running for 2.595)
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:11 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:27:12 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - false
+2021-02-16 15:28:38 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 18020 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:28:38 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:28:38 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:28:40 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.879 seconds (JVM running for 2.442)
+2021-02-16 15:28:43 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:29:56 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 7432 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:29:56 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:29:56 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:29:58 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.0 seconds (JVM running for 2.593)
+2021-02-16 15:30:02 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:30:35 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 18428 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:30:35 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:30:35 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:30:37 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.959 seconds (JVM running for 2.575)
+2021-02-16 15:30:41 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:31:27 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 12320 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:31:27 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:31:27 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:31:28 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.844 seconds (JVM running for 2.437)
+2021-02-16 15:31:31 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:32:27 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 19572 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:32:27 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:32:27 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:32:29 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.878 seconds (JVM running for 2.445)
+2021-02-16 15:32:30 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:32:34 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all pracownik
+2021-02-16 15:33:42 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 19132 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:33:42 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:33:42 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:33:43 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.807 seconds (JVM running for 2.475)
+2021-02-16 15:33:45 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:33:52 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all pracownik
+2021-02-16 15:37:22 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 7240 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:37:22 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:37:22 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:37:24 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.07 seconds (JVM running for 2.673)
+2021-02-16 15:37:28 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all pracownik
+2021-02-16 15:37:37 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:39:00 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 18412 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:39:00 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:39:00 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:39:02 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.875 seconds (JVM running for 2.488)
+2021-02-16 15:39:02 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:40:13 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 1084 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:40:13 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:40:13 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:40:15 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.236 seconds (JVM running for 2.876)
+2021-02-16 15:40:17 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:41:12 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 15996 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:41:12 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:41:12 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:41:14 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.973 seconds (JVM running for 2.55)
+2021-02-16 15:41:16 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:45:02 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 10436 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:45:02 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:45:02 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:45:04 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.453 seconds (JVM running for 3.075)
+2021-02-16 15:45:21 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 26472 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:45:21 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:45:21 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:45:22 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.841 seconds (JVM running for 2.397)
+2021-02-16 15:45:24 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:46:14 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 10452 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:46:14 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:46:14 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:46:16 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.879 seconds (JVM running for 2.445)
+2021-02-16 15:46:17 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:46:45 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 3892 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:46:45 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:46:45 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:46:47 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.957 seconds (JVM running for 2.552)
+2021-02-16 15:46:52 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:47:54 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 19872 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:47:54 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:47:54 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:47:55 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.904 seconds (JVM running for 2.502)
+2021-02-16 15:48:01 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:50:56 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 5464 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:50:56 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:50:56 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:50:57 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.802 seconds (JVM running for 2.467)
+2021-02-16 15:50:58 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 15:52:38 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 16220 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 15:52:38 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 15:52:38 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 15:52:40 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.042 seconds (JVM running for 2.682)
+2021-02-16 15:52:41 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:12:50 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 23636 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:12:50 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:12:50 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:12:52 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.015 seconds (JVM running for 2.59)
+2021-02-16 16:12:56 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:13:59 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 18836 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:13:59 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:13:59 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:14:00 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.993 seconds (JVM running for 2.639)
+2021-02-16 16:14:03 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:15:50 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 17552 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:15:50 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:15:50 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:15:52 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.949 seconds (JVM running for 2.576)
+2021-02-16 16:15:54 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:17:11 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 7904 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:17:11 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:17:11 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:17:13 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.819 seconds (JVM running for 2.387)
+2021-02-16 16:17:19 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:18:13 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 13792 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:18:13 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:18:13 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:18:15 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.88 seconds (JVM running for 2.468)
+2021-02-16 16:18:17 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:18:57 [http-nio-8080-exec-4] INFO  dm.api.controller.AdresController - Get Adres on id 3004
+2021-02-16 16:21:11 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 13060 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:21:11 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:21:11 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:21:13 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.125 seconds (JVM running for 2.757)
+2021-02-16 16:21:16 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:21:29 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 18960 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:21:29 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:21:29 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:21:31 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.844 seconds (JVM running for 2.447)
+2021-02-16 16:21:35 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:22:37 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 13336 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:22:37 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:22:37 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:22:39 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.825 seconds (JVM running for 2.47)
+2021-02-16 16:22:41 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:22:44 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:23:37 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 8172 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:23:37 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:23:37 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:23:39 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.836 seconds (JVM running for 2.388)
+2021-02-16 16:23:39 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:26:00 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 17128 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:26:00 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:26:00 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:26:01 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.017 seconds (JVM running for 2.669)
+2021-02-16 16:26:02 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:28:37 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 3136 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:28:37 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:28:37 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:28:39 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.858 seconds (JVM running for 2.486)
+2021-02-16 16:28:41 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:30:35 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 26036 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:30:35 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:30:35 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:30:36 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.027 seconds (JVM running for 2.903)
+2021-02-16 16:30:38 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:33:11 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 22676 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:33:11 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:33:11 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:33:13 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.888 seconds (JVM running for 2.476)
+2021-02-16 16:33:15 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:35:00 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 9188 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:35:00 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:35:00 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:35:02 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.927 seconds (JVM running for 2.578)
+2021-02-16 16:35:04 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:35:30 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 12624 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:35:30 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:35:30 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:35:32 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.853 seconds (JVM running for 2.423)
+2021-02-16 16:35:33 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:36:46 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 15244 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:36:46 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:36:46 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:36:47 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.882 seconds (JVM running for 2.521)
+2021-02-16 16:36:49 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:38:31 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 8764 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:38:31 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:38:31 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:38:32 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.873 seconds (JVM running for 2.477)
+2021-02-16 16:38:33 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:38:52 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 5076 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:38:52 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:38:52 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:38:54 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.037 seconds (JVM running for 2.642)
+2021-02-16 16:38:57 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:40:06 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 6520 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:40:06 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:40:06 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:40:07 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.875 seconds (JVM running for 2.436)
+2021-02-16 16:40:07 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:40:21 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 4828 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:40:21 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:40:21 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:40:22 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.858 seconds (JVM running for 2.459)
+2021-02-16 16:40:25 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:40:39 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 10564 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:40:39 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:40:39 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:40:41 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.063 seconds (JVM running for 2.798)
+2021-02-16 16:40:43 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:42:38 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:44:20 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 24832 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:44:20 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:44:20 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:44:21 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.87 seconds (JVM running for 2.452)
+2021-02-16 16:44:22 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:44:42 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 11364 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:44:42 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:44:42 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:44:44 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.959 seconds (JVM running for 2.633)
+2021-02-16 16:44:45 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:45:06 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 14956 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:45:06 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:45:06 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:45:08 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.973 seconds (JVM running for 2.553)
+2021-02-16 16:45:09 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:46:52 [http-nio-8080-exec-2] INFO  dm.api.controller.OsobaController - Get osoba on id 3025
+2021-02-16 16:47:45 [http-nio-8080-exec-3] INFO  dm.api.controller.OsobaController - Get all osoba
+2021-02-16 16:49:45 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 23368 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:49:45 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:49:45 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:49:47 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.866 seconds (JVM running for 2.431)
+2021-02-16 16:49:55 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:50:07 [http-nio-8080-exec-5] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 16:57:08 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 23276 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-16 16:57:08 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-16 16:57:08 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-16 16:57:10 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.007 seconds (JVM running for 2.763)
+2021-02-16 16:57:18 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-16 16:57:33 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-16 16:57:52 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all klient data
