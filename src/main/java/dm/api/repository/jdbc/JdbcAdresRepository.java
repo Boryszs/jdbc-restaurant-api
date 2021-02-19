@@ -29,7 +29,7 @@ public class JdbcAdresRepository implements AdresRepository {
 
     @Override
     public int count() {
-        return jdbcTemplate.queryForObject("select count(*) from restauracja.adres",Integer.class);
+        return jdbcTemplate.queryForObject("select count(*) from restauracja.adres order by id_adresu ",Integer.class);
     }
 
     @Override

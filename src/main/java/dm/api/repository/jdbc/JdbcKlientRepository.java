@@ -38,7 +38,7 @@ public class JdbcKlientRepository implements KlientRepository {
 
     @Override
     public int deleteById(Integer id) {
-        String SQL = "delete from restauracja.klient where id = ?";
+        String SQL = "delete from restauracja.klient where id_klienta = ?";
         jdbcTemplate.update(SQL, id);
         return id;
     }

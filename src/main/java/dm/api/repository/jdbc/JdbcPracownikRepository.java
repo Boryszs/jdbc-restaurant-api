@@ -54,7 +54,7 @@ public class JdbcPracownikRepository implements PracownikRepository {
 
     @Override
     public int deleteById(Integer id) {
-        String SQL = "delete from restauracja.pracownik where id = ?";
+        String SQL = "delete from restauracja.pracownik where id_pracownika = ?";
         jdbcTemplate.update(SQL, id);
         return id;
     }

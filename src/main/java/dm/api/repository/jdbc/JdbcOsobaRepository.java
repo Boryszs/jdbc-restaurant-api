@@ -63,7 +63,7 @@ public class JdbcOsobaRepository implements OsobaRepository {
 
     @Override
     public int deleteById(Integer id) {
-        String SQL = "delete from restauracja.osoba where id = ?";
+        String SQL = "delete from restauracja.osoba where id_osoby = ?";
         jdbcTemplate.update(SQL, id);
         return id;
     }
