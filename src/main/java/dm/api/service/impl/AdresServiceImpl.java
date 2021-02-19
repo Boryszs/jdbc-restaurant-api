@@ -36,7 +36,7 @@ public class AdresServiceImpl implements AdresService {
 
     @Override
     public int deleteById(int id) {
-        return 0;
+        return adresRepository.deleteById(id);
     }
 
     @Override

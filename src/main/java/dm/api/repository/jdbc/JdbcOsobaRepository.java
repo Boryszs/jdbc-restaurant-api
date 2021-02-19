@@ -61,10 +61,11 @@ public class JdbcOsobaRepository implements OsobaRepository {
         return jdbcTemplate.update("update restauracja.osoba set imie = ?,nazwisko = ? ,pesel = ?,data_urodzenia = ?,email = ?,telefon = ?,id_adresu = ? where id_osoby = ?",osoba.getImie(),osoba.getNazwisko(),osoba.getPesel(),osoba.getDataUrodzenia(),osoba.getEmail(),osoba.getTelefon(),osoba.getIdAdresu(),osoba.getIdOsoby());
     }
 
-    //TODO NOT WORK !!!!
     @Override
-    public int deleteById(int id) {
-        return 0;
+    public int deleteById(Integer id) {
+        String SQL = "delete from restauracja.osoba where id = ?";
+        jdbcTemplate.update(SQL, id);
+        return id;
     }
 
     @Override

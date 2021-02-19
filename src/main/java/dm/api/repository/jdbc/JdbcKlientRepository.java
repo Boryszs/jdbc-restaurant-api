@@ -35,10 +35,12 @@ public class JdbcKlientRepository implements KlientRepository {
         return jdbcTemplate.update("update restauracja.klient set login = ? , haslo = crypt(?, gen_salt('md5')) where id_klienta = ?",klient.getLogin(),klient.getHaslo(),klient.getIdKlienta());
     }
 
-    //TODO NOT WORK !!!!
+
     @Override
-    public int deleteById(int id) {
-        return 0;
+    public int deleteById(Integer id) {
+        String SQL = "delete from restauracja.klient where id = ?";
+        jdbcTemplate.update(SQL, id);
+        return id;
     }
 
     @Override

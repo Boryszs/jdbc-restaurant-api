@@ -10,7 +10,7 @@ public interface OsobaRepository {
     int count();
     int save (Osoba osoba);
     int update (Osoba osoba);
-    int deleteById (int id);
+    int deleteById (Integer id);
     List<Osoba> findAll ();
     Optional<Osoba> findById(int id);
 }

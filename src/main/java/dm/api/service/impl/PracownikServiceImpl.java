@@ -45,7 +45,7 @@ public class PracownikServiceImpl implements PracownikService {
 
     @Override
     public int deleteById(int id) {
-        return 0;
+        return pracownikRepository.deleteById(id);
     }
 
     @Override

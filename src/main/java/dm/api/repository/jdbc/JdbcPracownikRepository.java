@@ -52,10 +52,11 @@ public class JdbcPracownikRepository implements PracownikRepository {
 
     }
 
-    //TODO NOT WORK !!!!
     @Override
-    public int deleteById(int id) {
-        return 0;
+    public int deleteById(Integer id) {
+        String SQL = "delete from restauracja.pracownik where id = ?";
+        jdbcTemplate.update(SQL, id);
+        return id;
     }
 
     @Override

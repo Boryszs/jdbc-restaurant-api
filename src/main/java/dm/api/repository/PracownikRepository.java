@@ -10,7 +10,7 @@ public interface PracownikRepository {
     int count();
     int save (Pracownik pracownik);
     int update (Pracownik pracownik);
-    int deleteById (int id);
+    int deleteById (Integer id);
     List<Pracownik> findAll ();
     Optional<Pracownik> findById(int id);
 }

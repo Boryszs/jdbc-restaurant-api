@@ -45,7 +45,7 @@ public class PracownikController {
     @ResponseBody
     @GetMapping(value = "/all-pracownik")
     public ResponseEntity<List<DtoPracownikDataResponse>> getAllKlient() {
-        logger.info("Get all klient data");
+        logger.info("Get all pracownik data");
         List<DtoPracownikDataResponse> dtoKlientDataResponses = new LinkedList<>();
         for(Pracownik pracownik : pracownikService.findAll()){
             DtoPracownikResponse dtoPracownikResponse = new DtoPracownikResponse(pracownik.getIdPracownika(),pracownik.getPensja(),pracownik.getRola(),pracownik.getIdOsoby());

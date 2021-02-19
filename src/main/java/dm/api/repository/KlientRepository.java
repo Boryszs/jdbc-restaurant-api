@@ -10,7 +10,7 @@ public interface KlientRepository {
     int count();
     int save (Klient klient);
     int update (Klient klient);
-    int deleteById (int id);
+    int deleteById (Integer id);
     List<Klient> findAll ();
     Optional<Klient> findById(int id);
 }

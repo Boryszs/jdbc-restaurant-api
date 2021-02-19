@@ -955,3 +955,28 @@
 2021-02-16 16:57:18 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
 2021-02-16 16:57:33 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Get all klient data
 2021-02-16 16:57:52 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-19 15:44:12 [http-nio-8080-exec-9] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-19 15:44:29 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-19 16:04:06 [http-nio-8080-exec-1] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 16:04:20 [http-nio-8080-exec-10] INFO  dm.api.controller.AdresController - delete adres id 
+2021-02-19 16:04:27 [http-nio-8080-exec-2] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 16:05:28 [http-nio-8080-exec-5] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 16:05:38 [http-nio-8080-exec-10] INFO  dm.api.controller.AdresController - delete adres id 3085
+2021-02-19 16:07:03 [http-nio-8080-exec-1] INFO  dm.api.controller.AdresController - delete adres id 3085
+2021-02-19 16:07:29 [http-nio-8080-exec-1] INFO  dm.api.controller.AdresController - delete adres id 3085
+2021-02-19 16:08:33 [http-nio-8080-exec-7] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 16:08:40 [http-nio-8080-exec-8] INFO  dm.api.controller.AdresController - delete adres id 3085
+2021-02-19 16:24:44 [http-nio-8080-exec-1] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 16:24:56 [http-nio-8080-exec-2] INFO  dm.api.controller.AdresController - delete adres id 3000
+2021-02-19 16:40:39 [http-nio-8080-exec-1] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 16:40:52 [http-nio-8080-exec-10] INFO  dm.api.controller.AdresController - delete adres id 3000
+2021-02-19 17:06:13 [http-nio-8080-exec-1] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 17:06:16 [http-nio-8080-exec-2] INFO  dm.api.controller.AdresController - delete adres id 3000
+2021-02-19 17:07:54 [http-nio-8080-exec-5] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-19 17:07:59 [http-nio-8080-exec-6] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-19 17:08:03 [http-nio-8080-exec-7] INFO  dm.api.controller.KlientController - Get all klient
+2021-02-19 17:08:08 [http-nio-8080-exec-8] INFO  dm.api.controller.KlientController - Get all klient
+2021-02-19 17:08:13 [http-nio-8080-exec-9] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-19 17:10:36 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-19 17:10:37 [http-nio-8080-exec-1] ERROR dm.api.controller.KlientController - Incorrect result size: expected 1, actual 0
+2021-02-19 17:10:59 [http-nio-8080-exec-2] INFO  dm.api.controller.KlientController - Get all klient

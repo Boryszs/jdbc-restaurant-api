@@ -58,6 +58,17 @@ public class OsobaController {
         return ResponseEntity.ok(osobaService.update(new Osoba(id,osobaRequest.getImie(),osobaRequest.getNazwisko(),osobaRequest.getPesel(),osobaRequest.getDataUrodzenia(),osobaRequest.getEmail(),osobaRequest.getTelefon(),osobaRequest.getIdAdresu())));
     }
 
+    @DeleteMapping(value = "/delete/{id}")
+    public ResponseEntity<?> deleteKlient(@PathVariable(value="id") Integer id) {
+        try{
+            logger.info("delete adres id ",id);
+            return ResponseEntity.ok(osobaService.deleteById(id));
+        } catch (EmptyResultDataAccessException e){
+            logger.error(e.getMessage());
+            return ResponseEntity.status(400).body(new DtoError("No find Adres on id: "+id));
+        }
+    }
+
     @ResponseBody
     @GetMapping(value = "get/{id}")
     public ResponseEntity<?> getKlient(@PathVariable(value="id") Integer id) {

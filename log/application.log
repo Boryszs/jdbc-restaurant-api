@@ -1403,3 +1403,72 @@
 2021-02-16 16:57:18 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
 2021-02-16 16:57:33 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Get all klient data
 2021-02-16 16:57:52 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-17 14:05:34 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 9328 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-17 14:05:34 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-17 14:05:34 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-17 14:05:36 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 3.077 seconds (JVM running for 4.607)
+2021-02-19 15:43:44 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 18272 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-19 15:43:44 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-19 15:43:44 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-19 15:43:47 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 3.239 seconds (JVM running for 4.195)
+2021-02-19 15:44:12 [http-nio-8080-exec-9] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-19 15:44:29 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Get all klient data
+2021-02-19 16:03:58 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 9340 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-19 16:03:58 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-19 16:03:58 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-19 16:04:00 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.319 seconds (JVM running for 3.147)
+2021-02-19 16:04:06 [http-nio-8080-exec-1] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 16:04:20 [http-nio-8080-exec-10] INFO  dm.api.controller.AdresController - delete adres id 
+2021-02-19 16:04:27 [http-nio-8080-exec-2] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 16:05:22 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 13900 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-19 16:05:22 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-19 16:05:22 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-19 16:05:24 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.013 seconds (JVM running for 2.628)
+2021-02-19 16:05:28 [http-nio-8080-exec-5] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 16:05:38 [http-nio-8080-exec-10] INFO  dm.api.controller.AdresController - delete adres id 3085
+2021-02-19 16:06:58 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 10812 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-19 16:06:58 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-19 16:06:58 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-19 16:07:00 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.15 seconds (JVM running for 2.802)
+2021-02-19 16:07:03 [http-nio-8080-exec-1] INFO  dm.api.controller.AdresController - delete adres id 3085
+2021-02-19 16:07:26 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 17352 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-19 16:07:26 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-19 16:07:26 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-19 16:07:28 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.934 seconds (JVM running for 2.68)
+2021-02-19 16:07:29 [http-nio-8080-exec-1] INFO  dm.api.controller.AdresController - delete adres id 3085
+2021-02-19 16:08:24 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 16356 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-19 16:08:24 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-19 16:08:24 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-19 16:08:26 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.125 seconds (JVM running for 2.862)
+2021-02-19 16:08:33 [http-nio-8080-exec-7] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 16:08:40 [http-nio-8080-exec-8] INFO  dm.api.controller.AdresController - delete adres id 3085
+2021-02-19 16:24:31 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 17004 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-19 16:24:31 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-19 16:24:31 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-19 16:24:33 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.112 seconds (JVM running for 2.852)
+2021-02-19 16:24:44 [http-nio-8080-exec-1] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 16:24:56 [http-nio-8080-exec-2] INFO  dm.api.controller.AdresController - delete adres id 3000
+2021-02-19 16:40:28 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 13820 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-19 16:40:28 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-19 16:40:28 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-19 16:40:30 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 1.89 seconds (JVM running for 2.503)
+2021-02-19 16:40:39 [http-nio-8080-exec-1] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 16:40:52 [http-nio-8080-exec-10] INFO  dm.api.controller.AdresController - delete adres id 3000
+2021-02-19 17:06:03 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 18124 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-19 17:06:03 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-19 17:06:03 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-19 17:06:06 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.511 seconds (JVM running for 3.338)
+2021-02-19 17:06:13 [http-nio-8080-exec-1] INFO  dm.api.controller.AdresController - Get all adres
+2021-02-19 17:06:16 [http-nio-8080-exec-2] INFO  dm.api.controller.AdresController - delete adres id 3000
+2021-02-19 17:07:54 [http-nio-8080-exec-5] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-19 17:07:59 [http-nio-8080-exec-6] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-19 17:08:03 [http-nio-8080-exec-7] INFO  dm.api.controller.KlientController - Get all klient
+2021-02-19 17:08:08 [http-nio-8080-exec-8] INFO  dm.api.controller.KlientController - Get all klient
+2021-02-19 17:08:13 [http-nio-8080-exec-9] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-19 17:10:30 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 11644 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-02-19 17:10:30 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-02-19 17:10:30 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-02-19 17:10:31 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.032 seconds (JVM running for 3.019)
+2021-02-19 17:10:36 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get all klient data
+2021-02-19 17:10:37 [http-nio-8080-exec-1] ERROR dm.api.controller.KlientController - Incorrect result size: expected 1, actual 0
+2021-02-19 17:10:59 [http-nio-8080-exec-2] INFO  dm.api.controller.KlientController - Get all klient

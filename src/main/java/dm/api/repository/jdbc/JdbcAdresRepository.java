@@ -57,10 +57,11 @@ public class JdbcAdresRepository implements AdresRepository {
         return jdbcTemplate.update("update restauracja.adres set miejscowosc = ?,ulica = ?,nr_domu = ?,kod_pocztowy = ?  where  id_adresu = ?",adres.getMiejscowosc(),adres.getUlica(),adres.getNrDomu(),adres.getKodPocztowy(),adres.getIdAdresu());
     }
 
-    //TODO NOT WORK !!!!
     @Override
-    public int deleteById(int id) {
-        return 0;
+    public int deleteById(Integer id) {
+        String SQL = "delete from restauracja.adres where id_adresu = ?";
+        jdbcTemplate.update(SQL, id);
+        return id;
     }
 
     @Override

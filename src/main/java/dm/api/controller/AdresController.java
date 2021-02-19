@@ -52,9 +52,26 @@ public class AdresController {
     }
 
     @PutMapping(value = "/update/{id}")
-    public ResponseEntity<Integer> addUpdate(@PathVariable(value="id") Integer id,@RequestBody DtoAdresRequest adresRequest) {
-        logger.info("Update adres");
-        return ResponseEntity.ok(adresService.update(new Adres(id,adresRequest.getMiejscowosc(),adresRequest.getUlica(),adresRequest.getNrDomu(),adresRequest.getKodPocztowy())));
+    public ResponseEntity<?> addUpdate(@PathVariable(value="id") Integer id,@RequestBody DtoAdresRequest adresRequest) {
+        try{
+            logger.info("Update adres");
+            return ResponseEntity.ok(adresService.update(new Adres(id,adresRequest.getMiejscowosc(),adresRequest.getUlica(),adresRequest.getNrDomu(),adresRequest.getKodPocztowy())));
+
+        } catch (EmptyResultDataAccessException e){
+            logger.error(e.getMessage());
+            return ResponseEntity.status(400).body(new DtoError("No find Adres on id: "+id));
+        }
+    }
+
+    @DeleteMapping(value = "/delete/{id}")
+    public ResponseEntity<?> deleteAdres(@PathVariable(value="id") Integer id) {
+        try{
+            logger.info("delete adres id {}",id);
+            return ResponseEntity.ok(adresService.deleteById(id));
+        } catch (EmptyResultDataAccessException e){
+            logger.error(e.getMessage());
+            return ResponseEntity.status(400).body(new DtoError("No find Adres on id: "+id));
+        }
     }
 
     @ResponseBody

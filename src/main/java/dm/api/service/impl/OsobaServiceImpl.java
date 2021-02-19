@@ -36,7 +36,7 @@ public class OsobaServiceImpl implements OsobaService {
 
     @Override
     public int deleteById(int id) {
-        return 0;
+        return osobaRepository.deleteById(id);
     }
 
     @Override

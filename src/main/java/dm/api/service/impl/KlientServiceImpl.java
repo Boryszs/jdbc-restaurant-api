@@ -45,7 +45,7 @@ public class KlientServiceImpl implements KlientService {
 
     @Override
     public int deleteById(int id) {
-        return 0;
+        return klientRepository.deleteById(id);
     }
 
     @Override

@@ -10,7 +10,7 @@ public interface AdresRepository {
     int count();
     int save (Adres adres);
     int update (Adres adres);
-    int deleteById (int id);
+    int deleteById (Integer id);
     List<Adres> findAll ();
     Optional<Adres> findById(int id);
 }
