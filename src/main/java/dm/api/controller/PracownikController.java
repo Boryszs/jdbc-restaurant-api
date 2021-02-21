@@ -2,6 +2,7 @@ package dm.api.controller;
 
 import dm.api.dto.request.DtoAddPracownikRequest;
 import dm.api.dto.response.*;
+import dm.api.model.Osoba;
 import dm.api.model.Pracownik;
 import dm.api.service.AdresService;
 import dm.api.service.OsobaService;
@@ -61,6 +62,39 @@ public class PracownikController {
     }
 
     @ResponseBody
+    @GetMapping(value = "/get-pracownik/{id}")
+    public ResponseEntity<DtoPracownikDataResponse> getAllKlient(@PathVariable(value="id") Integer id) {
+        logger.info("Get all pracownik data");
+        DtoPracownikDataResponse dtoKlientDataResponses = new DtoPracownikDataResponse();
+        Pracownik pracownik = pracownikService.findById(id).get();
+            try {
+                DtoPracownikResponse dtoPracownikResponse = new DtoPracownikResponse(pracownik.getIdPracownika(), pracownik.getPensja(), pracownik.getRola(), pracownik.getIdOsoby());
+                DtoOsobaResponse dtoOsobaResponse = osobaService.findById(pracownik.getIdOsoby()).map(osoba -> new DtoOsobaResponse(osoba.getIdOsoby(), osoba.getImie(), osoba.getNazwisko(), osoba.getPesel(), osoba.getDataUrodzenia(), osoba.getEmail(), osoba.getTelefon(), osoba.getIdAdresu())).get();
+                DtoAdresResponse dtoAdresResponse = adresService.findById(dtoOsobaResponse.getIdAdresu()).map(adres -> new DtoAdresResponse(adres.getIdAdresu(), adres.getMiejscowosc(), adres.getUlica(), adres.getNrDomu(), adres.getKodPocztowy())).get();
+                dtoKlientDataResponses =  new DtoPracownikDataResponse(dtoPracownikResponse, dtoOsobaResponse, dtoAdresResponse);
+            }catch (EmptyResultDataAccessException e){
+                logger.error(e.getMessage());
+            }
+        return ResponseEntity.ok(dtoKlientDataResponses);
+    }
+
+    @ResponseBody
+    @DeleteMapping(value = "/delete-pracownik/{id}")
+    public ResponseEntity<?> deletePracownikId(@PathVariable(value="id") Integer id) {
+        logger.info("Delete pracownik on {}",id);
+        try{
+            Pracownik pracownik = pracownikService.findById(id).get();
+            Osoba osoba = osobaService.findById(pracownik.getIdOsoby()).get();
+            pracownikService.deleteById(pracownik.getIdPracownika());
+            osobaService.deleteById(osoba.getIdOsoby());
+            adresService.deleteById(osoba.getIdAdresu());
+        }catch (EmptyResultDataAccessException e){
+            logger.error(e.getMessage());
+        }
+        return ResponseEntity.ok(true);
+    }
+
+    @ResponseBody
     @GetMapping(value = "/all")
     public ResponseEntity<List<DtoPracownikResponse>> getAll() {
         logger.info("Get all pracownik");
@@ -77,11 +111,21 @@ public class PracownikController {
 
     @PostMapping(value = "/add-pracownik")
     public ResponseEntity<Integer> add(@RequestBody DtoAddPracownikRequest klientRequest) {
-        logger.info("Add klient");
+        logger.info("Add pracownik");
         logger.info(klientRequest.toString());
         return ResponseEntity.status(201).body(pracownikService.add(klientRequest));
     }
 
+    @DeleteMapping(value = "/delete/{id}")
+    public ResponseEntity<?> deletePracownik(@PathVariable(value="id") Integer id) {
+        try{
+            logger.info("Delete pracownik id ",id);
+            return ResponseEntity.ok(pracownikService.deleteById(id));
+        } catch (EmptyResultDataAccessException e){
+            logger.error(e.getMessage());
+            return ResponseEntity.status(400).body(new DtoError("No find Adres on id: "+id));
+        }
+    }
 
     @PutMapping(value = "/update/{id}")
     public ResponseEntity<Integer> addUpdate(@PathVariable(value="id") Integer id,@RequestBody DtoPracownikResponse pracownikResponse) {

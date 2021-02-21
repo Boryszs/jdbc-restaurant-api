@@ -5,6 +5,7 @@ import dm.api.dto.request.DtoAddKlientRequest;
 import dm.api.dto.request.DtoKlientRequest;
 import dm.api.dto.response.*;
 import dm.api.model.Klient;
+import dm.api.model.Osoba;
 import dm.api.service.AdresService;
 import dm.api.service.KlientService;
 import dm.api.service.OsobaService;
@@ -63,6 +64,39 @@ public class KlientController {
     }
 
     @ResponseBody
+    @GetMapping(value = "/get-klient/{id}")
+    public ResponseEntity<DtoKlientDataResponse> getKlientId(@PathVariable(value="id") Integer id) {
+        logger.info("Get klient data on id {}", id);
+        DtoKlientDataResponse dtoKlientDataResponses = new DtoKlientDataResponse();
+        Klient klient = klientService.finById(id).get();
+            try{
+                DtoKlientResponse dtoKlientResponse = new DtoKlientResponse(klient.getIdKlienta(),klient.getLogin(),klient.getHaslo(),klient.getIdOsoby());
+                DtoOsobaResponse dtoOsobaResponse = osobaService.findById(klient.getIdOsoby()).map(osoba ->  new DtoOsobaResponse(osoba.getIdOsoby(),osoba.getImie(),osoba.getNazwisko(),osoba.getPesel(),osoba.getDataUrodzenia(),osoba.getEmail(),osoba.getTelefon(),osoba.getIdAdresu())).get();
+                DtoAdresResponse dtoAdresResponse = adresService.findById(dtoOsobaResponse.getIdAdresu()).map(adres -> new DtoAdresResponse(adres.getIdAdresu(),adres.getMiejscowosc(),adres.getUlica(),adres.getNrDomu(),adres.getKodPocztowy())).get();
+                dtoKlientDataResponses = new DtoKlientDataResponse(dtoKlientResponse,dtoOsobaResponse,dtoAdresResponse);
+            }catch (EmptyResultDataAccessException e){
+                logger.error(e.getMessage());
+            }
+        return ResponseEntity.ok(dtoKlientDataResponses);
+    }
+
+    @ResponseBody
+    @DeleteMapping(value = "/delete-klient/{id}")
+    public ResponseEntity<?> deleteKlientId(@PathVariable(value="id") Integer id) {
+        logger.info("Delete klient on {}",id);
+        try{
+            Klient klient = klientService.finById(id).get();
+            Osoba osoba = osobaService.findById(klient.getIdOsoby()).get();
+            klientService.deleteById(klient.getIdKlienta());
+            osobaService.deleteById(osoba.getIdOsoby());
+            adresService.deleteById(osoba.getIdAdresu());
+        }catch (EmptyResultDataAccessException e){
+            logger.error(e.getMessage());
+        }
+        return ResponseEntity.ok(true);
+    }
+
+    @ResponseBody
     @GetMapping(value = "/all")
     public ResponseEntity<List<DtoKlientResponse>> getAll() {
         logger.info("Get all klient");
@@ -79,7 +113,7 @@ public class KlientController {
 
     @PostMapping(value = "/add-klient")
     public ResponseEntity<Integer> add(@RequestBody DtoAddKlientRequest klientRequest) {
-        logger.info("Add klient");
+        logger.info("Add klient {}",klientRequest.toString());
         return ResponseEntity.status(201).body(klientService.add(klientRequest));
     }
 
@@ -92,7 +126,7 @@ public class KlientController {
     @DeleteMapping(value = "/delete/{id}")
     public ResponseEntity<?> deleteKlient(@PathVariable(value="id") Integer id) {
         try{
-            logger.info("delete adres id ",id);
+            logger.info("Delete klient id ",id);
             return ResponseEntity.ok(klientService.deleteById(id));
         } catch (EmptyResultDataAccessException e){
             logger.error(e.getMessage());

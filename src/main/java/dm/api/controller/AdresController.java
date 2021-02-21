@@ -47,7 +47,7 @@ public class AdresController {
 
     @PostMapping(value = "/add")
     public ResponseEntity<Integer> addAdres(@RequestBody DtoAdresRequest adresRequest) {
-        logger.info("Add adres");
+        logger.info("Add adres",adresRequest.toString());
         return ResponseEntity.status(201).body(adresService.save(new Adres(null,adresRequest.getMiejscowosc(),adresRequest.getUlica(),adresRequest.getNrDomu(),adresRequest.getKodPocztowy())));
     }
 
@@ -66,7 +66,7 @@ public class AdresController {
     @DeleteMapping(value = "/delete/{id}")
     public ResponseEntity<?> deleteAdres(@PathVariable(value="id") Integer id) {
         try{
-            logger.info("delete adres id {}",id);
+            logger.info("Delete adres id {}",id);
             return ResponseEntity.ok(adresService.deleteById(id));
         } catch (EmptyResultDataAccessException e){
             logger.error(e.getMessage());

@@ -61,7 +61,7 @@ public class OsobaController {
     @DeleteMapping(value = "/delete/{id}")
     public ResponseEntity<?> deleteKlient(@PathVariable(value="id") Integer id) {
         try{
-            logger.info("delete adres id ",id);
+            logger.info("Delete osoba id ",id);
             return ResponseEntity.ok(osobaService.deleteById(id));
         } catch (EmptyResultDataAccessException e){
             logger.error(e.getMessage());
