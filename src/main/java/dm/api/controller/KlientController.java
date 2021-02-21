@@ -3,7 +3,9 @@ package dm.api.controller;
 
 import dm.api.dto.request.DtoAddKlientRequest;
 import dm.api.dto.request.DtoKlientRequest;
+import dm.api.dto.request.DtoUpdateKlientRequest;
 import dm.api.dto.response.*;
+import dm.api.model.Adres;
 import dm.api.model.Klient;
 import dm.api.model.Osoba;
 import dm.api.service.AdresService;
@@ -121,6 +123,24 @@ public class KlientController {
     public ResponseEntity<Integer> addUpdate(@PathVariable(value="id") Integer id,@RequestBody DtoKlientRequest klientRequest) {
         logger.info("Update klient");
         return ResponseEntity.ok(klientService.update(new Klient(id,klientRequest.getLogin(),klientRequest.getHaslo(),klientRequest.getIdOsoby())));
+    }
+
+    @PutMapping(value = "/update-klient/{id}")
+    public ResponseEntity<?> updateKlient(@PathVariable(value="id") Integer id, @RequestBody DtoUpdateKlientRequest klientRequest) {
+        try{
+            System.out.println(klientRequest);
+            Klient klient = new Klient(id,klientRequest.getKlient().getLogin(),klientRequest.getKlient().getHaslo(),klientRequest.getKlient().getIdOsoby());
+            Osoba osoba = new Osoba(klientRequest.getKlient().getIdOsoby(),klientRequest.getOsoba().getImie(),klientRequest.getOsoba().getNazwisko(),klientRequest.getOsoba().getPesel(),klientRequest.getOsoba().getDataUrodzenia(),klientRequest.getOsoba().getEmail(),klientRequest.getOsoba().getTelefon(),klientRequest.getOsoba().getIdAdresu());
+            Adres adres = new Adres(klientRequest.getOsoba().getIdAdresu(),klientRequest.getAdres().getMiejscowosc(),klientRequest.getAdres().getUlica(),klientRequest.getAdres().getNrDomu(),klientRequest.getAdres().getKodPocztowy());
+            klientService.update(klient);
+            osobaService.update(osoba);
+            adresService.update(adres);
+            logger.info("Update klient");
+            return ResponseEntity.ok(klient);
+        } catch (EmptyResultDataAccessException e){
+            logger.error(e.getMessage());
+            return ResponseEntity.status(400).body(new DtoError("No find Klient on id: "+id));
+        }
     }
 
     @DeleteMapping(value = "/delete/{id}")

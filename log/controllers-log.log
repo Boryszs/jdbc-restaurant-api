@@ -3011,3 +3011,74 @@
 2021-02-21 03:17:46 [http-nio-8080-exec-1] ERROR dm.api.controller.KlientController - Incorrect result size: expected 1, actual 0
 2021-02-21 03:17:46 [http-nio-8080-exec-1] ERROR dm.api.controller.KlientController - Incorrect result size: expected 1, actual 0
 2021-02-21 03:17:46 [http-nio-8080-exec-1] ERROR dm.api.controller.KlientController - Incorrect result size: expected 1, actual 0
+2021-02-21 19:44:44 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:44:52 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:48:25 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 19:48:27 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:48:30 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:48:43 [http-nio-8080-exec-5] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:48:45 [http-nio-8080-exec-6] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:06 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 19:51:11 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:32 [http-nio-8080-exec-5] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:48 [http-nio-8080-exec-6] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 19:51:50 [http-nio-8080-exec-7] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:51 [http-nio-8080-exec-8] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:51 [http-nio-8080-exec-9] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:51 [http-nio-8080-exec-10] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:51 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:52 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:52 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:52 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:52 [http-nio-8080-exec-5] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:52 [http-nio-8080-exec-6] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:52 [http-nio-8080-exec-7] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:51:53 [http-nio-8080-exec-8] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:52:14 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 19:53:30 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 19:53:37 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:56:44 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:57:06 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 19:57:08 [http-nio-8080-exec-5] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:57:10 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:58:48 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:59:30 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 19:59:32 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 19:59:35 [http-nio-8080-exec-6] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:06:23 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 20:07:25 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:07:55 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 20:07:59 [http-nio-8080-exec-9] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:08:26 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:08:34 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 20:08:36 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:08:37 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:09:44 [http-nio-8080-exec-9] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:12:00 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:12:12 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 20:12:17 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:13:34 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 20:13:41 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:14:04 [http-nio-8080-exec-5] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:14:49 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 20:14:52 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:15:24 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 20:15:27 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:15:32 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 20:15:34 [http-nio-8080-exec-5] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:15:36 [http-nio-8080-exec-7] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:15:41 [http-nio-8080-exec-8] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:16:32 [http-nio-8080-exec-2] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 20:16:34 [http-nio-8080-exec-3] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:17:21 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:19:42 [http-nio-8080-exec-1] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:19:49 [http-nio-8080-exec-4] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:19:50 [http-nio-8080-exec-5] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:19:55 [http-nio-8080-exec-6] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:19:58 [http-nio-8080-exec-7] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:20:52 [http-nio-8080-exec-8] INFO  d.api.controller.PracownikController - Update pracownik
+2021-02-21 20:20:55 [http-nio-8080-exec-9] INFO  d.api.controller.PracownikController - Get all pracownik data
+2021-02-21 20:28:56 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get klient data on id 21
+2021-02-21 20:31:02 [http-nio-8080-exec-1] INFO  dm.api.controller.KlientController - Get klient data on id 21
+2021-02-21 20:34:28 [http-nio-8080-exec-2] INFO  dm.api.controller.KlientController - Update klient
+2021-02-21 20:34:35 [http-nio-8080-exec-3] INFO  dm.api.controller.KlientController - Get klient data on id 21

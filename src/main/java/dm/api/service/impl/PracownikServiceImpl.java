@@ -35,12 +35,12 @@ public class PracownikServiceImpl implements PracownikService {
 
     @Override
     public int save(Pracownik pracownik) {
-        return 0;
+       return pracownikRepository.save(pracownik);
     }
 
     @Override
     public int update(Pracownik pracownik) {
-        return 0;
+        return pracownikRepository.update(pracownik);
     }
 
     @Override

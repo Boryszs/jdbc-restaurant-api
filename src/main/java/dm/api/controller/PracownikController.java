@@ -1,7 +1,9 @@
 package dm.api.controller;
 
 import dm.api.dto.request.DtoAddPracownikRequest;
+import dm.api.dto.request.DtoUpdatePracownikRequest;
 import dm.api.dto.response.*;
+import dm.api.model.Adres;
 import dm.api.model.Osoba;
 import dm.api.model.Pracownik;
 import dm.api.service.AdresService;
@@ -124,6 +126,23 @@ public class PracownikController {
         } catch (EmptyResultDataAccessException e){
             logger.error(e.getMessage());
             return ResponseEntity.status(400).body(new DtoError("No find Adres on id: "+id));
+        }
+    }
+
+    @PutMapping(value = "/update-pracownik/{id}")
+    public ResponseEntity<?> updatePracownik(@PathVariable(value="id") Integer id, @RequestBody DtoUpdatePracownikRequest pracownikRequest) {
+        try{
+            Pracownik pracownik = new Pracownik(id,pracownikRequest.getPracownik().getPensja(),pracownikRequest.getPracownik().getRola(),pracownikRequest.getPracownik().getIdOsoby());
+            Osoba osoba = new Osoba(pracownikRequest.getPracownik().getIdOsoby(),pracownikRequest.getOsoba().getImie(),pracownikRequest.getOsoba().getNazwisko(),pracownikRequest.getOsoba().getPesel(),pracownikRequest.getOsoba().getDataUrodzenia(),pracownikRequest.getOsoba().getEmail(),pracownikRequest.getOsoba().getTelefon(),pracownikRequest.getOsoba().getIdAdresu());
+            Adres adres = new Adres(pracownikRequest.getOsoba().getIdAdresu(),pracownikRequest.getAdres().getMiejscowosc(),pracownikRequest.getAdres().getUlica(),pracownikRequest.getAdres().getNrDomu(),pracownikRequest.getAdres().getKodPocztowy());
+            pracownikService.update(pracownik);
+            osobaService.update(osoba);
+            adresService.update(adres);
+            logger.info("Update pracownik");
+            return ResponseEntity.ok(pracownikRequest);
+        } catch (EmptyResultDataAccessException e){
+            logger.error(e.getMessage());
+            return ResponseEntity.status(400).body(new DtoError("No find Klient on id: "+id));
         }
     }
 
