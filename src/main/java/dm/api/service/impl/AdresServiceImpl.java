@@ -1,5 +1,8 @@
 package dm.api.service.impl;
 
+import dm.api.dto.request.DtoAdresRequest;
+import dm.api.dto.response.DtoAdresResponse;
+import dm.api.mapper.AdresRowMapper;
 import dm.api.model.Adres;
 import dm.api.repository.AdresRepository;
 import dm.api.service.AdresService;
@@ -25,8 +28,8 @@ public class AdresServiceImpl implements AdresService {
     }
 
     @Override
-    public int save(Adres adres) {
-        return adresRepository.save(adres);
+    public int save(DtoAdresRequest dtoAdresRequest) {
+        return adresRepository.save(new AdresRowMapper().convert(dtoAdresRequest));
     }
 
     @Override
@@ -40,12 +43,12 @@ public class AdresServiceImpl implements AdresService {
     }
 
     @Override
-    public List<Adres> findAll() {
+    public List<DtoAdresResponse> findAll() {
         return adresRepository.findAll();
     }
 
     @Override
-    public Optional<Adres> findById(int id) {
+    public Optional<DtoAdresResponse> findById(int id) {
         return adresRepository.findById(id);
     }
 }

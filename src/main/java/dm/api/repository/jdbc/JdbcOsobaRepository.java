@@ -1,5 +1,6 @@
 package dm.api.repository.jdbc;
 
+import dm.api.dto.response.DtoOsobaResponse;
 import dm.api.mapper.OsobaRowMapper;
 import dm.api.model.Osoba;
 import dm.api.repository.OsobaRepository;
@@ -69,7 +70,7 @@ public class JdbcOsobaRepository implements OsobaRepository {
     }
 
     @Override
-    public List<Osoba> findAll() {
+    public List<DtoOsobaResponse> findAll() {
         return jdbcTemplate.query("select * from restauracja.osoba ORDER BY id_osoby",new OsobaRowMapper());
     }
 

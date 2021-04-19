@@ -1,5 +1,6 @@
 package dm.api.repository;
 
+import dm.api.dto.response.DtoOsobaResponse;
 import dm.api.model.Osoba;
 
 import java.util.List;
@@ -11,6 +12,6 @@ public interface OsobaRepository {
     int save (Osoba osoba);
     int update (Osoba osoba);
     int deleteById (Integer id);
-    List<Osoba> findAll ();
+    List<DtoOsobaResponse> findAll ();
     Optional<Osoba> findById(int id);
 }

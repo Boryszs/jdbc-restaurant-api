@@ -1,28 +1,15 @@
 package dm.api.dto.response;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Builder
 public class DtoError {
+
     private String message;
-
-    public DtoError() {
-    }
-
-    public DtoError(String message) {
-        this.message = message;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    @Override
-    public String toString() {
-        return "DtoError{" +
-                "message='" + message + '\'' +
-                '}';
-    }
 }

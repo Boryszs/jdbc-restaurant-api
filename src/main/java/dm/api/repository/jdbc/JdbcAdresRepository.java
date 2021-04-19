@@ -1,5 +1,6 @@
 package dm.api.repository.jdbc;
 
+import dm.api.dto.response.DtoAdresResponse;
 import dm.api.mapper.AdresRowMapper;
 import dm.api.model.Adres;
 import dm.api.repository.AdresRepository;
@@ -65,12 +66,12 @@ public class JdbcAdresRepository implements AdresRepository {
     }
 
     @Override
-    public List<Adres> findAll() {
+    public List<DtoAdresResponse> findAll() {
         return jdbcTemplate.query("select * from restauracja.adres ORDER BY id_adresu",new AdresRowMapper());
     }
 
     @Override
-    public Optional<Adres> findById(int id) {
-        return jdbcTemplate.queryForObject("select * from restauracja.adres where id_adresu = ?",new Object[]{id},(rs,rowNum) -> Optional.of(new Adres(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5))));
+    public Optional<DtoAdresResponse> findById(int id) {
+        return jdbcTemplate.queryForObject("select * from restauracja.adres where id_adresu = ?",new Object[]{id},(rs,rowNum) -> Optional.of(new DtoAdresResponse(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5))));
     }
 }

@@ -1,5 +1,8 @@
 package dm.api.repository.jdbc;
 
+import dm.api.dto.response.DtoPracownikDataResponse;
+import dm.api.dto.response.DtoPracownikResponse;
+import dm.api.mapper.PracownikRowListMapper;
 import dm.api.mapper.PracownikRowMapper;
 import dm.api.model.Pracownik;
 import dm.api.repository.PracownikRepository;
@@ -25,43 +28,31 @@ public class JdbcPracownikRepository implements PracownikRepository {
     }
 
     @Override
-    public int save(Pracownik pracownik) {
-        return jdbcTemplate.update("insert into restauracja.pracownik(pensja,rola,id_osoby) values(?,(? :: restauracja.\"Rola\"),?)",pracownik.getPensja(),pracownik.getRola(),pracownik.getIdOsoby());
-//
-//        final KeyHolder holder = new GeneratedKeyHolder();
-//        final PreparedStatementCreator preparedStatementCreator = new PreparedStatementCreator(){
-//
-//            @Override
-//            public PreparedStatement createPreparedStatement(final Connection connection) throws SQLException {
-//                final PreparedStatement preparedStatement = connection.prepareStatement("insert into restauracja.pracownik(pensja,rola,id_osoby) values(?,(? :: restauracja.\"Rola\"),?)", Statement.RETURN_GENERATED_KEYS);
-//                preparedStatement.setDouble(1,pracownik.getPensja());
-//                preparedStatement.setString(2,pracownik.getRola());
-//                preparedStatement.setInt(3,pracownik.getIdPracownika());
-//                return preparedStatement;
-//            }
-//        };
-
-        //jdbcTemplate.update(preparedStatementCreator,holder);
-        //final Long Id = (Long) holder.getKeys().get("id_pracownika");
-        //return Id.intValue();
+    public void save(Pracownik pracownik) {
+        jdbcTemplate.update("insert into restauracja.pracownik(pensja,rola,id_osoby) values(?,(? :: restauracja.\"Rola\"),?)",pracownik.getPensja(),pracownik.getRola(),pracownik.getIdOsoby());
     }
 
     @Override
-    public int update(Pracownik pracownik) {
-        return jdbcTemplate.update("update restauracja.pracownik set pensja = ?, rola = (? :: restauracja.\"Rola\") where id_pracownika = ?",pracownik.getPensja(),pracownik.getRola(),pracownik.getIdPracownika());
+    public void update(Pracownik pracownik) {
+         jdbcTemplate.update("update restauracja.pracownik set pensja = ?, rola = (? :: restauracja.\"Rola\") where id_pracownika = ?",pracownik.getPensja(),pracownik.getRola(),pracownik.getIdPracownika());
 
     }
 
     @Override
-    public int deleteById(Integer id) {
+    public void deleteById(Integer id) {
         String SQL = "delete from restauracja.pracownik where id_pracownika = ?";
         jdbcTemplate.update(SQL, id);
-        return id;
     }
 
     @Override
-    public List<Pracownik> findAll() {
+    public List<DtoPracownikResponse> findAll() {
         return jdbcTemplate.query("select * from restauracja.pracownik ORDER BY id_pracownika",new PracownikRowMapper());
+    }
+
+    @Override
+    public List<DtoPracownikDataResponse> findAllEmployee() {
+        return jdbcTemplate.query("select * from restauracja.pracownik natural join restauracja.osoba natural join restauracja.adres ORDER BY id_pracownika;",new PracownikRowListMapper());
+
     }
 
     @Override

@@ -1,5 +1,6 @@
 package dm.api.repository;
 
+import dm.api.dto.response.DtoAdresResponse;
 import dm.api.model.Adres;
 
 import java.util.List;
@@ -11,6 +12,6 @@ public interface AdresRepository {
     int save (Adres adres);
     int update (Adres adres);
     int deleteById (Integer id);
-    List<Adres> findAll ();
-    Optional<Adres> findById(int id);
+    List<DtoAdresResponse> findAll ();
+    Optional<DtoAdresResponse> findById(int id);
 }

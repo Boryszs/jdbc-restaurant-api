@@ -12,7 +12,6 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
@@ -41,9 +40,7 @@ public class OsobaController {
     @GetMapping(value = "/all")
     public ResponseEntity<List<DtoOsobaResponse>> getAll() {
         logger.info("Get all osoba");
-        List<DtoOsobaResponse> dtoOsobaResponses = new LinkedList<>();
-        osobaService.findAll().stream().map(k -> new DtoOsobaResponse(k.getIdOsoby(),k.getImie(),k.getNazwisko(),k.getPesel(),k.getDataUrodzenia(),k.getEmail(),k.getTelefon(),k.getIdAdresu())).forEach(dtoOsobaResponses::add);
-        return ResponseEntity.ok(dtoOsobaResponses);
+        return ResponseEntity.ok(osobaService.findAll());
     }
 
     @PostMapping(value = "/add")

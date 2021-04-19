@@ -13,10 +13,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
@@ -49,18 +49,7 @@ public class PracownikController {
     @GetMapping(value = "/all-pracownik")
     public ResponseEntity<List<DtoPracownikDataResponse>> getAllKlient() {
         logger.info("Get all pracownik data");
-        List<DtoPracownikDataResponse> dtoKlientDataResponses = new LinkedList<>();
-        for(Pracownik pracownik : pracownikService.findAll()){
-            try {
-                DtoPracownikResponse dtoPracownikResponse = new DtoPracownikResponse(pracownik.getIdPracownika(), pracownik.getPensja(), pracownik.getRola(), pracownik.getIdOsoby());
-                DtoOsobaResponse dtoOsobaResponse = osobaService.findById(pracownik.getIdOsoby()).map(osoba -> new DtoOsobaResponse(osoba.getIdOsoby(), osoba.getImie(), osoba.getNazwisko(), osoba.getPesel(), osoba.getDataUrodzenia(), osoba.getEmail(), osoba.getTelefon(), osoba.getIdAdresu())).get();
-                DtoAdresResponse dtoAdresResponse = adresService.findById(dtoOsobaResponse.getIdAdresu()).map(adres -> new DtoAdresResponse(adres.getIdAdresu(), adres.getMiejscowosc(), adres.getUlica(), adres.getNrDomu(), adres.getKodPocztowy())).get();
-                dtoKlientDataResponses.add(new DtoPracownikDataResponse(dtoPracownikResponse, dtoOsobaResponse, dtoAdresResponse));
-            }catch (EmptyResultDataAccessException e){
-                logger.error(e.getMessage());
-            }
-        }
-        return ResponseEntity.ok(dtoKlientDataResponses);
+        return ResponseEntity.ok(pracownikService.findAllEmployee());
     }
 
     @ResponseBody
@@ -100,29 +89,30 @@ public class PracownikController {
     @GetMapping(value = "/all")
     public ResponseEntity<List<DtoPracownikResponse>> getAll() {
         logger.info("Get all pracownik");
-        List<DtoPracownikResponse> dtoPracownikResponseList = new LinkedList<>();
-        pracownikService.findAll().stream().map(k -> new DtoPracownikResponse(k.getIdPracownika(),k.getPensja(),k.getRola(), k.getIdOsoby())).forEach(dtoPracownikResponseList::add);
-        return ResponseEntity.ok(dtoPracownikResponseList);
+        return ResponseEntity.ok(pracownikService.findAll());
     }
 
     @PostMapping(value = "/add")
     public ResponseEntity<Integer> addAdres(@RequestBody DtoPracownikResponse pracownikResponse) {
         logger.info("Add pracownik");
-        return ResponseEntity.status(201).body(pracownikService.save(new Pracownik(null,pracownikResponse.getPensja(),pracownikResponse.getRola(),pracownikResponse.getIdOsoby())));
+        pracownikService.save(new Pracownik(null,pracownikResponse.getPensja(),pracownikResponse.getRola(),pracownikResponse.getIdOsoby()));
+        return new ResponseEntity(HttpStatus.OK);
     }
 
     @PostMapping(value = "/add-pracownik")
-    public ResponseEntity<Integer> add(@RequestBody DtoAddPracownikRequest klientRequest) {
+    public ResponseEntity add(@RequestBody DtoAddPracownikRequest klientRequest) {
         logger.info("Add pracownik");
         logger.info(klientRequest.toString());
-        return ResponseEntity.status(201).body(pracownikService.add(klientRequest));
+        pracownikService.add(klientRequest);
+        return new ResponseEntity(HttpStatus.CREATED);
     }
 
     @DeleteMapping(value = "/delete/{id}")
     public ResponseEntity<?> deletePracownik(@PathVariable(value="id") Integer id) {
         try{
             logger.info("Delete pracownik id ",id);
-            return ResponseEntity.ok(pracownikService.deleteById(id));
+            pracownikService.deleteById(id);
+            return new ResponseEntity(HttpStatus.OK);
         } catch (EmptyResultDataAccessException e){
             logger.error(e.getMessage());
             return ResponseEntity.status(400).body(new DtoError("No find Adres on id: "+id));
@@ -149,7 +139,8 @@ public class PracownikController {
     @PutMapping(value = "/update/{id}")
     public ResponseEntity<Integer> addUpdate(@PathVariable(value="id") Integer id,@RequestBody DtoPracownikResponse pracownikResponse) {
         logger.info("Update osoba");
-        return ResponseEntity.ok(pracownikService.update(new Pracownik(id,pracownikResponse.getPensja(),pracownikResponse.getRola(),pracownikResponse.getIdOsoby())));
+        pracownikService.update(new Pracownik(id,pracownikResponse.getPensja(),pracownikResponse.getRola(),pracownikResponse.getIdOsoby()));
+        return new ResponseEntity(HttpStatus.OK);
     }
 
     @ResponseBody

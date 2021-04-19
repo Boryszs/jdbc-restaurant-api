@@ -9,10 +9,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
@@ -40,15 +40,14 @@ public class AdresController {
     @GetMapping(value = "/all")
     public ResponseEntity<List<DtoAdresResponse>> getAll() {
         logger.info("Get all adres");
-        List<DtoAdresResponse> dtoAdresResponse = new LinkedList<>();
-        adresService.findAll().stream().map(k -> new DtoAdresResponse(k.getIdAdresu(),k.getMiejscowosc(),k.getUlica(),k.getNrDomu(),k.getKodPocztowy())).forEach(dtoAdresResponse::add);
-        return ResponseEntity.ok(dtoAdresResponse);
+        return ResponseEntity.ok(adresService.findAll());
     }
 
     @PostMapping(value = "/add")
     public ResponseEntity<Integer> addAdres(@RequestBody DtoAdresRequest adresRequest) {
         logger.info("Add adres",adresRequest.toString());
-        return ResponseEntity.status(201).body(adresService.save(new Adres(null,adresRequest.getMiejscowosc(),adresRequest.getUlica(),adresRequest.getNrDomu(),adresRequest.getKodPocztowy())));
+        adresService.save(adresRequest);
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @PutMapping(value = "/update/{id}")
@@ -56,7 +55,6 @@ public class AdresController {
         try{
             logger.info("Update adres");
             return ResponseEntity.ok(adresService.update(new Adres(id,adresRequest.getMiejscowosc(),adresRequest.getUlica(),adresRequest.getNrDomu(),adresRequest.getKodPocztowy())));
-
         } catch (EmptyResultDataAccessException e){
             logger.error(e.getMessage());
             return ResponseEntity.status(400).body(new DtoError("No find Adres on id: "+id));
@@ -79,7 +77,7 @@ public class AdresController {
     public ResponseEntity<?> getKlient(@PathVariable(value="id") Integer id) {
         logger.info("Get Adres on id {}",id);
         try {
-            Optional<Adres> adres = adresService.findById(id);
+            Optional<DtoAdresResponse> adres = adresService.findById(id);
             return ResponseEntity.ok(adres.get());
         }catch (EmptyResultDataAccessException e){
             logger.error(e.getMessage());

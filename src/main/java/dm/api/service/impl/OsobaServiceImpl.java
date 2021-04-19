@@ -1,5 +1,6 @@
 package dm.api.service.impl;
 
+import dm.api.dto.response.DtoOsobaResponse;
 import dm.api.model.Osoba;
 import dm.api.repository.OsobaRepository;
 import dm.api.service.OsobaService;
@@ -40,7 +41,7 @@ public class OsobaServiceImpl implements OsobaService {
     }
 
     @Override
-    public List<Osoba> findAll() {
+    public List<DtoOsobaResponse> findAll() {
         return osobaRepository.findAll();
     }
 

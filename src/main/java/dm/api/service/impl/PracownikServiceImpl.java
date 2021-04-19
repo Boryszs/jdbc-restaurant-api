@@ -1,6 +1,8 @@
 package dm.api.service.impl;
 
 import dm.api.dto.request.DtoAddPracownikRequest;
+import dm.api.dto.response.DtoPracownikDataResponse;
+import dm.api.dto.response.DtoPracownikResponse;
 import dm.api.model.Adres;
 import dm.api.model.Osoba;
 import dm.api.model.Pracownik;
@@ -34,30 +36,35 @@ public class PracownikServiceImpl implements PracownikService {
     }
 
     @Override
-    public int save(Pracownik pracownik) {
-       return pracownikRepository.save(pracownik);
+    public void save(Pracownik pracownik) {
+        pracownikRepository.save(pracownik);
     }
 
     @Override
-    public int update(Pracownik pracownik) {
-        return pracownikRepository.update(pracownik);
+    public void update(Pracownik pracownik) {
+         pracownikRepository.update(pracownik);
     }
 
     @Override
-    public int deleteById(int id) {
-        return pracownikRepository.deleteById(id);
+    public void deleteById(int id) {
+         pracownikRepository.deleteById(id);
     }
 
     @Override
-    public int add(DtoAddPracownikRequest pracownik) {
+    public void add(DtoAddPracownikRequest pracownik) {
         Integer idAdres = adresRepository.save(new Adres(null,pracownik.getAdres().getMiejscowosc(),pracownik.getAdres().getUlica(),pracownik.getAdres().getNrDomu(),pracownik.getAdres().getKodPocztowy()));
         Integer idOsoba = osobaRepository.save(new Osoba(null,pracownik.getOsoba().getImie(),pracownik.getOsoba().getNazwisko(),pracownik.getOsoba().getPesel(),pracownik.getOsoba().getDataUrodzenia(),pracownik.getOsoba().getEmail(),pracownik.getOsoba().getTelefon(),idAdres));
-        return pracownikRepository.save(new Pracownik(null,pracownik.getPensja(),pracownik.getRola(),idOsoba));
+        //return pracownikRepository.save(new Pracownik(null,pracownik.getPensja(),pracownik.getRola(),idOsoba));
     }
 
     @Override
-    public List<Pracownik> findAll() {
+    public List<DtoPracownikResponse> findAll() {
         return pracownikRepository.findAll();
+    }
+
+    @Override
+    public List<DtoPracownikDataResponse> findAllEmployee() {
+        return pracownikRepository.findAllEmployee();
     }
 
     @Override

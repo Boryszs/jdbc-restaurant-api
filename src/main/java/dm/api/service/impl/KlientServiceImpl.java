@@ -1,6 +1,8 @@
 package dm.api.service.impl;
 
 import dm.api.dto.request.DtoAddKlientRequest;
+import dm.api.dto.response.DtoKlientDataResponse;
+import dm.api.dto.response.DtoKlientResponse;
 import dm.api.model.Adres;
 import dm.api.model.Klient;
 import dm.api.model.Osoba;
@@ -34,34 +36,49 @@ public class KlientServiceImpl implements KlientService {
     }
 
     @Override
-    public int save(Klient klient) {
-        return klientRepository.save(klient);
+    public void save(Klient klient) {
+         klientRepository.save(klient);
     }
 
     @Override
-    public int update(Klient klient) {
-        return klientRepository.update(klient);
+    public void update(Klient klient) {
+         klientRepository.update(klient);
     }
 
     @Override
-    public int deleteById(int id) {
-        return klientRepository.deleteById(id);
+    public void deleteById(int id) {
+         klientRepository.deleteById(id);
     }
 
     @Override
-    public int add(DtoAddKlientRequest klient) {
+    public void deleteKlientById(Integer id) {
+        klientRepository.deleteKlientById(id);
+    }
+
+    @Override
+    public void add(DtoAddKlientRequest klient) {
        Integer idAdres = adresRepository.save(new Adres(null,klient.getAdres().getMiejscowosc(),klient.getAdres().getUlica(),klient.getAdres().getNrDomu(),klient.getAdres().getKodPocztowy()));
        Integer idOsoba = osobaRepository.save(new Osoba(null,klient.getOsoba().getImie(),klient.getOsoba().getNazwisko(),klient.getOsoba().getPesel(),klient.getOsoba().getDataUrodzenia(),klient.getOsoba().getEmail(),klient.getOsoba().getTelefon(),idAdres));
-       return klientRepository.save(new Klient(null,klient.getLogin(),klient.getHaslo(),idOsoba));
+       klientRepository.save(new Klient(null,klient.getLogin(),klient.getHaslo(),idOsoba));
     }
 
     @Override
-    public List<Klient> findAll() {
+    public List<DtoKlientResponse> findAll() {
         return klientRepository.findAll();
     }
 
     @Override
-    public Optional<Klient> finById(int id) {
+    public List<DtoKlientDataResponse> findAllKlient() {
+        return klientRepository.findAllKlient();
+    }
+
+    @Override
+    public DtoKlientDataResponse findKlientId(int id) {
+        return klientRepository.findKlientId(id);
+    }
+
+    @Override
+    public Optional<DtoKlientResponse> findById(int id) {
         return klientRepository.findById(id);
     }
 }
