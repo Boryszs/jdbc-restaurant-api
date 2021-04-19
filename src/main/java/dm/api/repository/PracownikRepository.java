@@ -13,6 +13,8 @@ public interface PracownikRepository {
     void update (Pracownik pracownik);
     void deleteById (Integer id);
     List<Pracownik> findAll();
-    List<DtoPracownikDataResponse> findAllEmployee();
+    List<DtoPracownikDataResponse> findAllPracownik();
+    DtoPracownikDataResponse findPracownikById(int id);
+    void deletePracownikById(Integer id);
     Optional<Pracownik> findById(int id);
 }

@@ -3,7 +3,6 @@ package dm.api.controller;
 import dm.api.dto.request.DtoOsobaRequest;
 import dm.api.dto.response.DtoError;
 import dm.api.dto.response.DtoOsobaResponse;
-import dm.api.model.Osoba;
 import dm.api.service.OsobaService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,15 +43,15 @@ public class OsobaController {
     }
 
     @PostMapping(value = "/add")
-    public ResponseEntity<Integer> addAdres(@RequestBody DtoOsobaResponse osobaRequest) {
+    public ResponseEntity<Integer> addAdres(@RequestBody DtoOsobaRequest osobaRequest) {
         logger.info("Add osoba");
-        return ResponseEntity.status(201).body(osobaService.save(new Osoba(null,osobaRequest.getImie(),osobaRequest.getNazwisko(),osobaRequest.getPesel(),osobaRequest.getDataUrodzenia(),osobaRequest.getEmail(),osobaRequest.getTelefon(),osobaRequest.getIdAdresu())));
+        return ResponseEntity.status(201).body(osobaService.save(osobaRequest));
     }
 
     @PutMapping(value = "/update/{id}")
     public ResponseEntity<Integer> addUpdate(@PathVariable(value="id") Integer id,@RequestBody DtoOsobaRequest osobaRequest) {
         logger.info("Update osoba");
-        return ResponseEntity.ok(osobaService.update(new Osoba(id,osobaRequest.getImie(),osobaRequest.getNazwisko(),osobaRequest.getPesel(),osobaRequest.getDataUrodzenia(),osobaRequest.getEmail(),osobaRequest.getTelefon(),osobaRequest.getIdAdresu())));
+        return ResponseEntity.ok(osobaService.update(id,osobaRequest));
     }
 
     @DeleteMapping(value = "/delete/{id}")

@@ -1,6 +1,7 @@
 package dm.api.service.impl;
 
 import dm.api.dto.request.DtoAddPracownikRequest;
+import dm.api.dto.request.DtoPracownikRequest;
 import dm.api.dto.response.DtoPracownikDataResponse;
 import dm.api.dto.response.DtoPracownikResponse;
 import dm.api.mapper.impl.PracownikRowMapper;
@@ -38,13 +39,13 @@ public class PracownikServiceImpl implements PracownikService {
     }
 
     @Override
-    public void save(Pracownik pracownik) {
-        pracownikRepository.save(pracownik);
+    public void save(DtoPracownikRequest dtoPracownikResponse) {
+        pracownikRepository.save(new PracownikRowMapper().convert(dtoPracownikResponse));
     }
 
     @Override
-    public void update(Pracownik pracownik) {
-         pracownikRepository.update(pracownik);
+    public void update(Integer id,DtoPracownikRequest dtoPracownikRequest) {
+         pracownikRepository.update(new PracownikRowMapper().update(pracownikRepository.findById(id).get(),dtoPracownikRequest));
     }
 
     @Override
@@ -67,8 +68,18 @@ public class PracownikServiceImpl implements PracownikService {
     }
 
     @Override
-    public List<DtoPracownikDataResponse> findAllEmployee() {
-        return pracownikRepository.findAllEmployee();
+    public List<DtoPracownikDataResponse> findAllPracownik() {
+        return pracownikRepository.findAllPracownik();
+    }
+
+    @Override
+    public DtoPracownikDataResponse findPracownikById(int id) {
+        return pracownikRepository.findPracownikById(id);
+    }
+
+    @Override
+    public void deletePracownikById(Integer id) {
+        pracownikRepository.deletePracownikById(id);
     }
 
     @Override

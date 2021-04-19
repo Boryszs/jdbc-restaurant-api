@@ -45,7 +45,7 @@ public class JdbcKlientRepository implements KlientRepository {
 
     @Override
     public void deleteKlientById(Integer id) {
-        jdbcTemplate.update("DELETE FROM restauracja.klientUSING restauracja.adres NATURAL JOIN restauracja.osoba WHERE klient.id_klienta = ?", id);
+        jdbcTemplate.update("DELETE FROM restauracja.klient USING restauracja.adres NATURAL JOIN restauracja.osoba WHERE klient.id_klienta = ?", id);
     }
 
     @Override
@@ -62,7 +62,6 @@ public class JdbcKlientRepository implements KlientRepository {
     @Override
     public DtoKlientDataResponse findKlientId(int id) {
         return jdbcTemplate.queryForObject("select * from restauracja.klient natural join restauracja.osoba natural join restauracja.adres where id_klienta = ?",new Object[]{id},new KlientRowListMapper());
-
     }
 
     @Override

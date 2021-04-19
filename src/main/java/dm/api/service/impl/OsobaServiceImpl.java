@@ -1,8 +1,8 @@
 package dm.api.service.impl;
 
+import dm.api.dto.request.DtoOsobaRequest;
 import dm.api.dto.response.DtoOsobaResponse;
 import dm.api.mapper.impl.OsobaRowMapper;
-import dm.api.model.Osoba;
 import dm.api.repository.OsobaRepository;
 import dm.api.service.OsobaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,13 +28,13 @@ public class OsobaServiceImpl implements OsobaService {
     }
 
     @Override
-    public int save(Osoba osoba) {
-        return osobaRepository.save(osoba);
+    public int save(DtoOsobaRequest dtoOsobaResponse) {
+        return osobaRepository.save(new OsobaRowMapper().convert(dtoOsobaResponse));
     }
 
     @Override
-    public int update(Osoba osoba) {
-        return osobaRepository.update(osoba);
+    public int update(Integer id, DtoOsobaRequest dtoOsobaRequest) {
+        return osobaRepository.update(new OsobaRowMapper().update(osobaRepository.findById(id).get(),dtoOsobaRequest));
     }
 
     @Override
