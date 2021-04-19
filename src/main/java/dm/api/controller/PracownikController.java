@@ -3,8 +3,6 @@ package dm.api.controller;
 import dm.api.dto.request.DtoAddPracownikRequest;
 import dm.api.dto.request.DtoUpdatePracownikRequest;
 import dm.api.dto.response.*;
-import dm.api.model.Adres;
-import dm.api.model.Osoba;
 import dm.api.model.Pracownik;
 import dm.api.service.AdresService;
 import dm.api.service.OsobaService;
@@ -74,11 +72,11 @@ public class PracownikController {
     public ResponseEntity<?> deletePracownikId(@PathVariable(value="id") Integer id) {
         logger.info("Delete pracownik on {}",id);
         try{
-            Pracownik pracownik = pracownikService.findById(id).get();
-            Osoba osoba = osobaService.findById(pracownik.getIdOsoby()).get();
-            pracownikService.deleteById(pracownik.getIdPracownika());
-            osobaService.deleteById(osoba.getIdOsoby());
-            adresService.deleteById(osoba.getIdAdresu());
+//            Pracownik pracownik = pracownikService.findById(id).get();
+//            Osoba osoba = osobaService.findById(pracownik.getIdOsoby()).get();
+//            pracownikService.deleteById(pracownik.getIdPracownika());
+//            osobaService.deleteById(osoba.getIdOsoby());
+//            adresService.deleteById(osoba.getIdAdresu());
         }catch (EmptyResultDataAccessException e){
             logger.error(e.getMessage());
         }
@@ -122,12 +120,12 @@ public class PracownikController {
     @PutMapping(value = "/update-pracownik/{id}")
     public ResponseEntity<?> updatePracownik(@PathVariable(value="id") Integer id, @RequestBody DtoUpdatePracownikRequest pracownikRequest) {
         try{
-            Pracownik pracownik = new Pracownik(id,pracownikRequest.getPracownik().getPensja(),pracownikRequest.getPracownik().getRola(),pracownikRequest.getPracownik().getIdOsoby());
-            Osoba osoba = new Osoba(pracownikRequest.getPracownik().getIdOsoby(),pracownikRequest.getOsoba().getImie(),pracownikRequest.getOsoba().getNazwisko(),pracownikRequest.getOsoba().getPesel(),pracownikRequest.getOsoba().getDataUrodzenia(),pracownikRequest.getOsoba().getEmail(),pracownikRequest.getOsoba().getTelefon(),pracownikRequest.getOsoba().getIdAdresu());
-            Adres adres = new Adres(pracownikRequest.getOsoba().getIdAdresu(),pracownikRequest.getAdres().getMiejscowosc(),pracownikRequest.getAdres().getUlica(),pracownikRequest.getAdres().getNrDomu(),pracownikRequest.getAdres().getKodPocztowy());
-            pracownikService.update(pracownik);
-            osobaService.update(osoba);
-            adresService.update(adres);
+//            Pracownik pracownik = new Pracownik(id,pracownikRequest.getPracownik().getPensja(),pracownikRequest.getPracownik().getRola(),pracownikRequest.getPracownik().getIdOsoby());
+//            Osoba osoba = new Osoba(pracownikRequest.getPracownik().getIdOsoby(),pracownikRequest.getOsoba().getImie(),pracownikRequest.getOsoba().getNazwisko(),pracownikRequest.getOsoba().getPesel(),pracownikRequest.getOsoba().getDataUrodzenia(),pracownikRequest.getOsoba().getEmail(),pracownikRequest.getOsoba().getTelefon(),pracownikRequest.getOsoba().getIdAdresu());
+//            Adres adres = new Adres(pracownikRequest.getOsoba().getIdAdresu(),pracownikRequest.getAdres().getMiejscowosc(),pracownikRequest.getAdres().getUlica(),pracownikRequest.getAdres().getNrDomu(),pracownikRequest.getAdres().getKodPocztowy());
+//            pracownikService.update(pracownik);
+//            osobaService.update(osoba);
+//            adresService.update(adresadres);
             logger.info("Update pracownik");
             return ResponseEntity.ok(pracownikRequest);
         } catch (EmptyResultDataAccessException e){

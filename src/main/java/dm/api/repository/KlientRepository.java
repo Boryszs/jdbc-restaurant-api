@@ -1,7 +1,6 @@
 package dm.api.repository;
 
 import dm.api.dto.response.DtoKlientDataResponse;
-import dm.api.dto.response.DtoKlientResponse;
 import dm.api.model.Klient;
 
 import java.util.List;
@@ -14,8 +13,8 @@ public interface KlientRepository {
     void update (Klient klient);
     void deleteById (Integer id);
     void deleteKlientById (Integer id);
-    List<DtoKlientResponse> findAll();
+    List<Klient> findAll();
     List<DtoKlientDataResponse> findAllKlient();
     DtoKlientDataResponse findKlientId(int id);
-    Optional<DtoKlientResponse> findById(int id);
+    Optional<Klient> findById(int id);
 }

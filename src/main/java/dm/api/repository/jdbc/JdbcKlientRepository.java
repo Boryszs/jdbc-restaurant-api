@@ -1,9 +1,8 @@
 package dm.api.repository.jdbc;
 
 import dm.api.dto.response.DtoKlientDataResponse;
-import dm.api.dto.response.DtoKlientResponse;
-import dm.api.mapper.KlientRowListMapper;
-import dm.api.mapper.KlientRowMapper;
+import dm.api.mapper.impl.KlientRowListMapper;
+import dm.api.mapper.impl.KlientRowMapper;
 import dm.api.model.Klient;
 import dm.api.repository.KlientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +49,7 @@ public class JdbcKlientRepository implements KlientRepository {
     }
 
     @Override
-    public List<DtoKlientResponse> findAll() {
+    public List<Klient> findAll() {
         return jdbcTemplate.query("select * from restauracja.klient ORDER BY id_klienta",new KlientRowMapper());
     }
 
@@ -67,7 +66,7 @@ public class JdbcKlientRepository implements KlientRepository {
     }
 
     @Override
-    public Optional<DtoKlientResponse> findById(int id) {
-        return jdbcTemplate.queryForObject("select * from restauracja.klient where id_klienta = ?",new Object[]{id},(rs,rowNum) -> Optional.of(new DtoKlientResponse(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getInt(4))));
+    public Optional<Klient> findById(int id) {
+        return jdbcTemplate.queryForObject("select * from restauracja.klient where id_klienta = ?",new Object[]{id},(rs,rowNum) -> Optional.of(new Klient(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getInt(4))));
     }
 }

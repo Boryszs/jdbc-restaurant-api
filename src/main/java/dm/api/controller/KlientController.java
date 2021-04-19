@@ -4,10 +4,9 @@ package dm.api.controller;
 import dm.api.dto.request.DtoAddKlientRequest;
 import dm.api.dto.request.DtoKlientRequest;
 import dm.api.dto.request.DtoUpdateKlientRequest;
-import dm.api.dto.response.*;
-import dm.api.model.Adres;
-import dm.api.model.Klient;
-import dm.api.model.Osoba;
+import dm.api.dto.response.DtoError;
+import dm.api.dto.response.DtoKlientDataResponse;
+import dm.api.dto.response.DtoKlientResponse;
 import dm.api.service.AdresService;
 import dm.api.service.KlientService;
 import dm.api.service.OsobaService;
@@ -83,33 +82,36 @@ public class KlientController {
     @PostMapping(value = "/add")
     public ResponseEntity<Integer> addKlient(@RequestBody DtoKlientRequest klientRequest) {
         logger.info("Add klient");
+        klientService.save(klientRequest);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @PostMapping(value = "/add-klient")
     public ResponseEntity<Integer> add(@RequestBody DtoAddKlientRequest klientRequest) {
         logger.info("Add klient");
+        klientService.add(klientRequest);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @PutMapping(value = "/update/{id}")
     public ResponseEntity<Integer> addUpdate(@PathVariable(value="id") Integer id,@RequestBody DtoKlientRequest klientRequest) {
         logger.info("Update klient");
+        klientService.update(id,klientRequest);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @PutMapping(value = "/update-klient/{id}")
     public ResponseEntity<?> updateKlient(@PathVariable(value="id") Integer id, @RequestBody DtoUpdateKlientRequest klientRequest) {
         try{
-            System.out.println(klientRequest);
-            Klient klient = new Klient(id,klientRequest.getKlient().getLogin(),klientRequest.getKlient().getHaslo(),klientRequest.getKlient().getIdOsoby());
-            Osoba osoba = new Osoba(klientRequest.getKlient().getIdOsoby(),klientRequest.getOsoba().getImie(),klientRequest.getOsoba().getNazwisko(),klientRequest.getOsoba().getPesel(),klientRequest.getOsoba().getDataUrodzenia(),klientRequest.getOsoba().getEmail(),klientRequest.getOsoba().getTelefon(),klientRequest.getOsoba().getIdAdresu());
-            Adres adres = new Adres(klientRequest.getOsoba().getIdAdresu(),klientRequest.getAdres().getMiejscowosc(),klientRequest.getAdres().getUlica(),klientRequest.getAdres().getNrDomu(),klientRequest.getAdres().getKodPocztowy());
-            klientService.update(klient);
-            osobaService.update(osoba);
-            adresService.update(adres);
-            logger.info("Update klient");
-            return ResponseEntity.ok(klient);
+//            System.out.println(klientRequest);
+//            Klient klient = new Klient(id,klientRequest.getKlient().getLogin(),klientRequest.getKlient().getHaslo(),klientRequest.getKlient().getIdOsoby());
+//            Osoba osoba = new Osoba(klientRequest.getKlient().getIdOsoby(),klientRequest.getOsoba().getImie(),klientRequest.getOsoba().getNazwisko(),klientRequest.getOsoba().getPesel(),klientRequest.getOsoba().getDataUrodzenia(),klientRequest.getOsoba().getEmail(),klientRequest.getOsoba().getTelefon(),klientRequest.getOsoba().getIdAdresu());
+//            Adres adres = new Adres(klientRequest.getOsoba().getIdAdresu(),klientRequest.getAdres().getMiejscowosc(),klientRequest.getAdres().getUlica(),klientRequest.getAdres().getNrDomu(),klientRequest.getAdres().getKodPocztowy());
+//            klientService.update(klient);
+//            osobaService.update(osoba);
+//            adresService.update(adres);
+//            logger.info("Update klient");
+            return ResponseEntity.ok(null);
         } catch (EmptyResultDataAccessException e){
             logger.error(e.getMessage());
             return ResponseEntity.status(400).body(new DtoError("No find Klient on id: "+id));

@@ -13,5 +13,5 @@ public interface OsobaService {
     int update (Osoba osoba);
     int deleteById (int id);
     List<DtoOsobaResponse> findAll();
-    Optional<Osoba> findById(int id);
+    Optional<DtoOsobaResponse> findById(int id);
 }

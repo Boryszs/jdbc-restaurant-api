@@ -1,4 +1,4 @@
-package dm.api.mapper;
+package dm.api.mapper.impl;
 
 import dm.api.dto.response.DtoAdresResponse;
 import dm.api.dto.response.DtoOsobaResponse;

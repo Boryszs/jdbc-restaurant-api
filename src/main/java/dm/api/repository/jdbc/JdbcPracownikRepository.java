@@ -1,9 +1,8 @@
 package dm.api.repository.jdbc;
 
 import dm.api.dto.response.DtoPracownikDataResponse;
-import dm.api.dto.response.DtoPracownikResponse;
-import dm.api.mapper.PracownikRowListMapper;
-import dm.api.mapper.PracownikRowMapper;
+import dm.api.mapper.impl.PracownikRowListMapper;
+import dm.api.mapper.impl.PracownikRowMapper;
 import dm.api.model.Pracownik;
 import dm.api.repository.PracownikRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +44,7 @@ public class JdbcPracownikRepository implements PracownikRepository {
     }
 
     @Override
-    public List<DtoPracownikResponse> findAll() {
+    public List<Pracownik> findAll() {
         return jdbcTemplate.query("select * from restauracja.pracownik ORDER BY id_pracownika",new PracownikRowMapper());
     }
 

@@ -71,7 +71,7 @@ public class OsobaController {
     public ResponseEntity<?> getKlient(@PathVariable(value="id") Integer id) {
         logger.info("Get osoba on id {}",id);
         try {
-            Optional<Osoba> osoba = osobaService.findById(id);
+            Optional<DtoOsobaResponse> osoba = osobaService.findById(id);
             return ResponseEntity.ok(osoba.get());
         }catch (EmptyResultDataAccessException e){
             logger.error(e.getMessage());

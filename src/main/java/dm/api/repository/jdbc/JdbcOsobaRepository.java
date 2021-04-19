@@ -1,7 +1,6 @@
 package dm.api.repository.jdbc;
 
-import dm.api.dto.response.DtoOsobaResponse;
-import dm.api.mapper.OsobaRowMapper;
+import dm.api.mapper.impl.OsobaRowMapper;
 import dm.api.model.Osoba;
 import dm.api.repository.OsobaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,7 +69,7 @@ public class JdbcOsobaRepository implements OsobaRepository {
     }
 
     @Override
-    public List<DtoOsobaResponse> findAll() {
+    public List<Osoba> findAll() {
         return jdbcTemplate.query("select * from restauracja.osoba ORDER BY id_osoby",new OsobaRowMapper());
     }
 

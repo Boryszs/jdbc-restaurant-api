@@ -3,7 +3,6 @@ package dm.api.controller;
 import dm.api.dto.request.DtoAdresRequest;
 import dm.api.dto.response.DtoAdresResponse;
 import dm.api.dto.response.DtoError;
-import dm.api.model.Adres;
 import dm.api.service.AdresService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -45,7 +44,7 @@ public class AdresController {
 
     @PostMapping(value = "/add")
     public ResponseEntity<Integer> addAdres(@RequestBody DtoAdresRequest adresRequest) {
-        logger.info("Add adres",adresRequest.toString());
+        logger.info("Add adres");
         adresService.save(adresRequest);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
@@ -54,7 +53,7 @@ public class AdresController {
     public ResponseEntity<?> addUpdate(@PathVariable(value="id") Integer id,@RequestBody DtoAdresRequest adresRequest) {
         try{
             logger.info("Update adres");
-            return ResponseEntity.ok(adresService.update(new Adres(id,adresRequest.getMiejscowosc(),adresRequest.getUlica(),adresRequest.getNrDomu(),adresRequest.getKodPocztowy())));
+            return ResponseEntity.ok(adresService.update(id,adresRequest));
         } catch (EmptyResultDataAccessException e){
             logger.error(e.getMessage());
             return ResponseEntity.status(400).body(new DtoError("No find Adres on id: "+id));
