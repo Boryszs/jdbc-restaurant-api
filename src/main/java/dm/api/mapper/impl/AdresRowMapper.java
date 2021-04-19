@@ -12,25 +12,23 @@ import java.sql.SQLException;
 public class AdresRowMapper implements RowMapper<Adres>, Convert<Adres, DtoAdresRequest, DtoAdresResponse> {
     @Override
     public Adres mapRow(ResultSet resultSet, int i) throws SQLException {
-        Adres adres = new Adres().builder()
+        return new Adres().builder()
                 .idAdresu(resultSet.getInt("id_adresu"))
                 .miejscowosc(resultSet.getString("miejscowosc"))
                 .ulica(resultSet.getString("ulica"))
                 .nrDomu(resultSet.getString("nr_domu"))
                 .kodPocztowy(resultSet.getString("kod_pocztowy"))
                 .build();
-        return adres;
     }
 
     @Override
     public Adres convert(DtoAdresRequest adresRequest) {
-        Adres adres = new Adres().builder()
+        return new Adres().builder()
                 .miejscowosc(adresRequest.getMiejscowosc())
                 .ulica(adresRequest.getUlica())
                 .nrDomu(adresRequest.getNrDomu())
                 .kodPocztowy(adresRequest.getKodPocztowy())
                 .build();
-        return adres;
     }
 
     @Override
@@ -44,14 +42,13 @@ public class AdresRowMapper implements RowMapper<Adres>, Convert<Adres, DtoAdres
 
     @Override
     public DtoAdresResponse toDto(Adres adres) {
-       DtoAdresResponse dtoAdresResponse = new DtoAdresResponse().builder()
-                .idAdresu(adres.getIdAdresu())
-                .miejscowosc(adres.getMiejscowosc())
-                .ulica(adres.getUlica())
-                .nrDomu(adres.getNrDomu())
-                .kodPocztowy(adres.getKodPocztowy())
-                .build();
-       return dtoAdresResponse;
+        return new DtoAdresResponse().builder()
+                 .idAdresu(adres.getIdAdresu())
+                 .miejscowosc(adres.getMiejscowosc())
+                 .ulica(adres.getUlica())
+                 .nrDomu(adres.getNrDomu())
+                 .kodPocztowy(adres.getKodPocztowy())
+                 .build();
     }
 
 }

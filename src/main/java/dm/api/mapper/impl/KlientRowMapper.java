@@ -14,23 +14,20 @@ public class KlientRowMapper implements RowMapper<Klient>, Convert<Klient, DtoKl
     @Override
     public Klient mapRow(ResultSet resultSet, int i) throws SQLException {
 
-        Klient klient = new Klient().builder()
+        return new Klient().builder()
                 .idKlienta(resultSet.getInt("id_klienta"))
                 .login(resultSet.getString("login"))
                 .haslo(resultSet.getString("haslo"))
                 .idOsoby(resultSet.getInt("id_osoby"))
                 .build();
-
-        return klient;
     }
 
     @Override
     public Klient convert(DtoKlientRequest klientRequest) {
-        Klient klient = new Klient().builder().login(klientRequest.getLogin())
+        return new Klient().builder().login(klientRequest.getLogin())
                 .haslo(klientRequest.getHaslo())
                 .idOsoby(klientRequest.getIdOsoby())
                 .build();
-        return klient;
     }
 
     @Override
@@ -43,13 +40,12 @@ public class KlientRowMapper implements RowMapper<Klient>, Convert<Klient, DtoKl
 
     @Override
     public DtoKlientResponse toDto(Klient klient) {
-        DtoKlientResponse dtoKlientResponse = new DtoKlientResponse().builder()
+        return new DtoKlientResponse().builder()
                 .idKlienta(klient.getIdKlienta())
                 .login(klient.getLogin())
                 .haslo(klient.getHaslo())
                 .idOsoby(klient.getIdOsoby())
                 .build();
-        return dtoKlientResponse;
     }
 
 }

@@ -28,9 +28,9 @@ public class PracownikController {
 
     Logger logger = LoggerFactory.getLogger(PracownikController.class);
 
-    private PracownikService pracownikService;
-    private OsobaService osobaService;
-    private AdresService adresService;
+    private final PracownikService pracownikService;
+    private final OsobaService osobaService;
+    private final AdresService adresService;
 
     @Autowired
     public PracownikController(PracownikService pracownikService, OsobaService osobaService, AdresService adresService) {

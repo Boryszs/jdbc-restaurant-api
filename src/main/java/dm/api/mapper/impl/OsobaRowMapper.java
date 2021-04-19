@@ -14,7 +14,7 @@ public class OsobaRowMapper implements RowMapper<Osoba>, Convert<Osoba, DtoOsoba
     @Override
     public Osoba mapRow(ResultSet resultSet, int i) throws SQLException {
 
-        Osoba osoba = new Osoba().builder()
+        return new Osoba().builder()
                 .idOsoby(resultSet.getInt("id_osoby"))
                 .imie(resultSet.getString("imie"))
                 .nazwisko(resultSet.getString("nazwisko"))
@@ -24,13 +24,12 @@ public class OsobaRowMapper implements RowMapper<Osoba>, Convert<Osoba, DtoOsoba
                 .telefon(resultSet.getString("telefon"))
                 .idAdresu(resultSet.getInt("id_adresu"))
                 .build();
-
-        return osoba;
     }
 
     @Override
     public Osoba convert(DtoOsobaRequest osobaRequest) {
-        Osoba osoba = new Osoba().builder()
+
+        return new Osoba().builder()
                 .imie(osobaRequest.getImie())
                 .nazwisko(osobaRequest.getNazwisko())
                 .pesel(osobaRequest.getPesel())
@@ -39,8 +38,6 @@ public class OsobaRowMapper implements RowMapper<Osoba>, Convert<Osoba, DtoOsoba
                 .telefon(osobaRequest.getTelefon())
                 .idAdresu(osobaRequest.getIdAdresu())
                 .build();
-
-        return osoba;
     }
 
     @Override
@@ -59,7 +56,7 @@ public class OsobaRowMapper implements RowMapper<Osoba>, Convert<Osoba, DtoOsoba
 
     @Override
     public DtoOsobaResponse toDto(Osoba osoba) {
-        DtoOsobaResponse dtoOsobaResponse = new DtoOsobaResponse().builder()
+        return new DtoOsobaResponse().builder()
                 .idOsoby(osoba.getIdOsoby())
                 .imie(osoba.getImie())
                 .nazwisko(osoba.getNazwisko())
@@ -69,6 +66,5 @@ public class OsobaRowMapper implements RowMapper<Osoba>, Convert<Osoba, DtoOsoba
                 .telefon(osoba.getTelefon())
                 .idAdresu(osoba.getIdAdresu())
                 .build();
-        return dtoOsobaResponse;
     }
 }

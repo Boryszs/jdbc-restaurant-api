@@ -22,9 +22,9 @@ import java.util.Optional;
 @Service
 public class KlientServiceImpl implements KlientService {
 
-    private KlientRepository klientRepository;
-    private OsobaRepository osobaRepository;
-    private AdresRepository adresRepository;
+    private final KlientRepository klientRepository;
+    private final OsobaRepository osobaRepository;
+    private final AdresRepository adresRepository;
 
     @Autowired
     public KlientServiceImpl(KlientRepository klientRepository, OsobaRepository osobaRepository, AdresRepository adresRepository) {

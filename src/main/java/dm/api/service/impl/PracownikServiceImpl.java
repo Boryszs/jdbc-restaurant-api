@@ -22,9 +22,9 @@ import java.util.Optional;
 @Service
 public class PracownikServiceImpl implements PracownikService {
 
-    private PracownikRepository pracownikRepository;
-    private OsobaRepository osobaRepository;
-    private AdresRepository adresRepository;
+    private final PracownikRepository pracownikRepository;
+    private final OsobaRepository osobaRepository;
+    private final AdresRepository adresRepository;
 
     @Autowired
     public PracownikServiceImpl(PracownikRepository pracownikRepository, OsobaRepository osobaRepository, AdresRepository adresRepository) {

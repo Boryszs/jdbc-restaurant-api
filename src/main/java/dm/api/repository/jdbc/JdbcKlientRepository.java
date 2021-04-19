@@ -15,7 +15,7 @@ import java.util.Optional;
 @Repository
 public class JdbcKlientRepository implements KlientRepository {
 
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
     @Autowired
     public JdbcKlientRepository(JdbcTemplate jdbcTemplate) {

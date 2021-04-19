@@ -14,7 +14,7 @@ import java.util.Optional;
 @Repository
 public class JdbcPracownikRepository implements PracownikRepository {
 
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
     @Autowired
     public JdbcPracownikRepository(JdbcTemplate jdbcTemplate) {

@@ -15,7 +15,7 @@ import java.util.Optional;
 @Service
 public class AdresServiceImpl implements AdresService {
 
-    private AdresRepository adresRepository;
+    private final AdresRepository adresRepository;
 
     @Autowired
     public AdresServiceImpl(AdresRepository adresRepository) {

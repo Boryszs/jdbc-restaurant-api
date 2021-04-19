@@ -28,9 +28,9 @@ public class KlientController {
 
     Logger logger = LoggerFactory.getLogger(KlientController.class);
 
-    private KlientService klientService;
-    private OsobaService osobaService;
-    private AdresService adresService;
+    private final KlientService klientService;
+    private final OsobaService osobaService;
+    private final AdresService adresService;
 
     @Autowired
     public KlientController(KlientService klientService, OsobaService osobaService, AdresService adresService) {

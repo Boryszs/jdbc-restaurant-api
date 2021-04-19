@@ -15,7 +15,7 @@ import java.util.Optional;
 @Service
 public class OsobaServiceImpl implements OsobaService {
 
-   private OsobaRepository osobaRepository;
+   private final OsobaRepository osobaRepository;
 
    @Autowired
     public OsobaServiceImpl(OsobaRepository osobaRepository) {

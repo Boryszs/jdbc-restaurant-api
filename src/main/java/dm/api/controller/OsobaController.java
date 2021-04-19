@@ -21,7 +21,7 @@ public class OsobaController {
 
     Logger logger = LoggerFactory.getLogger(OsobaController.class);
 
-    private OsobaService osobaService;
+    private final OsobaService osobaService;
 
     @Autowired
     public OsobaController(OsobaService osobaService) {

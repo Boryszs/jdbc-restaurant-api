@@ -10,9 +10,7 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
-import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 import java.util.Optional;
@@ -20,7 +18,7 @@ import java.util.Optional;
 @Repository
 public class JdbcOsobaRepository implements OsobaRepository {
 
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
     @Autowired
     public JdbcOsobaRepository(JdbcTemplate jdbcTemplate) {
@@ -35,20 +33,16 @@ public class JdbcOsobaRepository implements OsobaRepository {
     @Override
     public int save(Osoba osoba) {
         final KeyHolder holder = new GeneratedKeyHolder();
-        final PreparedStatementCreator preparedStatementCreator = new PreparedStatementCreator(){
-
-            @Override
-            public PreparedStatement createPreparedStatement(final Connection connection) throws SQLException {
-                final PreparedStatement preparedStatement = connection.prepareStatement("insert into restauracja.osoba(imie,nazwisko,pesel,data_urodzenia,email,telefon,id_adresu) values(?,?,?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
-                preparedStatement.setString(1,osoba.getImie());
-                preparedStatement.setString(2,osoba.getNazwisko());
-                preparedStatement.setString(3,osoba.getPesel());
-                preparedStatement.setDate(4,new java.sql.Date(osoba.getDataUrodzenia().getTime()));
-                preparedStatement.setString(5,osoba.getEmail());
-                preparedStatement.setString(6,osoba.getTelefon());
-                preparedStatement.setInt(7,osoba.getIdAdresu());
-                return preparedStatement;
-            }
+        final PreparedStatementCreator preparedStatementCreator = connection -> {
+            final PreparedStatement preparedStatement = connection.prepareStatement("insert into restauracja.osoba(imie,nazwisko,pesel,data_urodzenia,email,telefon,id_adresu) values(?,?,?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
+            preparedStatement.setString(1,osoba.getImie());
+            preparedStatement.setString(2,osoba.getNazwisko());
+            preparedStatement.setString(3,osoba.getPesel());
+            preparedStatement.setDate(4,new java.sql.Date(osoba.getDataUrodzenia().getTime()));
+            preparedStatement.setString(5,osoba.getEmail());
+            preparedStatement.setString(6,osoba.getTelefon());
+            preparedStatement.setInt(7,osoba.getIdAdresu());
+            return preparedStatement;
         };
 
         jdbcTemplate.update(preparedStatementCreator,holder);
