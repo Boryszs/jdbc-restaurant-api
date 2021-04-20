@@ -5,11 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
-public class DtoAdresResponse {
+public class DtoAdresResponse implements Serializable {
 
     private Integer idAdresu;
     private String miejscowosc;

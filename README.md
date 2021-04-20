@@ -6,3 +6,9 @@ Simple Server crud operation on restaurant database.
 http://localhost:8080/swagger-ui.html
 ```
 
+Technology:  
+   - Java  
+   - Spring Boot   
+   - Hibernate / Spring Data JPA 
+   - Swagger  
+   - PostgreSQL

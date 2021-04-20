@@ -5,13 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
-public class DtoOsobaRequest {
+public class DtoOsobaRequest implements Serializable {
 
     private String imie;
     private String nazwisko;

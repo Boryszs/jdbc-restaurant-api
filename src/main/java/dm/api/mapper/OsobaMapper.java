@@ -1,30 +1,12 @@
-package dm.api.mapper.impl;
+package dm.api.mapper;
 
 import dm.api.dto.request.DtoOsobaRequest;
 import dm.api.dto.response.DtoOsobaResponse;
-import dm.api.mapper.Convert;
 import dm.api.model.Osoba;
-import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-public class OsobaRowMapper implements RowMapper<Osoba>, Convert<Osoba, DtoOsobaRequest, DtoOsobaResponse> {
-
-    @Override
-    public Osoba mapRow(ResultSet resultSet, int i) throws SQLException {
-
-        return new Osoba().builder()
-                .idOsoby(resultSet.getInt("id_osoby"))
-                .imie(resultSet.getString("imie"))
-                .nazwisko(resultSet.getString("nazwisko"))
-                .pesel(resultSet.getString("pesel"))
-                .dataUrodzenia(resultSet.getDate("data_urodzenia"))
-                .email(resultSet.getString("email"))
-                .telefon(resultSet.getString("telefon"))
-                .idAdresu(resultSet.getInt("id_adresu"))
-                .build();
-    }
+@Component
+public class OsobaMapper implements Convert<Osoba, DtoOsobaRequest, DtoOsobaResponse> {
 
     @Override
     public Osoba convert(DtoOsobaRequest osobaRequest) {

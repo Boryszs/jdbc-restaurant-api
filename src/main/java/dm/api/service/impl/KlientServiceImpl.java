@@ -4,7 +4,7 @@ import dm.api.dto.request.DtoAddKlientRequest;
 import dm.api.dto.request.DtoKlientRequest;
 import dm.api.dto.response.DtoKlientDataResponse;
 import dm.api.dto.response.DtoKlientResponse;
-import dm.api.mapper.impl.KlientRowMapper;
+import dm.api.mapper.Convert;
 import dm.api.model.Adres;
 import dm.api.model.Klient;
 import dm.api.model.Osoba;
@@ -25,12 +25,14 @@ public class KlientServiceImpl implements KlientService {
     private final KlientRepository klientRepository;
     private final OsobaRepository osobaRepository;
     private final AdresRepository adresRepository;
+    private final Convert<Klient, DtoKlientRequest,DtoKlientResponse> klientMapper;
 
     @Autowired
-    public KlientServiceImpl(KlientRepository klientRepository, OsobaRepository osobaRepository, AdresRepository adresRepository) {
+    public KlientServiceImpl(KlientRepository klientRepository, OsobaRepository osobaRepository, AdresRepository adresRepository, Convert<Klient, DtoKlientRequest, DtoKlientResponse> klientMapper) {
         this.klientRepository = klientRepository;
         this.osobaRepository = osobaRepository;
         this.adresRepository = adresRepository;
+        this.klientMapper = klientMapper;
     }
 
     @Override
@@ -40,12 +42,12 @@ public class KlientServiceImpl implements KlientService {
 
     @Override
     public void save(DtoKlientRequest dtoKlientRequest) {
-         klientRepository.save(new KlientRowMapper().convert(dtoKlientRequest));
+         klientRepository.save(klientMapper.convert(dtoKlientRequest));
     }
 
     @Override
     public void update(Integer id,DtoKlientRequest dtoKlientRequest) {
-         klientRepository.update(new KlientRowMapper().update(klientRepository.findById(id).get(),dtoKlientRequest));
+         klientRepository.update(klientMapper.update(klientRepository.findById(id).get(),dtoKlientRequest));
     }
 
     @Override
@@ -68,7 +70,7 @@ public class KlientServiceImpl implements KlientService {
     @Override
     public List<DtoKlientResponse> findAll() {
         List<DtoKlientResponse> klientResponseList = new LinkedList<>();
-        klientRepository.findAll().stream().map(klient -> new KlientRowMapper().toDto(klient)).forEach(klientResponseList::add);
+        klientRepository.findAll().stream().map(klient -> klientMapper.toDto(klient)).forEach(klientResponseList::add);
         return klientResponseList;
     }
 
@@ -84,6 +86,6 @@ public class KlientServiceImpl implements KlientService {
 
     @Override
     public Optional<DtoKlientResponse> findById(int id) {
-        return  Optional.of(new KlientRowMapper().toDto(klientRepository.findById(id).get()));
+        return  Optional.of(klientMapper.toDto(klientRepository.findById(id).get()));
     }
 }

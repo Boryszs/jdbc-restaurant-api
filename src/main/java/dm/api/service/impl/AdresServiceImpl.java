@@ -2,7 +2,8 @@ package dm.api.service.impl;
 
 import dm.api.dto.request.DtoAdresRequest;
 import dm.api.dto.response.DtoAdresResponse;
-import dm.api.mapper.impl.AdresRowMapper;
+import dm.api.mapper.Convert;
+import dm.api.model.Adres;
 import dm.api.repository.AdresRepository;
 import dm.api.service.AdresService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,10 +17,12 @@ import java.util.Optional;
 public class AdresServiceImpl implements AdresService {
 
     private final AdresRepository adresRepository;
+    private final Convert<Adres, DtoAdresRequest, DtoAdresResponse> addreMapper;
 
     @Autowired
-    public AdresServiceImpl(AdresRepository adresRepository) {
+    public AdresServiceImpl(AdresRepository adresRepository, Convert<Adres, DtoAdresRequest, DtoAdresResponse> addreMapper) {
         this.adresRepository = adresRepository;
+        this.addreMapper = addreMapper;
     }
 
     @Override
@@ -29,12 +32,12 @@ public class AdresServiceImpl implements AdresService {
 
     @Override
     public int save(DtoAdresRequest dtoAdresRequest) {
-        return adresRepository.save(new AdresRowMapper().convert(dtoAdresRequest));
+        return adresRepository.save(addreMapper.convert(dtoAdresRequest));
     }
 
     @Override
     public int update(Integer id, DtoAdresRequest dtoAdresRequest) {
-        return adresRepository.update(new AdresRowMapper().update(adresRepository.findById(id).get(),dtoAdresRequest));
+        return adresRepository.update(addreMapper.update(adresRepository.findById(id).get(),dtoAdresRequest));
     }
 
     @Override
@@ -45,12 +48,12 @@ public class AdresServiceImpl implements AdresService {
     @Override
     public List<DtoAdresResponse> findAll() {
         List<DtoAdresResponse> adresResponseList = new LinkedList<>();
-        adresRepository.findAll().stream().map(adres -> new AdresRowMapper().toDto(adres)).forEach(adresResponseList::add);
+        adresRepository.findAll().stream().map(adres -> addreMapper.toDto(adres)).forEach(adresResponseList::add);
         return adresResponseList;
     }
 
     @Override
     public Optional<DtoAdresResponse> findById(int id) {
-        return Optional.of(new AdresRowMapper().toDto(adresRepository.findById(id).get()));
+        return Optional.of(addreMapper.toDto(adresRepository.findById(id).get()));
     }
 }

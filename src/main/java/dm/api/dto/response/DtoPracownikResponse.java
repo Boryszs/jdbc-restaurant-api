@@ -5,11 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
-public class DtoPracownikResponse {
+public class DtoPracownikResponse implements Serializable {
 
     private Integer idPracownika;
     private Double pensja;

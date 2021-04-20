@@ -5,11 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
-public class DtoKlientResponse {
+public class DtoKlientResponse implements Serializable {
 
     private Integer idKlienta;
     private String login;

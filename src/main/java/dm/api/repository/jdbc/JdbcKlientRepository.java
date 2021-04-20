@@ -1,8 +1,8 @@
 package dm.api.repository.jdbc;
 
 import dm.api.dto.response.DtoKlientDataResponse;
-import dm.api.mapper.impl.KlientRowListMapper;
-import dm.api.mapper.impl.KlientRowMapper;
+import dm.api.mapper.row.KlientRowListMapper;
+import dm.api.mapper.row.KlientRowMapper;
 import dm.api.model.Klient;
 import dm.api.repository.KlientRepository;
 import org.springframework.beans.factory.annotation.Autowired;

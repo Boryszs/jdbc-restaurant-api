@@ -4,7 +4,7 @@ import dm.api.dto.request.DtoAddPracownikRequest;
 import dm.api.dto.request.DtoPracownikRequest;
 import dm.api.dto.response.DtoPracownikDataResponse;
 import dm.api.dto.response.DtoPracownikResponse;
-import dm.api.mapper.impl.PracownikRowMapper;
+import dm.api.mapper.Convert;
 import dm.api.model.Adres;
 import dm.api.model.Osoba;
 import dm.api.model.Pracownik;
@@ -25,12 +25,14 @@ public class PracownikServiceImpl implements PracownikService {
     private final PracownikRepository pracownikRepository;
     private final OsobaRepository osobaRepository;
     private final AdresRepository adresRepository;
+    private final Convert<Pracownik, DtoPracownikRequest, DtoPracownikResponse> pracownikMapper;
 
     @Autowired
-    public PracownikServiceImpl(PracownikRepository pracownikRepository, OsobaRepository osobaRepository, AdresRepository adresRepository) {
+    public PracownikServiceImpl(PracownikRepository pracownikRepository, OsobaRepository osobaRepository, AdresRepository adresRepository, Convert<Pracownik, DtoPracownikRequest, DtoPracownikResponse> pracownikMapper) {
         this.pracownikRepository = pracownikRepository;
         this.osobaRepository = osobaRepository;
         this.adresRepository = adresRepository;
+        this.pracownikMapper = pracownikMapper;
     }
 
     @Override
@@ -40,12 +42,12 @@ public class PracownikServiceImpl implements PracownikService {
 
     @Override
     public void save(DtoPracownikRequest dtoPracownikResponse) {
-        pracownikRepository.save(new PracownikRowMapper().convert(dtoPracownikResponse));
+        pracownikRepository.save(pracownikMapper.convert(dtoPracownikResponse));
     }
 
     @Override
     public void update(Integer id,DtoPracownikRequest dtoPracownikRequest) {
-         pracownikRepository.update(new PracownikRowMapper().update(pracownikRepository.findById(id).get(),dtoPracownikRequest));
+         pracownikRepository.update(pracownikMapper.update(pracownikRepository.findById(id).get(),dtoPracownikRequest));
     }
 
     @Override
@@ -63,7 +65,7 @@ public class PracownikServiceImpl implements PracownikService {
     @Override
     public List<DtoPracownikResponse> findAll() {
         List<DtoPracownikResponse> pracownikResponseList = new LinkedList<>();
-        pracownikRepository.findAll().stream().map(pracownik -> new PracownikRowMapper().toDto(pracownik)).forEach(pracownikResponseList::add);
+        pracownikRepository.findAll().stream().map(pracownik -> pracownikMapper.toDto(pracownik)).forEach(pracownikResponseList::add);
         return pracownikResponseList;
     }
 

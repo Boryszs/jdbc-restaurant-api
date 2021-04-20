@@ -1,26 +1,12 @@
-package dm.api.mapper.impl;
+package dm.api.mapper;
 
 import dm.api.dto.request.DtoKlientRequest;
 import dm.api.dto.response.DtoKlientResponse;
-import dm.api.mapper.Convert;
 import dm.api.model.Klient;
-import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-public class KlientRowMapper implements RowMapper<Klient>, Convert<Klient, DtoKlientRequest,DtoKlientResponse> {
-
-    @Override
-    public Klient mapRow(ResultSet resultSet, int i) throws SQLException {
-
-        return new Klient().builder()
-                .idKlienta(resultSet.getInt("id_klienta"))
-                .login(resultSet.getString("login"))
-                .haslo(resultSet.getString("haslo"))
-                .idOsoby(resultSet.getInt("id_osoby"))
-                .build();
-    }
+@Component
+public class KlientMapper implements Convert<Klient, DtoKlientRequest,DtoKlientResponse> {
 
     @Override
     public Klient convert(DtoKlientRequest klientRequest) {

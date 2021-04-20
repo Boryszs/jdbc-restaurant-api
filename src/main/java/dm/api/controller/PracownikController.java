@@ -89,7 +89,6 @@ public class PracownikController {
     @PostMapping(value = "/add-pracownik")
     public ResponseEntity add(@RequestBody DtoAddPracownikRequest klientRequest) {
         logger.info("Add pracownik");
-        logger.info(klientRequest.toString());
         pracownikService.add(klientRequest);
         return new ResponseEntity(HttpStatus.CREATED);
     }

@@ -1,24 +1,12 @@
-package dm.api.mapper.impl;
+package dm.api.mapper;
 
 import dm.api.dto.request.DtoPracownikRequest;
 import dm.api.dto.response.DtoPracownikResponse;
-import dm.api.mapper.Convert;
 import dm.api.model.Pracownik;
-import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-public class PracownikRowMapper implements RowMapper<Pracownik>, Convert<Pracownik, DtoPracownikRequest, DtoPracownikResponse> {
-    @Override
-    public Pracownik mapRow(ResultSet resultSet, int i) throws SQLException {
-        return new Pracownik().builder()
-                .idPracownika(resultSet.getInt("id_pracownika"))
-                .pensja(resultSet.getDouble("pensja"))
-                .rola(resultSet.getString("rola"))
-                .idOsoby(resultSet.getInt("id_osoby"))
-                .build();
-    }
+@Component
+public class PracownikMapper implements Convert<Pracownik, DtoPracownikRequest, DtoPracownikResponse> {
 
     @Override
     public Pracownik convert(DtoPracownikRequest dtoPracownikRequest) {

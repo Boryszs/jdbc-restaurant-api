@@ -5,11 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
-public class DtoAdresRequest {
+public class DtoAdresRequest implements Serializable {
 
     private String miejscowosc;
     private String ulica;
