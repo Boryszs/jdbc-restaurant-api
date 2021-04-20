@@ -1,4 +1,4 @@
-package dm.api.mapper.row;
+package dm.api.mapper.impl.row;
 
 import dm.api.model.Klient;
 import org.springframework.jdbc.core.RowMapper;

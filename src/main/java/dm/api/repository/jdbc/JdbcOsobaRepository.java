@@ -1,6 +1,6 @@
 package dm.api.repository.jdbc;
 
-import dm.api.mapper.row.OsobaRowMapper;
+import dm.api.mapper.impl.row.OsobaRowMapper;
 import dm.api.model.Osoba;
 import dm.api.repository.OsobaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

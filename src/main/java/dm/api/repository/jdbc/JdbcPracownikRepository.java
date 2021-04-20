@@ -1,8 +1,8 @@
 package dm.api.repository.jdbc;
 
 import dm.api.dto.response.DtoPracownikDataResponse;
-import dm.api.mapper.row.PracownikRowListMapper;
-import dm.api.mapper.row.PracownikRowMapper;
+import dm.api.mapper.impl.row.PracownikRowListMapper;
+import dm.api.mapper.impl.row.PracownikRowMapper;
 import dm.api.model.Pracownik;
 import dm.api.repository.PracownikRepository;
 import org.springframework.beans.factory.annotation.Autowired;

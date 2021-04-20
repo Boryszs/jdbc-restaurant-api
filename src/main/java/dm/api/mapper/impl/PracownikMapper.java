@@ -1,7 +1,8 @@
-package dm.api.mapper;
+package dm.api.mapper.impl;
 
 import dm.api.dto.request.DtoPracownikRequest;
 import dm.api.dto.response.DtoPracownikResponse;
+import dm.api.mapper.Convert;
 import dm.api.model.Pracownik;
 import org.springframework.stereotype.Component;
 

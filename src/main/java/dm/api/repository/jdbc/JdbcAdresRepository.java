@@ -1,6 +1,6 @@
 package dm.api.repository.jdbc;
 
-import dm.api.mapper.row.AdresRowMapper;
+import dm.api.mapper.impl.row.AdresRowMapper;
 import dm.api.model.Adres;
 import dm.api.repository.AdresRepository;
 import org.springframework.beans.factory.annotation.Autowired;

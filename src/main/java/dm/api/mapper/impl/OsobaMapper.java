@@ -1,7 +1,8 @@
-package dm.api.mapper;
+package dm.api.mapper.impl;
 
 import dm.api.dto.request.DtoOsobaRequest;
 import dm.api.dto.response.DtoOsobaResponse;
+import dm.api.mapper.Convert;
 import dm.api.model.Osoba;
 import org.springframework.stereotype.Component;
 
