@@ -29,7 +29,7 @@ public class JdbcCustomerRepository implements CustomerRepository {
 
     @Override
     public void save(Customer customer) {
-         jdbcTemplate.update("insert into restauracja.klient(login,haslo,id_osoby) values(?,crypt(?, gen_salt('md5')),?)", customer.getLogin(), customer.getPassword(), customer.getIdPerson());
+         jdbcTemplate.update("insert into restauracja.klient(login,haslo,id_osoby) values(?,crypt(?, gen_salt('md5')),?)", customer.getLogin(), customer.getPassword(), customer.getPerson().getIdPerson());
     }
 
     @Override
@@ -66,6 +66,6 @@ public class JdbcCustomerRepository implements CustomerRepository {
 
     @Override
     public Optional<Customer> findById(int id) {
-        return jdbcTemplate.queryForObject("select * from restauracja.klient where id_klienta = ?",new Object[]{id},(rs,rowNum) -> Optional.of(new Customer(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getInt(4))));
+        return jdbcTemplate.queryForObject("select * from restauracja.klient where id_klienta = ?",new Object[]{id},(rs,rowNum) -> Optional.of(new Customer(rs.getInt(1),rs.getString(2),rs.getString(3))));
     }
 }

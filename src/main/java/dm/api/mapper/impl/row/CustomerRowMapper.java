@@ -15,7 +15,6 @@ public class CustomerRowMapper implements RowMapper<Customer> {
                 .idCustomer(resultSet.getInt("id_klienta"))
                 .login(resultSet.getString("login"))
                 .password(resultSet.getString("haslo"))
-                .idPerson(resultSet.getInt("id_osoby"))
                 .build();
     }
 }

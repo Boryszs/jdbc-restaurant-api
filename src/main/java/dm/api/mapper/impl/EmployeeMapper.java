@@ -14,7 +14,6 @@ public class EmployeeMapper implements Convert<Employee, DtoEmployeeRequest, Dto
         return new Employee().builder()
                 .salary(dtoEmployeeRequest.getSalary())
                 .role(dtoEmployeeRequest.getRole())
-                .idPerson(dtoEmployeeRequest.getIdPerson())
                 .build();
     }
 
@@ -22,7 +21,6 @@ public class EmployeeMapper implements Convert<Employee, DtoEmployeeRequest, Dto
     public Employee update(Employee employee, DtoEmployeeRequest dtoEmployeeRequest) {
         employee.setSalary(dtoEmployeeRequest.getSalary());
         employee.setRole(dtoEmployeeRequest.getRole());
-        employee.setIdPerson(dtoEmployeeRequest.getIdPerson());
         return employee;
     }
 
@@ -32,6 +30,6 @@ public class EmployeeMapper implements Convert<Employee, DtoEmployeeRequest, Dto
                 .idEmployee(employee.getIdEmployee())
                 .salary(employee.getSalary())
                 .role(employee.getRole())
-                .idPerson(employee.getIdPerson()).build();
+                .idPerson(employee.getPerson().getIdPerson()).build();
     }
 }

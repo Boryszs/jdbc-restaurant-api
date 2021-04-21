@@ -9,8 +9,14 @@ import lombok.*;
 @EqualsAndHashCode
 public class Employee {
 
+    public Employee(Integer idEmployee, Double salary, String role) {
+        this.idEmployee = idEmployee;
+        this.salary = salary;
+        this.role = role;
+    }
+
     private Integer idEmployee;
     private Double salary;
     private String role;
-    private Integer idPerson;
+    private Person person;
 }

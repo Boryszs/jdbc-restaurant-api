@@ -19,7 +19,6 @@ public class PersonRowMapper implements RowMapper<Person>{
                 .dateBirthday(resultSet.getDate("data_urodzenia"))
                 .email(resultSet.getString("email"))
                 .telephone(resultSet.getString("telefon"))
-                .idAddress(resultSet.getInt("id_adresu"))
                 .build();
     }
 }

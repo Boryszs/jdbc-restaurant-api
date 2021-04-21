@@ -58,8 +58,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void add(DtoAddEmployeeRequest dtoAddEmployeeRequest) {
         Integer idAddress = addressRepository.save(new Address(null, dtoAddEmployeeRequest.getAddress().getTown(), dtoAddEmployeeRequest.getAddress().getStreet(), dtoAddEmployeeRequest.getAddress().getNrHome(), dtoAddEmployeeRequest.getAddress().getPostCode()));
-        Integer idPerson = personRepository.save(new Person(null, dtoAddEmployeeRequest.getPerson().getName(), dtoAddEmployeeRequest.getPerson().getSurname(), dtoAddEmployeeRequest.getPerson().getPesel(), dtoAddEmployeeRequest.getPerson().getDateBirthday(), dtoAddEmployeeRequest.getPerson().getEmail(), dtoAddEmployeeRequest.getPerson().getTelephone(),idAddress));
-        employeeRepository.save(new Employee(null, dtoAddEmployeeRequest.getSalary(), dtoAddEmployeeRequest.getRole(),idPerson));
+        Integer idPerson = personRepository.save(new Person(null, dtoAddEmployeeRequest.getPerson().getName(), dtoAddEmployeeRequest.getPerson().getSurname(), dtoAddEmployeeRequest.getPerson().getPesel(), dtoAddEmployeeRequest.getPerson().getDateBirthday(), dtoAddEmployeeRequest.getPerson().getEmail(), dtoAddEmployeeRequest.getPerson().getTelephone(),addressRepository.findById(idAddress).get()));
+        employeeRepository.save(new Employee(null, dtoAddEmployeeRequest.getSalary(), dtoAddEmployeeRequest.getRole(),personRepository.findById(idPerson).get()));
     }
 
     @Override

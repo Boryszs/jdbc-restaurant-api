@@ -11,6 +11,16 @@ import java.util.Date;
 @EqualsAndHashCode
 public class Person {
 
+    public Person(Integer idPerson, String name, String surname, String pesel, Date dateBirthday, String email, String telephone) {
+        this.idPerson = idPerson;
+        this.name = name;
+        this.surname = surname;
+        this.pesel = pesel;
+        this.dateBirthday = dateBirthday;
+        this.email = email;
+        this.telephone = telephone;
+    }
+
     private Integer idPerson;
     private String name;
     private String surname;
@@ -18,5 +28,5 @@ public class Person {
     private Date dateBirthday;
     private String email;
     private String telephone;
-    private Integer idAddress;
+    private Address address;
 }

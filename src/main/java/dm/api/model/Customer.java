@@ -9,8 +9,15 @@ import lombok.*;
 @EqualsAndHashCode
 public class Customer {
 
+
+    public Customer(Integer idCustomer, String login, String password) {
+        this.idCustomer = idCustomer;
+        this.login = login;
+        this.password = password;
+    }
+
     private Integer idCustomer;
     private String login;
     private String password;
-    private Integer idPerson;
+    private Person person;
 }

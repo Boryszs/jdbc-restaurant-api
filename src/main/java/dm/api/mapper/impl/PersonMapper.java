@@ -19,7 +19,6 @@ public class PersonMapper implements Convert<Person, DtoPersonRequest, DtoPerson
                 .dateBirthday(osobaRequest.getDateBirthday())
                 .email(osobaRequest.getEmail())
                 .telephone(osobaRequest.getTelephone())
-                .idAddress(osobaRequest.getIdPerson())
                 .build();
     }
 
@@ -31,7 +30,6 @@ public class PersonMapper implements Convert<Person, DtoPersonRequest, DtoPerson
         person.setDateBirthday(osobaRequest.getDateBirthday());
         person.setEmail(osobaRequest.getEmail());
         person.setTelephone(osobaRequest.getTelephone());
-        person.setIdAddress(osobaRequest.getIdPerson());
 
         return person;
 
@@ -47,7 +45,7 @@ public class PersonMapper implements Convert<Person, DtoPersonRequest, DtoPerson
                 .dateBirthday(person.getDateBirthday())
                 .email(person.getEmail())
                 .telephone(person.getTelephone())
-                .idAddress(person.getIdAddress())
+                .idAddress(person.getAddress().getIdAddress())
                 .build();
     }
 }

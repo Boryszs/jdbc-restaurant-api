@@ -41,7 +41,7 @@ public class JdbcPersonRepository implements PersonRepository {
             preparedStatement.setDate(4,new java.sql.Date(person.getDateBirthday().getTime()));
             preparedStatement.setString(5, person.getEmail());
             preparedStatement.setString(6, person.getTelephone());
-            preparedStatement.setInt(7, person.getIdAddress());
+            preparedStatement.setInt(7, person.getAddress().getIdAddress());
             return preparedStatement;
         };
 
@@ -52,7 +52,7 @@ public class JdbcPersonRepository implements PersonRepository {
 
     @Override
     public int update(Person person) {
-        return jdbcTemplate.update("update restauracja.osoba set imie = ?,nazwisko = ? ,pesel = ?,data_urodzenia = ?,email = ?,telefon = ?,id_adresu = ? where id_osoby = ?", person.getName(), person.getSurname(), person.getPesel(), person.getDateBirthday(), person.getEmail(), person.getTelephone(), person.getIdAddress(), person.getIdPerson());
+        return jdbcTemplate.update("update restauracja.osoba set imie = ?,nazwisko = ? ,pesel = ?,data_urodzenia = ?,email = ?,telefon = ?,id_adresu = ? where id_osoby = ?", person.getName(), person.getSurname(), person.getPesel(), person.getDateBirthday(), person.getEmail(), person.getTelephone(), person.getAddress().getIdAddress(), person.getIdPerson());
     }
 
     @Override
@@ -69,6 +69,6 @@ public class JdbcPersonRepository implements PersonRepository {
 
     @Override
     public Optional<Person> findById(int id) {
-        return jdbcTemplate.queryForObject("select * from restauracja.osoba where id_osoby = ?",new Object[]{id},(rs,rowNum) -> Optional.of(new Person(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5),rs.getString(6),rs.getString(7),rs.getInt(8))));
+        return jdbcTemplate.queryForObject("select * from restauracja.osoba where id_osoby = ?",new Object[]{id},(rs,rowNum) -> Optional.of(new Person(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5),rs.getString(6),rs.getString(7))));
     }
 }

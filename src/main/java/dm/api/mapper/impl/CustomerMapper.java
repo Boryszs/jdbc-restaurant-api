@@ -13,7 +13,6 @@ public class CustomerMapper implements Convert<Customer, DtoCustomerRequest, Dto
     public Customer convert(DtoCustomerRequest klientRequest) {
         return new Customer().builder().login(klientRequest.getLogin())
                 .password(klientRequest.getPassword())
-                .idPerson(klientRequest.getIdPerson())
                 .build();
     }
 
@@ -21,7 +20,6 @@ public class CustomerMapper implements Convert<Customer, DtoCustomerRequest, Dto
     public Customer update(Customer customer, DtoCustomerRequest dtoCustomerRequest) {
         customer.setLogin(dtoCustomerRequest.getLogin());
         customer.setPassword(dtoCustomerRequest.getPassword());
-        customer.setIdPerson(dtoCustomerRequest.getIdPerson());
         return customer;
     }
 
@@ -31,7 +29,7 @@ public class CustomerMapper implements Convert<Customer, DtoCustomerRequest, Dto
                 .idCustomer(customer.getIdCustomer())
                 .login(customer.getLogin())
                 .password(customer.getPassword())
-                .idPerson(customer.getIdPerson())
+                .idPerson(customer.getPerson().getIdPerson())
                 .build();
     }
 

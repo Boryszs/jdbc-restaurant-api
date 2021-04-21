@@ -20,3 +20,7 @@
 2021-04-20 13:32:42 [http-nio-8080-exec-2] INFO  dm.api.controller.PersonController - Get all person
 2021-04-20 13:32:53 [http-nio-8080-exec-6] INFO  dm.api.controller.EmployeeController - Get all employee
 2021-04-20 13:33:01 [http-nio-8080-exec-5] INFO  dm.api.controller.EmployeeController - Get all employee data
+2021-04-21 17:22:42 [main] INFO  dm.api.ApiApplication - Starting ApiApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 14084 (C:\Users\ideapad\Desktop\java\api\api\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\api\api)
+2021-04-21 17:22:42 [main] DEBUG dm.api.ApiApplication - Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-21 17:22:42 [main] INFO  dm.api.ApiApplication - No active profile set, falling back to default profiles: default
+2021-04-21 17:22:45 [main] INFO  dm.api.ApiApplication - Started ApiApplication in 2.724 seconds (JVM running for 3.641)

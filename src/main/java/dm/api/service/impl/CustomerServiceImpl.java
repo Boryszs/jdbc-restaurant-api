@@ -63,8 +63,8 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public void add(DtoAddCustomerRequest dtoAddCustomerRequest) {
        Integer idAddress = addressRepository.save(new Address(null, dtoAddCustomerRequest.getAddress().getTown(), dtoAddCustomerRequest.getAddress().getStreet(), dtoAddCustomerRequest.getAddress().getNrHome(), dtoAddCustomerRequest.getAddress().getPostCode()));
-       Integer idPerson = personRepository.save(new Person(null, dtoAddCustomerRequest.getPerson().getName(), dtoAddCustomerRequest.getPerson().getSurname(), dtoAddCustomerRequest.getPerson().getPesel(), dtoAddCustomerRequest.getPerson().getDateBirthday(), dtoAddCustomerRequest.getPerson().getEmail(), dtoAddCustomerRequest.getPerson().getTelephone(),idAddress));
-       customerRepository.save(new Customer(null, dtoAddCustomerRequest.getLogin(), dtoAddCustomerRequest.getPassword(),idPerson));
+       Integer idPerson = personRepository.save(new Person(null, dtoAddCustomerRequest.getPerson().getName(), dtoAddCustomerRequest.getPerson().getSurname(), dtoAddCustomerRequest.getPerson().getPesel(), dtoAddCustomerRequest.getPerson().getDateBirthday(), dtoAddCustomerRequest.getPerson().getEmail(), dtoAddCustomerRequest.getPerson().getTelephone(),addressRepository.findById(idAddress).get()));
+       customerRepository.save(new Customer(null, dtoAddCustomerRequest.getLogin(), dtoAddCustomerRequest.getPassword(),personRepository.findById(idPerson).get()));
     }
 
     @Override

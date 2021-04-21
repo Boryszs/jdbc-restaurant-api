@@ -13,7 +13,6 @@ public class EmployeeRowMapper implements RowMapper<Employee>{
                 .idEmployee(resultSet.getInt("id_pracownika"))
                 .salary(resultSet.getDouble("pensja"))
                 .role(resultSet.getString("rola"))
-                .idPerson(resultSet.getInt("id_osoby"))
                 .build();
     }
 }

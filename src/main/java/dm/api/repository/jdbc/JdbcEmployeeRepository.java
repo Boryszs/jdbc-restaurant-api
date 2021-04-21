@@ -28,7 +28,7 @@ public class JdbcEmployeeRepository implements EmployeeRepository {
 
     @Override
     public void save(Employee employee) {
-        jdbcTemplate.update("insert into restauracja.pracownik(pensja,rola,id_osoby) values(?,(? :: restauracja.\"Rola\"),?)", employee.getSalary(), employee.getRole(), employee.getIdPerson());
+        jdbcTemplate.update("insert into restauracja.pracownik(pensja,rola,id_osoby) values(?,(? :: restauracja.\"Rola\"),?)", employee.getSalary(), employee.getRole(), employee.getPerson().getIdPerson());
     }
 
     @Override
@@ -65,6 +65,6 @@ public class JdbcEmployeeRepository implements EmployeeRepository {
 
     @Override
     public Optional<Employee> findById(int id) {
-        return jdbcTemplate.queryForObject("select * from restauracja.pracownik where id_pracownika = ?",new Object[]{id},(rs,rowNum) -> Optional.of(new Employee(rs.getInt(1),rs.getDouble(2),rs.getString(3),rs.getInt(4))));
+        return jdbcTemplate.queryForObject("select * from restauracja.pracownik where id_pracownika = ?",new Object[]{id},(rs,rowNum) -> Optional.of(new Employee(rs.getInt(1),rs.getDouble(2),rs.getString(3))));
     }
 }
