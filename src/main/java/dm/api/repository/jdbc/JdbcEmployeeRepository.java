@@ -1,6 +1,5 @@
 package dm.api.repository.jdbc;
 
-import dm.api.dto.response.DtoEmployeeDataResponse;
 import dm.api.mapper.impl.row.EmployeeRowListMapper;
 import dm.api.mapper.impl.row.EmployeeRowMapper;
 import dm.api.model.Employee;
@@ -49,12 +48,12 @@ public class JdbcEmployeeRepository implements EmployeeRepository {
     }
 
     @Override
-    public List<DtoEmployeeDataResponse> findAllEmployee() {
+    public List<Employee> findAllEmployee() {
         return jdbcTemplate.query("select * from restauracja.pracownik natural join restauracja.osoba natural join restauracja.adres ORDER BY id_pracownika;",new EmployeeRowListMapper());
     }
 
     @Override
-    public DtoEmployeeDataResponse findEmployeeById(int id) {
+    public Employee findEmployeeById(int id) {
         return jdbcTemplate.queryForObject("select * from restauracja.pracownik natural join restauracja.osoba natural join restauracja.adres WHERE pracownik.id_pracownika = ?",new Object[]{id},new EmployeeRowListMapper());
     }
 

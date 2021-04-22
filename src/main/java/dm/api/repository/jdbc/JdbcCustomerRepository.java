@@ -1,6 +1,5 @@
 package dm.api.repository.jdbc;
 
-import dm.api.dto.response.DtoCustomerDataResponse;
 import dm.api.mapper.impl.row.CustomerRowListMapper;
 import dm.api.mapper.impl.row.CustomerRowMapper;
 import dm.api.model.Customer;
@@ -54,13 +53,13 @@ public class JdbcCustomerRepository implements CustomerRepository {
     }
 
     @Override
-    public List<DtoCustomerDataResponse> findAllCustomer() {
+    public List<Customer> findAllCustomer() {
         return jdbcTemplate.query("select * from restauracja.klient natural join restauracja.osoba natural join restauracja.adres ORDER BY id_klienta;",new CustomerRowListMapper());
 
     }
 
     @Override
-    public DtoCustomerDataResponse findCustomerId(int id) {
+    public Customer findCustomerId(int id) {
         return jdbcTemplate.queryForObject("select * from restauracja.klient natural join restauracja.osoba natural join restauracja.adres where id_klienta = ?",new Object[]{id},new CustomerRowListMapper());
     }
 

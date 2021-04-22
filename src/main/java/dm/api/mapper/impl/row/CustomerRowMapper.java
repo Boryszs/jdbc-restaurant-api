@@ -1,6 +1,7 @@
 package dm.api.mapper.impl.row;
 
 import dm.api.model.Customer;
+import dm.api.model.Person;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;
@@ -15,6 +16,7 @@ public class CustomerRowMapper implements RowMapper<Customer> {
                 .idCustomer(resultSet.getInt("id_klienta"))
                 .login(resultSet.getString("login"))
                 .password(resultSet.getString("haslo"))
+                .person(new Person().builder().idPerson(resultSet.getInt("id_osoby")).build())
                 .build();
     }
 }

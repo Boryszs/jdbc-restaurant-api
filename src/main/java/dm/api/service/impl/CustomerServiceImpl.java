@@ -5,6 +5,7 @@ import dm.api.dto.request.DtoCustomerRequest;
 import dm.api.dto.response.DtoCustomerDataResponse;
 import dm.api.dto.response.DtoCustomerResponse;
 import dm.api.mapper.Convert;
+import dm.api.mapper.ConvertList;
 import dm.api.model.Address;
 import dm.api.model.Customer;
 import dm.api.model.Person;
@@ -15,9 +16,9 @@ import dm.api.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
@@ -25,14 +26,16 @@ public class CustomerServiceImpl implements CustomerService {
     private final CustomerRepository customerRepository;
     private final PersonRepository personRepository;
     private final AddressRepository addressRepository;
-    private final Convert<Customer, DtoCustomerRequest, DtoCustomerResponse> klientMapper;
+    private final Convert<Customer, DtoCustomerRequest, DtoCustomerResponse> customerMapper;
+    private final ConvertList<DtoCustomerDataResponse, Customer> customerListMapper;
 
     @Autowired
-    public CustomerServiceImpl(CustomerRepository customerRepository, PersonRepository personRepository, AddressRepository addressRepository, Convert<Customer, DtoCustomerRequest, DtoCustomerResponse> klientMapper) {
+    public CustomerServiceImpl(CustomerRepository customerRepository, PersonRepository personRepository, AddressRepository addressRepository, Convert<Customer, DtoCustomerRequest, DtoCustomerResponse> customerMapper, ConvertList<DtoCustomerDataResponse, Customer> customerListMapper) {
         this.customerRepository = customerRepository;
         this.personRepository = personRepository;
         this.addressRepository = addressRepository;
-        this.klientMapper = klientMapper;
+        this.customerMapper = customerMapper;
+        this.customerListMapper = customerListMapper;
     }
 
     @Override
@@ -42,12 +45,12 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void save(DtoCustomerRequest dtoCustomerRequest) {
-         customerRepository.save(klientMapper.convert(dtoCustomerRequest));
+         customerRepository.save(customerMapper.convert(dtoCustomerRequest));
     }
 
     @Override
     public void update(Integer id, DtoCustomerRequest dtoCustomerRequest) {
-         customerRepository.update(klientMapper.update(customerRepository.findById(id).get(), dtoCustomerRequest));
+         customerRepository.update(customerMapper.update(customerRepository.findById(id).get(), dtoCustomerRequest));
     }
 
     @Override
@@ -69,23 +72,21 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public List<DtoCustomerResponse> findAll() {
-        List<DtoCustomerResponse> customerResponseList = new LinkedList<>();
-        customerRepository.findAll().stream().map(customer -> klientMapper.toDto(customer)).forEach(customerResponseList::add);
-        return customerResponseList;
+        return customerRepository.findAll().parallelStream().map(customer -> customerMapper.toDto(customer)).collect(Collectors.toList());
     }
 
     @Override
     public List<DtoCustomerDataResponse> findAllCustomer() {
-        return customerRepository.findAllCustomer();
+        return customerListMapper.toListDto(customerRepository.findAllCustomer());
     }
 
     @Override
     public DtoCustomerDataResponse findCustomerById(int id) {
-        return customerRepository.findCustomerId(id);
+        return customerListMapper.toDto(customerRepository.findCustomerId(id));
     }
 
     @Override
     public Optional<DtoCustomerResponse> findById(int id) {
-        return  Optional.of(klientMapper.toDto(customerRepository.findById(id).get()));
+        return  Optional.of(customerMapper.toDto(customerRepository.findById(id).get()));
     }
 }

@@ -1,6 +1,5 @@
 package dm.api.repository;
 
-import dm.api.dto.response.DtoEmployeeDataResponse;
 import dm.api.model.Employee;
 
 import java.util.List;
@@ -13,8 +12,8 @@ public interface EmployeeRepository {
     void update (Employee employee);
     void deleteById (Integer id);
     List<Employee> findAll();
-    List<DtoEmployeeDataResponse> findAllEmployee();
-    DtoEmployeeDataResponse findEmployeeById(int id);
+    List<Employee> findAllEmployee();
+    Employee findEmployeeById(int id);
     void deleteEmployeeById(Integer id);
     Optional<Employee> findById(int id);
 }

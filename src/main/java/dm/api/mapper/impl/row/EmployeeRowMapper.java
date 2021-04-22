@@ -1,6 +1,7 @@
 package dm.api.mapper.impl.row;
 
 import dm.api.model.Employee;
+import dm.api.model.Person;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;
@@ -13,6 +14,7 @@ public class EmployeeRowMapper implements RowMapper<Employee>{
                 .idEmployee(resultSet.getInt("id_pracownika"))
                 .salary(resultSet.getDouble("pensja"))
                 .role(resultSet.getString("rola"))
+                .person(new Person().builder().idPerson(resultSet.getInt("id_pracownika")).build())
                 .build();
     }
 }

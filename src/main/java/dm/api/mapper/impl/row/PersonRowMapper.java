@@ -1,5 +1,6 @@
 package dm.api.mapper.impl.row;
 
+import dm.api.model.Address;
 import dm.api.model.Person;
 import org.springframework.jdbc.core.RowMapper;
 
@@ -19,6 +20,7 @@ public class PersonRowMapper implements RowMapper<Person>{
                 .dateBirthday(resultSet.getDate("data_urodzenia"))
                 .email(resultSet.getString("email"))
                 .telephone(resultSet.getString("telefon"))
+                .address(new Address().builder().idAddress(resultSet.getInt("id_adresu")).build())
                 .build();
     }
 }

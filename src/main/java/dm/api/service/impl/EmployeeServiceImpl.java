@@ -5,19 +5,20 @@ import dm.api.dto.request.DtoEmployeeRequest;
 import dm.api.dto.response.DtoEmployeeDataResponse;
 import dm.api.dto.response.DtoEmployeeResponse;
 import dm.api.mapper.Convert;
+import dm.api.mapper.ConvertList;
 import dm.api.model.Address;
 import dm.api.model.Employee;
 import dm.api.model.Person;
 import dm.api.repository.AddressRepository;
-import dm.api.repository.PersonRepository;
 import dm.api.repository.EmployeeRepository;
+import dm.api.repository.PersonRepository;
 import dm.api.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
@@ -26,13 +27,15 @@ public class EmployeeServiceImpl implements EmployeeService {
     private final PersonRepository personRepository;
     private final AddressRepository addressRepository;
     private final Convert<Employee, DtoEmployeeRequest, DtoEmployeeResponse> employeeMapper;
+    private final ConvertList<DtoEmployeeDataResponse, Employee> employeeListMapper;
 
     @Autowired
-    public EmployeeServiceImpl(EmployeeRepository employeeRepository, PersonRepository personRepository, AddressRepository addressRepository, Convert<Employee, DtoEmployeeRequest, DtoEmployeeResponse> employeeMapper) {
+    public EmployeeServiceImpl(EmployeeRepository employeeRepository, PersonRepository personRepository, AddressRepository addressRepository, Convert<Employee, DtoEmployeeRequest, DtoEmployeeResponse> employeeMapper, ConvertList<DtoEmployeeDataResponse, Employee> employeeListMapper) {
         this.employeeRepository = employeeRepository;
         this.personRepository = personRepository;
         this.addressRepository = addressRepository;
         this.employeeMapper = employeeMapper;
+        this.employeeListMapper = employeeListMapper;
     }
 
     @Override
@@ -64,19 +67,18 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public List<DtoEmployeeResponse> findAll() {
-        List<DtoEmployeeResponse> employeeResponseList = new LinkedList<>();
-        employeeRepository.findAll().stream().map(employee -> employeeMapper.toDto(employee)).forEach(employeeResponseList::add);
-        return employeeResponseList;
+        return employeeRepository.findAll().stream().map(employee -> employeeMapper.toDto(employee)).collect(Collectors.toList());
     }
 
     @Override
     public List<DtoEmployeeDataResponse> findAllEmployee() {
-        return employeeRepository.findAllEmployee();
+
+        return employeeListMapper.toListDto(employeeRepository.findAllEmployee());
     }
 
     @Override
     public DtoEmployeeDataResponse findEmployeeById(int id) {
-        return employeeRepository.findEmployeeById(id);
+        return employeeListMapper.toDto(employeeRepository.findEmployeeById(id));
     }
 
     @Override

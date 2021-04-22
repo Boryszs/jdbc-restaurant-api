@@ -9,21 +9,21 @@ import dm.api.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class PersonServiceImpl implements PersonService {
 
-   private final PersonRepository personRepository;
-   private final Convert<Person, DtoPersonRequest, DtoPersonResponse> person;
+    private final PersonRepository personRepository;
+    private final Convert<Person, DtoPersonRequest, DtoPersonResponse> person;
 
-   @Autowired
+    @Autowired
     public PersonServiceImpl(PersonRepository personRepository, Convert<Person, DtoPersonRequest, DtoPersonResponse> person) {
         this.personRepository = personRepository;
         this.person = person;
-   }
+    }
 
     @Override
     public int count() {
@@ -47,9 +47,7 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public List<DtoPersonResponse> findAll() {
-        List<DtoPersonResponse> personResponseList = new LinkedList<>();
-        personRepository.findAll().stream().map(person -> this.person.toDto(person)).forEach(personResponseList::add);
-        return personResponseList;
+        return personRepository.findAll().stream().map(person -> this.person.toDto(person)).collect(Collectors.toList());
     }
 
     @Override

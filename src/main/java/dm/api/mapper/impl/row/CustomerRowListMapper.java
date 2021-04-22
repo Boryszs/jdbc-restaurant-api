@@ -1,27 +1,23 @@
 package dm.api.mapper.impl.row;
 
-import dm.api.dto.response.DtoAddressResponse;
-import dm.api.dto.response.DtoCustomerDataResponse;
-import dm.api.dto.response.DtoCustomerResponse;
-import dm.api.dto.response.DtoPersonResponse;
+import dm.api.model.Address;
+import dm.api.model.Customer;
+import dm.api.model.Person;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CustomerRowListMapper implements RowMapper<DtoCustomerDataResponse> {
+public class CustomerRowListMapper implements RowMapper<Customer> {
 
     @Override
-    public DtoCustomerDataResponse mapRow(ResultSet resultSet, int i) throws SQLException {
+    public Customer mapRow(ResultSet resultSet, int i) throws SQLException {
 
-        DtoCustomerDataResponse dtoKlientResponse = new DtoCustomerDataResponse().builder()
-                .customer(new DtoCustomerResponse().builder()
-                        .idCustomer(resultSet.getInt("id_klienta"))
-                        .login(resultSet.getString("login"))
-                        .password(resultSet.getString("haslo"))
-                        .idPerson(resultSet.getInt("id_osoby"))
-                        .build())
-                .person(new DtoPersonResponse().builder()
+        Customer customer = new Customer().builder()
+                .idCustomer(resultSet.getInt("id_klienta"))
+                .login(resultSet.getString("login"))
+                .password(resultSet.getString("haslo"))
+                .person(new Person().builder()
                         .idPerson(resultSet.getInt("id_osoby"))
                         .name(resultSet.getString("imie"))
                         .surname(resultSet.getString("nazwisko"))
@@ -29,14 +25,16 @@ public class CustomerRowListMapper implements RowMapper<DtoCustomerDataResponse>
                         .dateBirthday(resultSet.getDate("data_urodzenia"))
                         .email(resultSet.getString("email"))
                         .telephone(resultSet.getString("telefon"))
-                        .idAddress(resultSet.getInt("id_adresu")).build())
-                .address(new DtoAddressResponse().builder()
-                        .idAddress(resultSet.getInt("id_adresu"))
-                        .town(resultSet.getString("miejscowosc"))
-                        .street(resultSet.getString("ulica"))
-                        .nrHome(resultSet.getString("nr_domu"))
-                        .postCode(resultSet.getString("kod_pocztowy"))
-                        .build()).build();
-        return dtoKlientResponse;
+                        .address(new Address().builder()
+                                .idAddress(resultSet.getInt("id_adresu"))
+                                .town(resultSet.getString("miejscowosc"))
+                                .street(resultSet.getString("ulica"))
+                                .nrHome(resultSet.getString("nr_domu"))
+                                .postCode(resultSet.getString("kod_pocztowy"))
+                                .build())
+                        .build())
+                .build();
+
+        return customer;
     }
 }

@@ -1,6 +1,5 @@
 package dm.api.repository;
 
-import dm.api.dto.response.DtoCustomerDataResponse;
 import dm.api.model.Customer;
 
 import java.util.List;
@@ -14,7 +13,7 @@ public interface CustomerRepository {
     void deleteById (Integer id);
     void deleteCustomerById(Integer id);
     List<Customer> findAll();
-    List<DtoCustomerDataResponse> findAllCustomer();
-    DtoCustomerDataResponse findCustomerId(int id);
+    List<Customer> findAllCustomer();
+    Customer findCustomerId(int id);
     Optional<Customer> findById(int id);
 }
